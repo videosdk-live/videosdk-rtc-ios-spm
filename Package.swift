@@ -6,19 +6,17 @@ import PackageDescription
 let package = Package(
     name: "VideoSDKRTCSwift",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v13)
     ],
     products: [
         .library(
-            name: "VideoSDKRTCSwift",
-            targets: ["VideoSDKRTCSwift", "VideoSDKRTC", "WebRTC", "Mediasoup"]),
+            name: "VideoSDKRTC",
+            targets: ["VideoSDKRTC", "WebRTC", "Mediasoup"]),
     ],
     dependencies: [],
     targets: [
-        .target(name: "VideoSDKRTCSwift", dependencies: []),
         .binaryTarget(name: "WebRTC", path: "Sources/WebRTC.xcframework"),
         .binaryTarget(name: "Mediasoup", path: "Sources/Mediasoup.xcframework"),
-        .binaryTarget(name: "VideoSDKRTC", path: "Sources/VideoSDKRTC.xcframework"),
-        .testTarget(name: "VideoSDKRTCSwiftTests", dependencies: ["VideoSDKRTCSwift"]),
+        .binaryTarget(name: "VideoSDKRTC", path: "Sources/VideoSDKRTC.xcframework")
     ]
 )
