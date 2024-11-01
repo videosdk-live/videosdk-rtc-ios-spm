@@ -11,14 +11,13 @@ let package = Package(
     products: [
         .library(
             name: "VideoSDKRTCSwift",
-            targets: ["VideoSDKRTCSwift", "VideoSDKRTC", "VideosdkWebSocket", "WebRTC", "Mediasoup"]),
+            targets: ["VideoSDKRTCSwift", "VideoSDKRTC", "WebRTC", "Mediasoup"]),
     ],
     dependencies: [],
     targets: [
         .target(name: "VideoSDKRTCSwift", dependencies: []),
         .binaryTarget(name: "WebRTC", path: "Sources/WebRTC.xcframework"),
         .binaryTarget(name: "Mediasoup", path: "Sources/Mediasoup.xcframework"),
-        .binaryTarget(name: "VideosdkWebSocket", path: "Sources/VideosdkWebSocket.xcframework"),
         .binaryTarget(name: "VideoSDKRTC", path: "Sources/VideoSDKRTC.xcframework"),
         .testTarget(name: "VideoSDKRTCSwiftTests", dependencies: ["VideoSDKRTCSwift"]),
     ]
