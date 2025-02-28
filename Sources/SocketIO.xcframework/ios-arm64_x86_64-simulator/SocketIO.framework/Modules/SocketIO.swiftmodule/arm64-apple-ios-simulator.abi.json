@@ -20621,6 +20621,96 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "currentReconnectAttempt",
+            "printedName": "currentReconnectAttempt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8SocketIO0A7ManagerC23currentReconnectAttemptSivp",
+            "mangledName": "$s8SocketIO0A7ManagerC23currentReconnectAttemptSivp",
+            "moduleName": "SocketIO",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SocketIO0A7ManagerC23currentReconnectAttemptSivg",
+                "mangledName": "$s8SocketIO0A7ManagerC23currentReconnectAttemptSivg",
+                "moduleName": "SocketIO",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SocketIO0A7ManagerC23currentReconnectAttemptSivs",
+                "mangledName": "$s8SocketIO0A7ManagerC23currentReconnectAttemptSivs",
+                "moduleName": "SocketIO",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SocketIO0A7ManagerC23currentReconnectAttemptSivM",
+                "mangledName": "$s8SocketIO0A7ManagerC23currentReconnectAttemptSivM",
+                "moduleName": "SocketIO",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(socketURL:config:)",
@@ -28029,527 +28119,527 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "StringLiteral",
       "offset": 1620,
       "length": 14,
       "value": "\"SocketEngine\""
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "StringLiteral",
       "offset": 1743,
       "length": 32,
       "value": "\"com.socketio.engineHandleQueue\""
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 2457,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 2678,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 2763,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 2881,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 3033,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 3328,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 3458,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 3584,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 3690,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 3805,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 3937,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "StringLiteral",
       "offset": 4122,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "StringLiteral",
       "offset": 4198,
       "length": 13,
       "value": "\"\/engine.io\/\""
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "StringLiteral",
       "offset": 4295,
       "length": 19,
       "value": "\"http:\/\/localhost\/\""
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "StringLiteral",
       "offset": 4405,
       "length": 19,
       "value": "\"http:\/\/localhost\/\""
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 4572,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 4927,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 5078,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 5271,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "IntegerLiteral",
       "offset": 5639,
       "length": 5,
       "value": "25000"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "IntegerLiteral",
       "offset": 5554,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "IntegerLiteral",
       "offset": 5694,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "IntegerLiteral",
       "offset": 5729,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 5801,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEngine.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 5884,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEnginePacketType.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEnginePacketType.swift",
       "kind": "IntegerLiteral",
       "offset": 1386,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEnginePacketType.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEnginePacketType.swift",
       "kind": "IntegerLiteral",
       "offset": 1424,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEnginePacketType.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEnginePacketType.swift",
       "kind": "IntegerLiteral",
       "offset": 1461,
       "length": 4,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEnginePacketType.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEnginePacketType.swift",
       "kind": "IntegerLiteral",
       "offset": 1501,
       "length": 7,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEnginePacketType.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEnginePacketType.swift",
       "kind": "IntegerLiteral",
       "offset": 1544,
       "length": 7,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Engine\/SocketEnginePacketType.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Engine\/SocketEnginePacketType.swift",
       "kind": "IntegerLiteral",
       "offset": 1576,
       "length": 4,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Ack\/SocketAckEmitter.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Ack\/SocketAckEmitter.swift",
       "kind": "BooleanLiteral",
       "offset": 3837,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Ack\/SocketAckManager.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Ack\/SocketAckManager.swift",
       "kind": "StringLiteral",
       "offset": 1353,
       "length": 8,
       "value": "\"NO ACK\""
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Ack\/SocketAckManager.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Ack\/SocketAckManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2363,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Client\/SocketAnyEvent.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Client\/SocketAnyEvent.swift",
       "kind": "StringLiteral",
       "offset": 1567,
       "length": 69,
       "value": "\"SocketAnyEvent: Event: \""
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Client\/SocketAnyEvent.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Client\/SocketAnyEvent.swift",
       "kind": "StringLiteral",
       "offset": 1599,
       "length": 5,
       "value": "\" items: \""
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Client\/SocketAnyEvent.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Client\/SocketAnyEvent.swift",
       "kind": "StringLiteral",
       "offset": 1635,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Client\/SocketIOClient.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Client\/SocketIOClient.swift",
       "kind": "IntegerLiteral",
       "offset": 3098,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Client\/SocketIOClient.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Client\/SocketIOClient.swift",
       "kind": "StringLiteral",
       "offset": 3133,
       "length": 24,
       "value": "\"SocketIOClient{\""
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Client\/SocketIOClient.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Client\/SocketIOClient.swift",
       "kind": "StringLiteral",
       "offset": 3155,
       "length": 1,
       "value": "\"}\""
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Client\/SocketIOClient.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Client\/SocketIOClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 5903,
+      "offset": 6039,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Client\/SocketIOClient.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Client\/SocketIOClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 11659,
+      "offset": 11795,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Client\/SocketIOClient.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Client\/SocketIOClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 11693,
+      "offset": 11829,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Client\/SocketIOClient.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Client\/SocketIOClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 14320,
+      "offset": 14456,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Client\/SocketIOClientOption.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Client\/SocketIOClientOption.swift",
       "kind": "IntegerLiteral",
       "offset": 1354,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Client\/SocketIOClientOption.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Client\/SocketIOClientOption.swift",
       "kind": "IntegerLiteral",
       "offset": 1407,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Client\/SocketIOStatus.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Client\/SocketIOStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 1517,
       "length": 12,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Client\/SocketIOStatus.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Client\/SocketIOStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 1600,
       "length": 10,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Client\/SocketIOStatus.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Client\/SocketIOStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 1672,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Client\/SocketIOClientConfiguration.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Client\/SocketIOClientConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 3827,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Util\/SocketLogger.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Util\/SocketLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 2860,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Parse\/SocketPacket.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Parse\/SocketPacket.swift",
       "kind": "StringLiteral",
       "offset": 1370,
       "length": 14,
       "value": "\"SocketPacket\""
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Parse\/SocketPacket.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Parse\/SocketPacket.swift",
       "kind": "IntegerLiteral",
       "offset": 2836,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Parse\/SocketPacket.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Parse\/SocketPacket.swift",
       "kind": "IntegerLiteral",
       "offset": 2873,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Parse\/SocketPacket.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Parse\/SocketPacket.swift",
       "kind": "IntegerLiteral",
       "offset": 5587,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Parse\/SocketPacket.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Parse\/SocketPacket.swift",
       "kind": "IntegerLiteral",
       "offset": 5633,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Parse\/SocketPacket.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Parse\/SocketPacket.swift",
       "kind": "IntegerLiteral",
       "offset": 5672,
       "length": 3,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Parse\/SocketPacket.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Parse\/SocketPacket.swift",
       "kind": "IntegerLiteral",
       "offset": 5711,
       "length": 5,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Parse\/SocketPacket.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Parse\/SocketPacket.swift",
       "kind": "IntegerLiteral",
       "offset": 5759,
       "length": 11,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Parse\/SocketPacket.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Parse\/SocketPacket.swift",
       "kind": "IntegerLiteral",
       "offset": 5811,
       "length": 9,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Parse\/SocketPacket.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Parse\/SocketPacket.swift",
       "kind": "BooleanLiteral",
       "offset": 6524,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Manager\/SocketManager.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Manager\/SocketManager.swift",
       "kind": "StringLiteral",
       "offset": 2303,
       "length": 15,
       "value": "\"SocketManager\""
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Manager\/SocketManager.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Manager\/SocketManager.swift",
       "kind": "BooleanLiteral",
       "offset": 3493,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Manager\/SocketManager.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Manager\/SocketManager.swift",
       "kind": "BooleanLiteral",
       "offset": 4014,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Manager\/SocketManager.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Manager\/SocketManager.swift",
       "kind": "IntegerLiteral",
       "offset": 4129,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Manager\/SocketManager.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Manager\/SocketManager.swift",
       "kind": "IntegerLiteral",
       "offset": 4245,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Manager\/SocketManager.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Manager\/SocketManager.swift",
       "kind": "FloatLiteral",
       "offset": 4353,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Manager\/SocketManager.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Manager\/SocketManager.swift",
       "kind": "BooleanLiteral",
       "offset": 4568,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Manager\/SocketManager.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Manager\/SocketManager.swift",
       "kind": "IntegerLiteral",
       "offset": 4616,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Manager\/SocketManager.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Manager\/SocketManager.swift",
       "kind": "IntegerLiteral",
       "offset": 5134,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Manager\/SocketManager.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Manager\/SocketManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5233,
+      "offset": 5234,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Manager\/SocketManager.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Manager\/SocketManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5266,
+      "offset": 5267,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/udaygajera\/Downloads\/socket.io-client-swift-16.1.0\/Source\/SocketIO\/Manager\/SocketManager.swift",
+      "filePath": "\/Users\/udaygajera\/Desktop\/experiment\/socket.io-client-swift\/Source\/SocketIO\/Manager\/SocketManager.swift",
       "kind": "Array",
-      "offset": 5575,
+      "offset": 5576,
       "length": 2,
       "value": "[]"
     }
