@@ -4818,6 +4818,14 @@ public enum authorisationStatus {
 public protocol AuthorisationDelegate : AnyObject {
   func handlePermission()
 }
+public enum MediaStreamEventType {
+  case state
+  public static func == (a: VideoSDKRTC.MediaStreamEventType, b: VideoSDKRTC.MediaStreamEventType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers public class MediaStream : Swift.Equatable {
   public var id: Swift.String {
     get
@@ -4839,6 +4847,12 @@ public protocol AuthorisationDelegate : AnyObject {
 extension VideoSDKRTC.MediaStream {
   public func pause()
   public func resume()
+  public var isPaused: Swift.Bool {
+    get
+  }
+  @discardableResult
+  public func on(_ event: VideoSDKRTC.MediaStreamEventType, listener: @escaping (VideoSDKRTC.StreamState) -> Swift.Void) -> Foundation.UUID
+  public func off(_ event: VideoSDKRTC.MediaStreamEventType, listenerId: Foundation.UUID)
   public func handleStreamStateChanged(state: VideoSDKRTC.StreamState, streamId: Swift.String)
 }
 extension VideoSDKRTC.MediaStream {
@@ -9738,6 +9752,8 @@ extension VideoSDKRTC.JSONEncodingError : Swift.Equatable {}
 extension VideoSDKRTC.JSONEncodingError : Swift.Hashable {}
 extension VideoSDKRTC.authorisationStatus : Swift.Equatable {}
 extension VideoSDKRTC.authorisationStatus : Swift.Hashable {}
+extension VideoSDKRTC.MediaStreamEventType : Swift.Equatable {}
+extension VideoSDKRTC.MediaStreamEventType : Swift.Hashable {}
 extension VideoSDKRTC.MeetingState : Swift.Equatable {}
 extension VideoSDKRTC.MeetingState : Swift.Hashable {}
 extension VideoSDKRTC.MeetingState : Swift.RawRepresentable {}
