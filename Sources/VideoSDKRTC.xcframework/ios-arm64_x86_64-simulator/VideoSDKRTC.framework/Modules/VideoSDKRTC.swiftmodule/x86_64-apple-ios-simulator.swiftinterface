@@ -4963,7 +4963,7 @@ extension VideoSDKRTC.Meeting {
   #endif
 }
 extension VideoSDKRTC.Meeting {
-  public func switchTo(meetingId: Swift.String, token: Swift.String)
+  public func switchTo(meetingId: Swift.String, token: Swift.String, mode: VideoSDKRTC.Mode)
 }
 extension VideoSDKRTC.Meeting {
   #if compiler(>=5.3) && $NonescapableTypes
