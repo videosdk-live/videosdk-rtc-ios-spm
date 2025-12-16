@@ -5105,7 +5105,7 @@ extension VideoSDKRTC.MeetingEventListener {
   public func onQualityLimitation(type: VideoSDKRTC.QualityLimitationType, state: VideoSDKRTC.QualityLimitationState, timestamp: Swift.String)
 }
 public enum MeetingState : Swift.String {
-  case CONNECTING, CONNECTED, DISCONNECTED, RECONNECTING
+  case CONNECTING, CONNECTED, DISCONNECTED, RECONNECTING, FAILED
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
   #endif
