@@ -8714,7 +8714,7 @@ public protocol Getter {
   func get(carrier: [Swift.String : Swift.String], key: Swift.String) -> [Swift.String]?
   #endif
 }
-public struct Google_Protobuf_Timestamp {
+@_documentation(visibility: internal) public struct Google_Protobuf_Timestamp {
   public var seconds: Swift.Int64
   public var nanos: Swift.Int32
   public var unknownFields: VideoSDKRTC.UnknownStorage
