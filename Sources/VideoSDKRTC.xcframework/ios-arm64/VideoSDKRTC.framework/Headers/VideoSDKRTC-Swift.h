@@ -281,6 +281,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import AVFoundation;
+@import CoreFoundation;
+@import CoreMedia;
+@import ObjectiveC;
+@import UIKit;
 #endif
 
 #endif
@@ -302,6 +307,87 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
+/// Captures camera frames and pushes NV12 data to Rust for encoding.
+SWIFT_CLASS("_TtC11VideoSDKRTC13CameraManager")
+@interface CameraManager : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class AVCaptureOutput;
+@class AVCaptureConnection;
+@interface CameraManager (SWIFT_EXTENSION(VideoSDKRTC)) <AVCaptureVideoDataOutputSampleBufferDelegate>
+- (void)captureOutput:(AVCaptureOutput * _Nonnull)output didOutputSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer fromConnection:(AVCaptureConnection * _Nonnull)connection;
+@end
+
+@class NSCoder;
+/// A UIView that renders frames received via the <code>RTCVideoRenderer</code> protocol.
+/// Usage (modern):
+/// \code
+/// let view = RTCMTLVideoView()
+/// (stream.track as? RTCVideoTrack)?.add(view)
+///
+/// \endcodeUsage (legacy, still supported):
+/// \code
+/// let view = stream.createRenderView()
+///
+/// \endcode
+SWIFT_CLASS_NAMED("RTCMTLVideoView")
+@interface RTCMTLVideoView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+/// Mirrors Rust <code>EventCategory</code>. Raw values are FROZEN.
+typedef SWIFT_ENUM(int32_t, SdkTraceCategory, open) {
+  SdkTraceCategoryInternalLog = 0,
+  SdkTraceCategoryDebug = 1,
+  SdkTraceCategoryRealtime = 2,
+  SdkTraceCategoryTelemetry = 3,
+  SdkTraceCategoryWarn = 4,
+  SdkTraceCategoryError = 5,
+  SdkTraceCategoryBackendError = 6,
+};
+
+/// Mirrors Rust <code>ComponentCategory</code>
+typedef SWIFT_ENUM(int32_t, SdkTraceComponent, open) {
+  SdkTraceComponentMedia = 0,
+  SdkTraceComponentTransport = 1,
+  SdkTraceComponentNetwork = 2,
+  SdkTraceComponentMeeting = 3,
+  SdkTraceComponentParticipant = 4,
+  SdkTraceComponentInternalLog = 5,
+  SdkTraceComponentInfo = 6,
+};
+
+@class UIColor;
+/// A UIView that presents the system’s broadcast picker for the app’s
+/// configured Broadcast Upload Extension. Tap the view (or call
+/// <code>triggerPicker()</code>) to show the system “Start Broadcast” UI.
+/// <h3>Usage</h3>
+/// \code
+/// let picker = VideoSDKBroadcastButton(
+///     extensionBundleId: "com.zujo.videosdk.example.ScreenBroadcastiOS"
+/// )
+/// picker.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
+/// controlsStack.addArrangedSubview(picker)
+///
+/// // Or trigger manually from your own button:
+/// myButton.addAction(UIAction { _ in picker.triggerPicker() }, for: .touchUpInside)
+///
+/// \endcodeimportant:
+/// You must also call
+/// <code>meeting.enableScreenShare()</code> (arms the consumer side) BEFORE
+/// the user taps the picker. A common pattern is to call both in
+/// the same “Share Screen” tap handler.
+SWIFT_CLASS("_TtC11VideoSDKRTC23VideoSDKBroadcastButton")
+@interface VideoSDKBroadcastButton : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+/// Tint the inner broadcast icon.
+@property (nonatomic, strong) UIColor * _Null_unspecified tintColor;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
 
 #endif
 #if __has_attribute(external_source_symbol)

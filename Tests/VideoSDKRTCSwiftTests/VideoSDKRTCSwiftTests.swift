@@ -6,6 +6,6 @@ final class VideoSDKRTCSwiftTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(VideoSDKRTCSwift().text, "Hello, World!")
+        XCTAssertEqual(VideoSDKRTCSwift().text, "Welcome to VideoSDK! 🚀")
     }
 }
