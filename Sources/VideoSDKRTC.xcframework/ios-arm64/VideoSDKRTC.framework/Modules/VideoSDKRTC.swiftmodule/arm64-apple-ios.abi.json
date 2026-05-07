@@ -31141,34 +31141,6 @@
           {
             "kind": "Function",
             "name": "pin",
-            "printedName": "pin(forShare:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11VideoSDKRTC11ParticipantC3pin8forShareySb_tF",
-            "mangledName": "$s11VideoSDKRTC11ParticipantC3pin8forShareySb_tF",
-            "moduleName": "VideoSDKRTC",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "pin",
             "printedName": "pin(_:)",
             "children": [
               {
@@ -31187,34 +31159,6 @@
             "declKind": "Func",
             "usr": "s:11VideoSDKRTC11ParticipantC3pinyyAA7PinTypeOF",
             "mangledName": "$s11VideoSDKRTC11ParticipantC3pinyyAA7PinTypeOF",
-            "moduleName": "VideoSDKRTC",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "unpin",
-            "printedName": "unpin(forShare:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11VideoSDKRTC11ParticipantC5unpin8forShareySb_tF",
-            "mangledName": "$s11VideoSDKRTC11ParticipantC5unpin8forShareySb_tF",
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
               "AccessControl",
@@ -31493,6 +31437,7 @@
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
               "AccessControl",
+              "Documentation",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -47027,35 +46972,21 @@
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Participant.swift",
       "kind": "Dictionary",
-      "offset": 1437,
+      "offset": 1489,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Participant.swift",
       "kind": "BooleanLiteral",
-      "offset": 6174,
+      "offset": 25268,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Participant.swift",
       "kind": "BooleanLiteral",
-      "offset": 6605,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Participant.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11866,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Participant.swift",
-      "kind": "BooleanLiteral",
-      "offset": 12661,
+      "offset": 26109,
       "length": 5,
       "value": "false"
     },

@@ -1213,9 +1213,7 @@ public enum LeaveReason : Swift.Int, Swift.CaseIterable {
   #if compiler(>=5.3) && $NonescapableTypes
   public func getShareStats() throws -> Any?
   #endif
-  public func pin(forShare: Swift.Bool = false)
   public func pin(_ pinType: VideoSDKRTC.PinType = .SHARE_AND_CAM)
-  public func unpin(forShare: Swift.Bool = false)
   public func unpin(_ pinType: VideoSDKRTC.PinType = .SHARE_AND_CAM)
   #if compiler(>=5.3) && $NonescapableTypes
   public func captureImage(height: CoreFoundation.CGFloat? = nil, width: CoreFoundation.CGFloat? = nil, completion: @escaping (Swift.String?) -> Swift.Void) throws
@@ -1226,7 +1224,7 @@ public enum LeaveReason : Swift.Int, Swift.CaseIterable {
   public func removeAllEventListeners()
   public static func == (lhs: VideoSDKRTC.Participant, rhs: VideoSDKRTC.Participant) -> Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
-  public func getVideoRenderView() -> VideoSDKRTC.RTCMTLVideoView?
+  @_documentation(visibility: internal) public func getVideoRenderView() -> VideoSDKRTC.RTCMTLVideoView?
   #endif
   @objc deinit
 }
