@@ -43316,7 +43316,7 @@
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Tracks\/AudioTrack.swift",
       "kind": "Array",
-      "offset": 1462,
+      "offset": 1475,
       "length": 2,
       "value": "[]"
     },
@@ -45829,28 +45829,28 @@
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIVideoRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 2770,
+      "offset": 2786,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIVideoRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 3095,
+      "offset": 3111,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIVideoRenderer.swift",
       "kind": "Dictionary",
-      "offset": 7812,
+      "offset": 7843,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIVideoRenderer.swift",
       "kind": "Dictionary",
-      "offset": 7872,
+      "offset": 7903,
       "length": 3,
       "value": "[]"
     },
@@ -46074,7 +46074,7 @@
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Tracks\/MediaStreamTrack.swift",
       "kind": "BooleanLiteral",
-      "offset": 2484,
+      "offset": 2517,
       "length": 4,
       "value": "true"
     },
@@ -46655,168 +46655,168 @@
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 19829,
+      "offset": 19856,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 19974,
+      "offset": 20005,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 20101,
+      "offset": 20130,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 20228,
+      "offset": 20255,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 20719,
+      "offset": 20746,
       "length": 14,
       "value": "\"HIGH_QUALITY\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 22026,
+      "offset": 22053,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 22339,
+      "offset": 22366,
       "length": 11,
       "value": "3"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 22624,
+      "offset": 22651,
       "length": 17,
       "value": "\"FREEZE_DETECTED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 23232,
+      "offset": 23259,
       "length": 5,
       "value": "\"CPU\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 23640,
+      "offset": 23667,
       "length": 10,
       "value": "\"DETECTED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 24306,
+      "offset": 24333,
       "length": 4,
       "value": "1001"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 24438,
+      "offset": 24465,
       "length": 4,
       "value": "1002"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 24587,
+      "offset": 24614,
       "length": 4,
       "value": "1003"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 24737,
+      "offset": 24764,
       "length": 4,
       "value": "1004"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 24854,
+      "offset": 24881,
       "length": 4,
       "value": "1005"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 24973,
+      "offset": 25000,
       "length": 4,
       "value": "1006"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 25097,
+      "offset": 25124,
       "length": 4,
       "value": "1007"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 25219,
+      "offset": 25246,
       "length": 4,
       "value": "1008"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 25374,
+      "offset": 25401,
       "length": 4,
       "value": "1009"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 25497,
+      "offset": 25524,
       "length": 4,
       "value": "1010"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 25638,
+      "offset": 25665,
       "length": 4,
       "value": "1011"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 25821,
+      "offset": 25848,
       "length": 4,
       "value": "1101"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 26188,
+      "offset": 26215,
       "length": 4,
       "value": "1103"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/MeetingStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 26309,
+      "offset": 26336,
       "length": 4,
       "value": "1104"
     },

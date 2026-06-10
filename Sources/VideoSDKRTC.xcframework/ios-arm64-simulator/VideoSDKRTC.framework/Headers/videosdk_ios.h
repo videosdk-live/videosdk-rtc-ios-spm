@@ -49,11 +49,11 @@ int32_t meeting_setE2EEKey(const char *key);
 int32_t meeting_ratchetE2EEKey(void);
 /// Configure the E2EE AEAD algorithm. The wire format is selected by
 /// the algorithm choice — VideoSDK variants interoperate with
-/// libwebrtc-based clients (PBKDF2 key derivation, trailer IV/key-id
+/// the native-engine clients (PBKDF2 key derivation, trailer IV/key-id
 /// layout, AAD-bound cleartext prefix). Rust-native variants use HKDF
 /// derivation and a leading-header layout.
-///   0 = VSDK_AES_GCM_128 (default, libwebrtc-compatible)
-///   1 = VSDK_AES_GCM_256 (libwebrtc-compatible)
+///   0 = VSDK_AES_GCM_128 (default, native-engine-compatible)
+///   1 = VSDK_AES_GCM_256 (native-engine-compatible)
 ///   2 = AES_GCM_128      (Rust-native, peer must be Rust SDK)
 ///   3 = AES_GCM_256      (Rust-native, peer must be Rust SDK)
 /// MUST be called before meeting_join. Returns 0 on success, -1 when
