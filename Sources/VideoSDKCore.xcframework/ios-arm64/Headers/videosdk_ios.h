@@ -240,6 +240,34 @@ int32_t meeting_respondEntry(const char *peer_id, const char *decision);
 /// `videosdk_videoInit`. Pass a JSON string matching CameraVideoTrackConfig.
 void videosdk_setVideoTrackConfig(const char *config_json);
 
+/// Set the audio-processing (APM) noise config for the mic track. Call before
+/// `meeting_enableMic`. Pass a JSON string matching NoiseConfig (camelCase
+/// keys: noiseSupression/noiseSuppression, echoCancellation, autoGainControl,
+/// highPassFilter). Absent/null fields keep the engine default. NOTE:
+/// highPassFilter is accepted but NOT applied by the native engine.
+void videosdk_setNoiseConfig(const char *config_json);
+
+/// Set the opus audio encoder config for the mic track. `bitrate_kbps` 0 or
+/// >128 means "no override". The `*_valid` flags gate whether the paired
+/// DTX/FEC value is applied.
+void videosdk_setAudioEncoderConfig(uint32_t bitrate_kbps,
+                                    int32_t dtx_valid,
+                                    int32_t dtx_on,
+                                    int32_t fec_valid,
+                                    int32_t fec_on);
+
+/// Enable/disable the client-side codec-switch fallback (downgrade the local
+/// camera to VP8 when the server reports a remote that cannot decode the
+/// current codec). Default true. Call before `meeting_join`. Client-side only —
+/// never sent to the server.
+void videosdk_setCodecSwitchEnabled(bool enabled);
+
+/// Enable/disable server-side notification batching. Default true. Call before
+/// `meeting_join`. Sent to the server on `join` as `batchingEnabled`; when the
+/// server batches participant events into `batchNotification` envelopes, the
+/// SDK unpacks and dispatches each inner entry through the normal path.
+void videosdk_setBatchingEnabled(bool enabled);
+
 /// Set the SDK log level. Call before `meeting_join`. `level` accepts
 /// "none" | "error" | "warn" | "info" | "debug" | "all".
 void videosdk_setLogLevel(const char *level);
