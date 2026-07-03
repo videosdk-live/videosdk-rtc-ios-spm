@@ -2,8 +2,8 @@
 triple:          'arm64-apple-darwin'
 binary-path:     '/Users/admin/Library/Developer/Xcode/DerivedData/VideoSDK-afwxycwcmpfuxpahpsozamgtvjxl/Build/Intermediates.noindex/ArchiveIntermediates/VideoSDKRTC/InstallationBuildProductsLocation/Library/Frameworks/VideoSDKRTC.framework/VideoSDKRTC'
 relocations:
-  - { offset: 0xBD6B9, size: 0x8, addend: 0x0, symName: _VideoSDKRTCVersionString, symObjAddr: 0x0, symBinAddr: 0xC63B00, symSize: 0x0 }
-  - { offset: 0xBD6F0, size: 0x8, addend: 0x0, symName: _VideoSDKRTCVersionNumber, symObjAddr: 0x30, symBinAddr: 0xC63B30, symSize: 0x0 }
+  - { offset: 0xBD6B9, size: 0x8, addend: 0x0, symName: _VideoSDKRTCVersionString, symObjAddr: 0x0, symBinAddr: 0xC62400, symSize: 0x0 }
+  - { offset: 0xBD6F0, size: 0x8, addend: 0x0, symName: _VideoSDKRTCVersionNumber, symObjAddr: 0x30, symBinAddr: 0xC62430, symSize: 0x0 }
   - { offset: 0xBD7A3, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC21AgentParticipantErrorOs0E0AAsADP7_domainSSvgTW', symObjAddr: 0x988, symBinAddr: 0x2A48, symSize: 0x4 }
   - { offset: 0xBD7BF, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC21AgentParticipantErrorOs0E0AAsADP5_codeSivgTW', symObjAddr: 0x98C, symBinAddr: 0x2A4C, symSize: 0x4 }
   - { offset: 0xBD7DB, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC21AgentParticipantErrorOs0E0AAsADP9_userInfoyXlSgvgTW', symObjAddr: 0x990, symBinAddr: 0x2A50, symSize: 0x4 }
@@ -181,7 +181,7 @@ relocations:
   - { offset: 0xC2870, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC11AICharacterC9interruptyyYaFTY0_', symObjAddr: 0x1660, symBinAddr: 0x55AC, symSize: 0x100 }
   - { offset: 0xC293A, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC11AICharacterCfd', symObjAddr: 0x1760, symBinAddr: 0x56AC, symSize: 0x74 }
   - { offset: 0xC295D, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC11AICharacterCfD', symObjAddr: 0x17D4, symBinAddr: 0x5720, symSize: 0x20 }
-  - { offset: 0xC2E7B, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC12AudioManagerC6sharedACvpZ', symObjAddr: 0x20638, symBinAddr: 0xF92B80, symSize: 0x0 }
+  - { offset: 0xC2E7B, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC12AudioManagerC6sharedACvpZ', symObjAddr: 0x20638, symBinAddr: 0xF8E5C0, symSize: 0x0 }
   - { offset: 0xC3070, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC12AudioManagerC6shared_WZ', symObjAddr: 0x0, symBinAddr: 0x9B5C, symSize: 0x44 }
   - { offset: 0xC30F5, size: 0x8, addend: 0x0, symName: '_$sSo16AVAudioPCMBufferCSo0A4TimeCIeggg_AbDIeyByy_TR', symObjAddr: 0x7DC, symBinAddr: 0xA338, symSize: 0x78 }
   - { offset: 0xC310D, size: 0x8, addend: 0x0, symName: '_$s10Foundation12NotificationVIeghn_So14NSNotificationCIeyBhy_TR', symObjAddr: 0xA74, symBinAddr: 0xA5D0, symSize: 0x94 }
@@ -252,7 +252,7 @@ relocations:
   - { offset: 0xCA247, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC19CallObserverManagerCfD', symObjAddr: 0xCC, symBinAddr: 0xF0F8, symSize: 0x30 }
   - { offset: 0xCA2F8, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC19CallObserverManagerC16notifyMeetingApp33_0F2AD5BC27C10B7C520EFF1C0159F9F8LL5event8callTypeySS_SStFTf4nnd_n', symObjAddr: 0x12C, symBinAddr: 0xF158, symSize: 0x1E0 }
   - { offset: 0xCA3E7, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC19CallObserverManagerC04callD0_0F7ChangedySo06CXCallD0C_So0H0CtFTf4dnd_n', symObjAddr: 0x30C, symBinAddr: 0xF338, symSize: 0x130 }
-  - { offset: 0xCA699, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC13CameraManagerC6sharedACvpZ', symObjAddr: 0x3920, symBinAddr: 0xF21840, symSize: 0x0 }
+  - { offset: 0xCA699, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC13CameraManagerC6sharedACvpZ', symObjAddr: 0x3920, symBinAddr: 0xF1D330, symSize: 0x0 }
   - { offset: 0xCA909, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC13CameraManagerC6shared_WZ', symObjAddr: 0x0, symBinAddr: 0xF468, symSize: 0x2C }
   - { offset: 0xCA94A, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC0A17SDKVideoProcessor_pSgWOc', symObjAddr: 0x10C, symBinAddr: 0xF574, symSize: 0x50 }
   - { offset: 0xCA95E, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC0A17SDKVideoProcessor_pSgWOd', symObjAddr: 0x1FC, symBinAddr: 0xF620, symSize: 0x50 }
@@ -383,7 +383,7 @@ relocations:
   - { offset: 0xD0CC8, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC27CharacterMulticasteDelegateCAA0C13EventListenerA2aDP02onC4LeftyyAA11AICharacterCFTW', symObjAddr: 0xDAC, symBinAddr: 0x15818, symSize: 0x20 }
   - { offset: 0xD0CDC, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC27CharacterMulticasteDelegateCAA0C13EventListenerA2aDP02onC7MessageyyAA0cI0CFTW', symObjAddr: 0xDCC, symBinAddr: 0x15838, symSize: 0x20 }
   - { offset: 0xD0CF0, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC27CharacterMulticasteDelegateCAA0C13EventListenerA2aDP02onC12StateChangedyyAA0cI6ChangeCFTW', symObjAddr: 0xDEC, symBinAddr: 0x15858, symSize: 0x20 }
-  - { offset: 0xD0F40, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC17MediaStreamConfigC6sharedACvpZ', symObjAddr: 0xA1E0, symBinAddr: 0xF92B88, symSize: 0x0 }
+  - { offset: 0xD0F40, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC17MediaStreamConfigC6sharedACvpZ', symObjAddr: 0xA1E0, symBinAddr: 0xF8E5C8, symSize: 0x0 }
   - { offset: 0xD1287, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC20CustomRTCMediaStreamC10videoTrackAA08RTCVideoG0CSgvpACTk', symObjAddr: 0x0, symBinAddr: 0x158C0, symSize: 0x5C }
   - { offset: 0xD12C5, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC20CustomRTCMediaStreamC10audioTrackAA08RTCAudioG0CSgvpACTk', symObjAddr: 0x104, symBinAddr: 0x15994, symSize: 0x5C }
   - { offset: 0xD1436, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC17MediaStreamConfigC6shared_WZ', symObjAddr: 0x1290, symBinAddr: 0x16AD8, symSize: 0x50 }
@@ -417,8 +417,8 @@ relocations:
   - { offset: 0xD20DC, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC20CustomRTCMediaStreamCfd', symObjAddr: 0x1240, symBinAddr: 0x16A88, symSize: 0x24 }
   - { offset: 0xD210D, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC20CustomRTCMediaStreamCfD', symObjAddr: 0x1264, symBinAddr: 0x16AAC, symSize: 0x2C }
   - { offset: 0xD2168, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC17MediaStreamConfigCfD', symObjAddr: 0x12E0, symBinAddr: 0x16B28, symSize: 0x10 }
-  - { offset: 0xD2468, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC25customVideotrackConfigMapSDyAA06Customa5TrackE0OSDySSypGGvp', symObjAddr: 0xBAF0, symBinAddr: 0xF92B90, symSize: 0x0 }
-  - { offset: 0xD24FF, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC25customAudioTrackConfigMapSDyAA06CustomdeF0OSDySSypGGvp', symObjAddr: 0x27B0, symBinAddr: 0xF220E0, symSize: 0x0 }
+  - { offset: 0xD2468, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC25customVideotrackConfigMapSDyAA06Customa5TrackE0OSDySSypGGvp', symObjAddr: 0xBAF0, symBinAddr: 0xF8E5D0, symSize: 0x0 }
+  - { offset: 0xD24FF, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC25customAudioTrackConfigMapSDyAA06CustomdeF0OSDySSypGGvp', symObjAddr: 0x27B0, symBinAddr: 0xF1DBD0, symSize: 0x0 }
   - { offset: 0xD25D4, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC25customVideotrackConfigMap_WZ', symObjAddr: 0x84, symBinAddr: 0x17044, symSize: 0x1128 }
   - { offset: 0xD3594, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC25customAudioTrackConfigMap_WZ', symObjAddr: 0x1274, symBinAddr: 0x181F0, symSize: 0xC1C }
   - { offset: 0xD3A7E, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC25customAudioTrackConfigMapSDyAA06CustomdeF0OSDySSypGGvg', symObjAddr: 0x1E90, symBinAddr: 0x18E0C, symSize: 0x40 }
@@ -453,7 +453,7 @@ relocations:
   - { offset: 0xD42AB, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC11NoiseConfigV15noiseSupression16echoCancellation15autoGainControl14highPassFilterACSbSg_A3HtcfC', symObjAddr: 0x1F60, symBinAddr: 0x18ECC, symSize: 0x14 }
   - { offset: 0xD433C, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC11NoiseConfigV12toJsonStringSSyF', symObjAddr: 0x1F74, symBinAddr: 0x18EE0, symSize: 0x2D8 }
   - { offset: 0xD465B, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC18DarwinNotificationOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x0, symBinAddr: 0x195AC, symSize: 0xD0 }
-  - { offset: 0xD467F, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC24DarwinNotificationCenterC6sharedACvpZ', symObjAddr: 0x8628, symBinAddr: 0xF92B98, symSize: 0x0 }
+  - { offset: 0xD467F, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC24DarwinNotificationCenterC6sharedACvpZ', symObjAddr: 0x8628, symBinAddr: 0xF8E5D8, symSize: 0x0 }
   - { offset: 0xD47C9, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC24DarwinNotificationCenterC6shared_WZ', symObjAddr: 0x2E8, symBinAddr: 0x19894, symSize: 0x78 }
   - { offset: 0xD4966, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC24DarwinNotificationCenterCMa', symObjAddr: 0x944, symBinAddr: 0x19EF0, symSize: 0x20 }
   - { offset: 0xD497A, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC18DarwinNotificationOMa', symObjAddr: 0xAC8, symBinAddr: 0x19F10, symSize: 0x10 }
@@ -481,7 +481,7 @@ relocations:
   - { offset: 0xD5CFB, size: 0x8, addend: 0x0, symName: '_$sSSSg5label_yp5valuetWOc', symObjAddr: 0x5C0, symBinAddr: 0x1A5CC, symSize: 0x50 }
   - { offset: 0xD5D0F, size: 0x8, addend: 0x0, symName: '_$sSSSg5label_yp5valuetWOh', symObjAddr: 0x610, symBinAddr: 0x1A61C, symSize: 0x48 }
   - { offset: 0xD5FC0, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC15EventDispatcherC6shared_WZ', symObjAddr: 0x0, symBinAddr: 0x1A664, symSize: 0x40 }
-  - { offset: 0xD5FE4, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC15EventDispatcherC6sharedACvpZ', symObjAddr: 0x4A10, symBinAddr: 0xF92BA0, symSize: 0x0 }
+  - { offset: 0xD5FE4, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC15EventDispatcherC6sharedACvpZ', symObjAddr: 0x4A10, symBinAddr: 0xF8E5E0, symSize: 0x0 }
   - { offset: 0xD60A8, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC15EventDispatcherC6shared_WZ', symObjAddr: 0x0, symBinAddr: 0x1A664, symSize: 0x40 }
   - { offset: 0xD60F7, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC15EventDispatcherCMa', symObjAddr: 0x308, symBinAddr: 0x1A96C, symSize: 0x20 }
   - { offset: 0xD610B, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC15EventDispatcherC8dispatch5event4jsonySS_SStFyyScMYccfU_TA', symObjAddr: 0x3C4, symBinAddr: 0x1A9E4, symSize: 0x10 }
@@ -492,7 +492,7 @@ relocations:
   - { offset: 0xD62EC, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC15EventDispatcherCfD', symObjAddr: 0x2E4, symBinAddr: 0x1A948, symSize: 0x24 }
   - { offset: 0xD632D, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC15EventDispatcherC12decodeString_3keySSSgSS_SStFZTf4nnd_n', symObjAddr: 0x508, symBinAddr: 0x1AA0C, symSize: 0x29C }
   - { offset: 0xD639B, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC15EventDispatcherC10decodeJSONySDySSypGSgSSFZTf4nd_n', symObjAddr: 0x8BC, symBinAddr: 0x1ACA8, symSize: 0x1E4 }
-  - { offset: 0xD663E, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC9FFIBridgeC6sharedACvpZ', symObjAddr: 0x125C0, symBinAddr: 0xF92BA8, symSize: 0x0 }
+  - { offset: 0xD663E, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC9FFIBridgeC6sharedACvpZ', symObjAddr: 0x125C0, symBinAddr: 0xF8E5E8, symSize: 0x0 }
   - { offset: 0xD6CB6, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC9FFIBridgeC6shared_WZ', symObjAddr: 0x0, symBinAddr: 0x1AE8C, symSize: 0x44 }
   - { offset: 0xD6F0E, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC9FFIBridgeCMa', symObjAddr: 0x1BA4, symBinAddr: 0x1CA30, symSize: 0x20 }
   - { offset: 0xD6F22, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC9FFIBridgeC11tracerEvent4name9component8category9attrsJSON12parentHandle12dashboardLogySS_s5Int32VALSSSgs6UInt64VSbtFySPys4Int8VGXEfU_yARXEfU_TA', symObjAddr: 0x1CB8, symBinAddr: 0x1CB44, symSize: 0x40 }
@@ -558,7 +558,7 @@ relocations:
   - { offset: 0xD8DC7, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC9FFIBridgeCfD', symObjAddr: 0x1B94, symBinAddr: 0x1CA20, symSize: 0x10 }
   - { offset: 0xD8DEC, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC9FFIBridgeC8startHls10configJson013transcriptionG0s5Int32VSSSg_AItFTf4nnd_n', symObjAddr: 0x1BC4, symBinAddr: 0x1CA50, symSize: 0x84 }
   - { offset: 0xD8E21, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC9FFIBridgeC12getSessionIdSSSgyFTf4d_n', symObjAddr: 0x1C48, symBinAddr: 0x1CAD4, symSize: 0x70 }
-  - { offset: 0xD90CC, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC06RemoteA7ManagerC6sharedACvpZ', symObjAddr: 0x3268, symBinAddr: 0xF22348, symSize: 0x0 }
+  - { offset: 0xD90CC, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC06RemoteA7ManagerC6sharedACvpZ', symObjAddr: 0x3268, symBinAddr: 0xF1DE38, symSize: 0x0 }
   - { offset: 0xD98E9, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC15RTCMTLVideoViewC9lastFrameSo7CIImageCSgvpACTk', symObjAddr: 0x764, symBinAddr: 0x1D420, symSize: 0x64 }
   - { offset: 0xD9927, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC06RemoteA7ManagerC6sharedACvau', symObjAddr: 0xEF0, symBinAddr: 0x1DBAC, symSize: 0x40 }
   - { offset: 0xD99B7, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC15RTCMTLVideoViewCfETo', symObjAddr: 0x117C, symBinAddr: 0x1DE38, symSize: 0x5C }
@@ -1656,7 +1656,7 @@ relocations:
   - { offset: 0x110AE3, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC26RealtimeStoreEventListener_pSgWOh', symObjAddr: 0x2E4, symBinAddr: 0x57758, symSize: 0x48 }
   - { offset: 0x110C58, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC30RealtimeStoreMulticastDelegateC14onValueChanged3key5value9updatedByySS_SSSgSStF', symObjAddr: 0x0, symBinAddr: 0x574DC, symSize: 0x23C }
   - { offset: 0x110EAE, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC30RealtimeStoreMulticastDelegateCAA0cD13EventListenerA2aDP14onValueChanged3key5value9updatedByySS_SSSgSStFTW', symObjAddr: 0x280, symBinAddr: 0x57738, symSize: 0x20 }
-  - { offset: 0x1110FE, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC18ScreenShareManagerC6sharedACvpZ', symObjAddr: 0x2640, symBinAddr: 0xF24368, symSize: 0x0 }
+  - { offset: 0x1110FE, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC18ScreenShareManagerC6sharedACvpZ', symObjAddr: 0x2640, symBinAddr: 0xF1FE58, symSize: 0x0 }
   - { offset: 0x1112EC, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC18ScreenShareManagerC6shared_WZ', symObjAddr: 0x9C0, symBinAddr: 0x5811C, symSize: 0x3C }
   - { offset: 0x11132D, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC18ScreenShareManagerC5startyyFyycfU_TA', symObjAddr: 0xAB8, symBinAddr: 0x58214, symSize: 0x8 }
   - { offset: 0x111341, size: 0x8, addend: 0x0, symName: '_$s10Foundation4UUIDVSgWOd', symObjAddr: 0xAC0, symBinAddr: 0x5821C, symSize: 0x50 }
@@ -1702,7 +1702,7 @@ relocations:
   - { offset: 0x112340, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC18ScreenShareManagerCfD', symObjAddr: 0x1E08, symBinAddr: 0x594A0, symSize: 0x98 }
   - { offset: 0x1123DD, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC18ScreenShareManagerCACycfc', symObjAddr: 0x207C, symBinAddr: 0x59704, symSize: 0x25C }
   - { offset: 0x11268E, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC15ScreenShareRingC6shared_WZ', symObjAddr: 0x0, symBinAddr: 0x59BC0, symSize: 0x4C }
-  - { offset: 0x1126B2, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC15ScreenShareRingC6sharedACvpZ', symObjAddr: 0x4DB0, symBinAddr: 0xF92BB0, symSize: 0x0 }
+  - { offset: 0x1126B2, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC15ScreenShareRingC6sharedACvpZ', symObjAddr: 0x4DB0, symBinAddr: 0xF8E5F0, symSize: 0x0 }
   - { offset: 0x112765, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC15ScreenShareRingC6shared_WZ', symObjAddr: 0x0, symBinAddr: 0x59BC0, symSize: 0x4C }
   - { offset: 0x1127D9, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC15ScreenShareRingCMa', symObjAddr: 0x650, symBinAddr: 0x5A210, symSize: 0x20 }
   - { offset: 0x1127ED, size: 0x8, addend: 0x0, symName: '_$sSpys4Int8VGSpyxGs7CVarArgsWl', symObjAddr: 0x6B4, symBinAddr: 0x5A230, symSize: 0x50 }
@@ -1712,7 +1712,7 @@ relocations:
   - { offset: 0x112FD1, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC16SDKConfigurationCfD', symObjAddr: 0x0, symBinAddr: 0x5A280, symSize: 0x3C }
   - { offset: 0x113022, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC16SDKConfigurationCMa', symObjAddr: 0x3C, symBinAddr: 0x5A2BC, symSize: 0x20 }
   - { offset: 0x113069, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC16SDKConfigurationCfD', symObjAddr: 0x0, symBinAddr: 0x5A280, symSize: 0x3C }
-  - { offset: 0x1132E8, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC9SdkTracerC6sharedACvpZ', symObjAddr: 0x3A68, symBinAddr: 0xF92BB8, symSize: 0x0 }
+  - { offset: 0x1132E8, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC9SdkTracerC6sharedACvpZ', symObjAddr: 0x3A68, symBinAddr: 0xF8E5F8, symSize: 0x0 }
   - { offset: 0x11332F, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC9SdkTracerC6shared_WZ', symObjAddr: 0x138, symBinAddr: 0x5A40C, symSize: 0x28 }
   - { offset: 0x11335F, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC17SdkTraceComponentOSHAASQWb', symObjAddr: 0x228, symBinAddr: 0x5A4EC, symSize: 0x4 }
   - { offset: 0x113373, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC17SdkTraceComponentOACSQAAWl', symObjAddr: 0x22C, symBinAddr: 0x5A4F0, symSize: 0x40 }
@@ -1802,12 +1802,12 @@ relocations:
   - { offset: 0x1152AD, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC0A7QualityOSYAASY8rawValue03RawE0QzvgTW', symObjAddr: 0x3D8, symBinAddr: 0x5BAB4, symSize: 0x4C }
   - { offset: 0x1152C5, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC0A7QualityOSYAASY8rawValue03RawE0QzvgTW', symObjAddr: 0x3D8, symBinAddr: 0x5BAB4, symSize: 0x4C }
   - { offset: 0x1152F8, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC0A7QualityOs12CaseIterableAAsADP8allCases03AllG0QzvgZTW', symObjAddr: 0x4BC, symBinAddr: 0x5BB54, symSize: 0x40 }
-  - { offset: 0x115581, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC0A3SDKC10configLock33_3F55F97E99ECBA1D04571CD3FD485FC6LLSo6NSLockCvpZ', symObjAddr: 0x5D50, symBinAddr: 0xF24920, symSize: 0x0 }
-  - { offset: 0x11559B, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC0A3SDKC12_accessToken33_3F55F97E99ECBA1D04571CD3FD485FC6LLSSSgvpZ', symObjAddr: 0x5D58, symBinAddr: 0xF24928, symSize: 0x0 }
-  - { offset: 0x1155B5, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC0A3SDKC16_baseKeyProvider33_3F55F97E99ECBA1D04571CD3FD485FC6LLAA04BaseeF0CSgvpZ', symObjAddr: 0x5D68, symBinAddr: 0xF24938, symSize: 0x0 }
-  - { offset: 0x1155CF, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC0A3SDKC12_bitrateMode33_3F55F97E99ECBA1D04571CD3FD485FC6LLAA07BitrateE0OvpZ', symObjAddr: 0x5D70, symBinAddr: 0xF24940, symSize: 0x0 }
-  - { offset: 0x1155E9, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC0A3SDKC9_maxLayer33_3F55F97E99ECBA1D04571CD3FD485FC6LLAA08EncodingE0OvpZ', symObjAddr: 0x5D71, symBinAddr: 0xF24941, symSize: 0x0 }
-  - { offset: 0x115603, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC0A3SDKC14_trackEncoding33_3F55F97E99ECBA1D04571CD3FD485FC6LLAA06CustomA11TrackConfigOvpZ', symObjAddr: 0x5D72, symBinAddr: 0xF24942, symSize: 0x0 }
+  - { offset: 0x115581, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC0A3SDKC10configLock33_3F55F97E99ECBA1D04571CD3FD485FC6LLSo6NSLockCvpZ', symObjAddr: 0x5D50, symBinAddr: 0xF20410, symSize: 0x0 }
+  - { offset: 0x11559B, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC0A3SDKC12_accessToken33_3F55F97E99ECBA1D04571CD3FD485FC6LLSSSgvpZ', symObjAddr: 0x5D58, symBinAddr: 0xF20418, symSize: 0x0 }
+  - { offset: 0x1155B5, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC0A3SDKC16_baseKeyProvider33_3F55F97E99ECBA1D04571CD3FD485FC6LLAA04BaseeF0CSgvpZ', symObjAddr: 0x5D68, symBinAddr: 0xF20428, symSize: 0x0 }
+  - { offset: 0x1155CF, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC0A3SDKC12_bitrateMode33_3F55F97E99ECBA1D04571CD3FD485FC6LLAA07BitrateE0OvpZ', symObjAddr: 0x5D70, symBinAddr: 0xF20430, symSize: 0x0 }
+  - { offset: 0x1155E9, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC0A3SDKC9_maxLayer33_3F55F97E99ECBA1D04571CD3FD485FC6LLAA08EncodingE0OvpZ', symObjAddr: 0x5D71, symBinAddr: 0xF20431, symSize: 0x0 }
+  - { offset: 0x115603, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC0A3SDKC14_trackEncoding33_3F55F97E99ECBA1D04571CD3FD485FC6LLAA06CustomA11TrackConfigOvpZ', symObjAddr: 0x5D72, symBinAddr: 0xF20432, symSize: 0x0 }
   - { offset: 0x115611, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC11ParticipantC2id11displayName7isLocal4mode8pinState8metaDataACSS_SSSbAA4ModeOAA0c3PinK0VSDySSypGSgtcfcfA3_', symObjAddr: 0x78, symBinAddr: 0x5BC24, symSize: 0x8 }
   - { offset: 0x115A5C, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC0A3SDKC10configLock33_3F55F97E99ECBA1D04571CD3FD485FC6LL_WZ', symObjAddr: 0xFC, symBinAddr: 0x5BCA8, symSize: 0x30 }
   - { offset: 0x115AA2, size: 0x8, addend: 0x0, symName: '_$s11VideoSDKRTC0A3SDKC15baseKeyProviderAA04BaseeF0CSgvpZACmTK', symObjAddr: 0x12C, symBinAddr: 0x5BCD8, symSize: 0x88 }
