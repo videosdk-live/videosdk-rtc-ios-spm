@@ -22,10 +22,13 @@ const char *videosdk_get_build_id(void);
 /// empty, or unknown falls back to "SEND_AND_RECV". The Rust core uses
 /// this mode to gate produce — `RECV_ONLY`, `SIGNALLING_ONLY`, and
 /// `VIEWER` skip mic/webcam production entirely even when
-/// `mic_enabled` / `webcam_enabled` are true.
+/// `mic_enabled` / `webcam_enabled` are true. `signaling_base_url` is an
+/// optional custom signaling/proxy base URL (e.g. a dev environment); NULL
+/// or empty falls back to the SDK default (`api.videosdk.live`).
 int32_t meeting_join(const char *token, const char *meeting_id, const char *name,
                   bool mic_enabled, bool webcam_enabled, bool multistream,
-                  const char *device_info_json, const char *mode);
+                  const char *device_info_json, const char *mode,
+                  const char *signaling_base_url);
 /// Leave the current meeting. Only the local participant departs.
 void meeting_leave(void);
 
