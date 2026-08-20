@@ -20,7 +20,7 @@ A Swift framework for real-time audio and video communication for iOS applicatio
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/videosdk-live/videosdk-rtc-ios-spm.git", from: "2.8.0")
+    .package(url: "https://github.com/videosdk-live/videosdk-rtc-ios-spm.git", branch: "4.0.0-beta.1")
 ]
 ```
 

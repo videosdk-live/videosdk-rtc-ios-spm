@@ -25,10 +25,13 @@ const char *videosdk_get_build_id(void);
 /// `mic_enabled` / `webcam_enabled` are true. `signaling_base_url` is an
 /// optional custom signaling/proxy base URL (e.g. a dev environment); NULL
 /// or empty falls back to the SDK default (`api.videosdk.live`).
+/// `participant_id` pins the SFU peer id (`initMeeting(participantId:)`); NULL
+/// or empty makes the core mint one. Passing it is what lets a re-join replace
+/// the existing server-side peer instead of adding a duplicate.
 int32_t meeting_join(const char *token, const char *meeting_id, const char *name,
                   bool mic_enabled, bool webcam_enabled, bool multistream,
                   const char *device_info_json, const char *mode,
-                  const char *signaling_base_url);
+                  const char *signaling_base_url, const char *participant_id);
 /// Leave the current meeting. Only the local participant departs.
 void meeting_leave(void);
 
@@ -43,6 +46,15 @@ void meeting_end(void);
 /// key (disables E2EE for the next join). Returns 0 on success,
 /// -1 on invalid UTF-8.
 int32_t meeting_setE2EEKey(const char *key);
+
+/// Set the E2EE key for a single participant (peer id). Mirrors
+/// production Android's BaseKeyProvider.setKey(participantId, key).
+/// Only consulted when NO shared key is set — the shared key always
+/// wins. A peer without a key stays plaintext. Passing NULL for key
+/// removes that participant's key. Safe to call after join: the change
+/// is pushed onto the live transports. Returns 0 on success, -1 on a
+/// null/invalid participantId or invalid UTF-8.
+int32_t meeting_setE2EEParticipantKey(const char *participantId, const char *key);
 
 /// Advance the E2EE epoch by one ratchet step. The next encrypted
 /// frame carries the new kid; the previous epoch is retained by the
@@ -154,7 +166,9 @@ int32_t meeting_startRecording(const char *webhook_url,
 int32_t meeting_stopRecording(void);
 
 /// `outputs_json` must be a JSON array of `{"url":"...","streamKey":"..."}`.
-int32_t meeting_startLivestream(const char *outputs_json);
+/// `config_json` is the optional livestream config object
+/// `{"layout":{...},"theme":"...","recording":{"enabled":bool}}`; pass NULL to omit.
+int32_t meeting_startLivestream(const char *outputs_json, const char *config_json);
 int32_t meeting_stopLivestream(void);
 
 int32_t meeting_startHls(const char *config_json, const char *transcription_json);
@@ -250,14 +264,34 @@ void videosdk_setVideoTrackConfig(const char *config_json);
 /// highPassFilter is accepted but NOT applied by the native engine.
 void videosdk_setNoiseConfig(const char *config_json);
 
+/// Read back the APM flags: the ones the mic track was actually built with
+/// once it exists, otherwise the ones last set. JSON
+/// `{noiseSuppression, echoCancellation, autoGainControl, highPassFilter,
+/// applied}`. With `applied` true a null flag means the engine does not apply
+/// that control; `echoCancellation` is always null today (no far-end
+/// reference on the custom-source path). Caller must free with
+/// `videosdk_freeString`.
+/// Negotiated codec of the local webcam producer, or NULL when the webcam is
+/// off. Caller owns the string (free it).
+char *videosdk_getActiveVideoCodec(void);
+
+char *videosdk_getNoiseConfig(void);
+
 /// Set the opus audio encoder config for the mic track. `bitrate_kbps` 0 or
 /// >128 means "no override". The `*_valid` flags gate whether the paired
-/// DTX/FEC value is applied.
+/// DTX/FEC/stereo value is applied. `stereo_on` maps to the `opusStereo`
+/// codec option prod sends for the `*_stereo` audio profiles.
+/// `max_playback_rate_hz` / `ptime_ms` are prod's `opusMaxPlaybackRate` and
+/// `opusPtime` from the same profile row; 0 means "keep the opus default".
 void videosdk_setAudioEncoderConfig(uint32_t bitrate_kbps,
                                     int32_t dtx_valid,
                                     int32_t dtx_on,
                                     int32_t fec_valid,
-                                    int32_t fec_on);
+                                    int32_t fec_on,
+                                    int32_t stereo_valid,
+                                    int32_t stereo_on,
+                                    uint32_t max_playback_rate_hz,
+                                    uint32_t ptime_ms);
 
 /// Enable/disable the client-side codec-switch fallback (downgrade the local
 /// camera to VP8 when the server reports a remote that cannot decode the
@@ -278,6 +312,12 @@ void videosdk_setLogLevel(const char *level);
 /// Change the local participant's mode mid-meeting. `mode` accepts
 /// "CONFERENCE" | "VIEWER" | "SEND_AND_RECV" | "RECV_ONLY" | "SIGNALLING_ONLY".
 int32_t meeting_changeMode(const char *mode);
+
+/// Whether the live participant mode permits producing media. Ask BEFORE
+/// starting camera/mic capture — the core's produce-lock blocks transmission
+/// only, so capturing under RECV_ONLY/SIGNALLING_ONLY is a silent privacy leak.
+/// Returns true when no meeting exists yet (pre-join intents still queue).
+bool meeting_canProduce(void);
 
 /// Switch the active session to a different meeting room without
 /// destroying the local Meeting object. The server validates the
@@ -303,6 +343,12 @@ int32_t meeting_setAttributes(const char *name, const char *version);
 /// `codec`: 0 = VP8, 1 = H264. Screen content is always single-layer
 /// (no simulcast). Returns 0 on success.
 int32_t videosdk_screenShareInit(uint32_t width, uint32_t height, uint32_t fps, int32_t codec);
+
+/// Cap the next share producer's bitrate/framerate from the resolved
+/// screen-share profile — without it the share publishes uncapped and
+/// never follows the selected profile. Call BEFORE
+/// `videosdk_screenShareInit`. `0`/`0` clears the cap. Returns 0 on success.
+int32_t videosdk_screenShareSetEncoding(uint32_t max_bitrate_bps, uint32_t max_framerate);
 
 /// Push one NV12 screen-capture frame into the screen-share encoder.
 /// Called by the main app per frame polled from the Broadcast Upload
@@ -377,14 +423,36 @@ int32_t meeting_sendCharacterMessage(const char *interaction_id, const char *tex
 /// Interrupt an AI character's current response.
 int32_t meeting_interruptCharacter(const char *interaction_id);
 
-/// Publish a message to a PubSub topic. `options_json` is optional (NULL to omit).
-int32_t pubsub_publish(const char *topic, const char *message, const char *options_json);
+/// Publish a message to a PubSub topic. `options_json` and `payload_json` are
+/// optional (NULL to omit). `payload_json` is a JSON object carried alongside
+/// the message; the server never parses it.
+int32_t pubsub_publish(const char *topic, const char *message, const char *options_json,
+                       const char *payload_json);
 
 /// Subscribe to a PubSub topic. Messages arrive via event callback.
 int32_t pubsub_subscribe(const char *topic);
 
+/// Subscribe to a PubSub topic, bounding how much history is replayed and
+/// how live messages are paced. `options_json` is a `PubSubSubscribeOptions`
+/// object (NULL or blank behaves exactly like `pubsub_subscribe`); invalid
+/// options are rejected with a non-zero return, never sanitized.
+/// `subscription_id` identifies the single listener this subscribe is for
+/// and is echoed as `subscriptionId` on every `pubsubOldMessages` event, so
+/// a replay reaches only the listener that asked for it (NULL to let the
+/// core derive one).
+/// Returns 0 on success, -3 when the pubsub socket is momentarily
+/// unavailable ("Operation Timeout."), -2 with no active meeting, -1 otherwise.
+int32_t pubsub_subscribeWithOptions(const char *topic, const char *options_json,
+                                    const char *subscription_id);
+
 /// Unsubscribe all listeners from a PubSub topic.
 int32_t pubsub_unsubscribeAll(const char *topic);
+
+/// Non-blocking probe: 1 while the dedicated pubsub socket is between an
+/// unexpected close and its reconnect (or torn down), 0 otherwise. Lets the
+/// Swift layer refuse a pubsub call at the call site instead of waiting out
+/// the request timeout.
+int32_t pubsub_isTransportUnavailable(void);
 
 /// Return cached pubsub messages for `topic` as a JSON array. Caller
 /// must free with `videosdk_freeString`.
@@ -466,5 +534,38 @@ void videosdk_tracerEvent(const char *name,
                           const char *attrs_json,
                           uint64_t    parent_handle,
                           bool        dashboard_log);
+
+/* ── Inspector buffer ──────────────────────────────────────────────────────
+ *
+ * The debug-UI event buffer lives in the shared core, so iOS and Android read
+ * identical events, span depth and counts; only the UI is per-platform.
+ */
+
+/* Called once per newly buffered event, with the same JSON envelope that
+ * videosdk_inspectorSnapshotJson returns elements of. A refresh nudge only —
+ * the event is already stored in the core. Do not free the pointer; it is
+ * only valid for the duration of the call. */
+typedef void (*VideoSDKInspectorEventCallback)(const char *json);
+
+/* Register before enabling; only the first registration is kept. */
+void videosdk_setInspectorCallback(VideoSDKInspectorEventCallback callback);
+
+/* Start/stop buffering. Both idempotent. */
+void videosdk_inspectorEnable(void);
+void videosdk_inspectorDisable(void);
+
+/* JSON array of buffered events, "[]" when off.
+ * Free with videosdk_freeString. */
+char *videosdk_inspectorSnapshotJson(void);
+
+/* {events, errors, warnings, slowOps, components[]}, zeros when off.
+ * Free with videosdk_freeString. */
+char *videosdk_inspectorCountsJson(void);
+
+void videosdk_inspectorClear(void);
+
+/* Ring size; the core clamps to its supported range (50..2000). */
+void    videosdk_inspectorSetCapacity(int32_t capacity);
+int32_t videosdk_inspectorCapacity(void);
 
 #endif
