@@ -177,6 +177,18 @@ int32_t meeting_stopHls(void);
 int32_t meeting_startTranscription(const char *config_json);
 int32_t meeting_stopTranscription(void);
 
+/* ── Translation ───────────────────────────────────────────────────────────
+ *
+ * Server-side translation. `config_json` is forwarded verbatim; its shape is
+ * defined by the server, not by the SDK. Call
+ * videosdk_setTranslationLanguages BEFORE meeting_join — the languages are
+ * merged into the join metaData, which is where the server reads them. */
+int32_t meeting_setTranslationLanguages(const char *translation_language,
+                                        const char *speaking_language);
+int32_t meeting_startTranslation(const char *config_json);
+int32_t meeting_stopTranslation(void);
+int32_t meeting_changeTranslationLanguage(const char *language);
+
 /// Pass NULL to use the iOS default of "v2".
 int32_t meeting_startWhiteboard(const char *version);
 int32_t meeting_stopWhiteboard(void);
