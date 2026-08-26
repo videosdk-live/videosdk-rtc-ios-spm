@@ -28,10 +28,19 @@ const char *videosdk_get_build_id(void);
 /// `participant_id` pins the SFU peer id (`initMeeting(participantId:)`); NULL
 /// or empty makes the core mint one. Passing it is what lets a re-join replace
 /// the existing server-side peer instead of adding a duplicate.
+/// `extra_config_json` carries every remaining `initMeeting(...)` argument that
+/// has no positional parameter, as one UTF-8 JSON object; NULL, empty, or
+/// unparseable is ignored and each absent key keeps its core default. Uses the
+/// same key names as the Android bridge, so a new `initMeeting` argument is a
+/// JSON key on both platforms rather than another C-ABI change. Recognised
+/// keys: `metaData` (object — participant metadata sent on `join`),
+/// `preferredProtocol` ("UDP_ONLY" | "UDP_OVER_TCP" | "TCP_ONLY"),
+/// `secureKey` (room-wide E2EE key; a key set via `meeting_setE2EEKey` wins).
 int32_t meeting_join(const char *token, const char *meeting_id, const char *name,
                   bool mic_enabled, bool webcam_enabled, bool multistream,
                   const char *device_info_json, const char *mode,
-                  const char *signaling_base_url, const char *participant_id);
+                  const char *signaling_base_url, const char *participant_id,
+                  const char *extra_config_json);
 /// Leave the current meeting. Only the local participant departs.
 void meeting_leave(void);
 
