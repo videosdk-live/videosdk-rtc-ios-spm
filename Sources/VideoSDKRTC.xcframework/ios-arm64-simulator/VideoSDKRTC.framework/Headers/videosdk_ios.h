@@ -2,6 +2,7 @@
 #define VIDEOSDK_IOS_H
 
 #include <stdbool.h>
+#include <stddef.h>
 #include <stdint.h>
 
 typedef void (*VideoSDKEventCallback)(const char *event_name, const char *data);
@@ -292,6 +293,10 @@ void videosdk_setNoiseConfig(const char *config_json);
 /// that control; `echoCancellation` is always null today (no far-end
 /// reference on the custom-source path). Caller must free with
 /// `videosdk_freeString`.
+/// Publishable video codecs as a JSON array of names, "[]" before join.
+/// Caller owns the string (free it).
+char *videosdk_getAvailableVideoCodecs(void);
+
 /// Negotiated codec of the local webcam producer, or NULL when the webcam is
 /// off. Caller owns the string (free it).
 char *videosdk_getActiveVideoCodec(void);
@@ -401,6 +406,50 @@ char *meeting_getActivePresenterId(void);
 char *participant_getAudioStats(const char *peer_id);
 char *participant_getVideoStats(const char *peer_id);
 char *participant_getShareStats(const char *peer_id);
+
+// ── Cross-SDK parity: capabilities the browser could reach and iOS could not ─
+
+/// Per-track stats for the audio riding along with a screen share, excluding
+/// the mic (JSON array). Caller must free with `videosdk_freeString`.
+char *participant_getShareAudioStats(const char *peer_id);
+
+/// ICE/DTLS transport stats for one peer (JSON object). Caller must free with
+/// `videosdk_freeString`.
+char *participant_getTransportStats(const char *peer_id);
+
+/// Rendered viewport (px) for a remote participant's video, so the SFU forwards
+/// an appropriately-scaled simulcast layer.
+int32_t participant_setViewPort(const char *peer_id, int32_t width, int32_t height);
+
+/// The screen-share counterpart of `participant_setQuality` — re-layers the
+/// peer's SHARE stream rather than its camera. `quality` accepts
+/// "low" | "medium" (or "med") | "high"; NULL defaults to "high".
+int32_t participant_setScreenShareQuality(const char *peer_id, const char *quality);
+
+/// Start / stop consuming one peer's audio or video. The per-peer counterparts
+/// of `meeting_pauseAllStreams` — adaptive-subscription apps use these to drop
+/// off-screen peers entirely rather than merely pausing them.
+int32_t participant_consumeMicStreams(const char *peer_id);
+int32_t participant_consumeWebcamStreams(const char *peer_id);
+int32_t participant_stopConsumingMicStreams(const char *peer_id);
+int32_t participant_stopConsumingWebcamStreams(const char *peer_id);
+
+/// Manual ICE restart — `meeting.refreshConnection()`. For a session whose
+/// media has stalled but whose signaling is still up.
+int32_t meeting_refreshConnection(void);
+
+/// Cap the live camera at `layer`, the 0-indexed simulcast rung the caller
+/// resolved from its own quality table.
+int32_t meeting_setWebcamQuality(int32_t layer);
+
+/// Data-channel send. Text and binary are distinct frame types on the wire:
+/// pass `text` for a text frame, or `bytes`/`len` for a binary one. Exactly one
+/// of the two must be supplied.
+int32_t meeting_send(const char *text, const uint8_t *bytes, size_t len, bool reliable);
+
+/// The meeting's custom attributes as a JSON object — the read side of
+/// `meeting_setAttributes`. Caller must free with `videosdk_freeString`.
+char *meeting_getAttributes(void);
 
 // ── Media relay ─────────────────────────────────────────────────────────────
 
@@ -556,6 +605,53 @@ void videosdk_tracerEvent(const char *name,
                           uint64_t    parent_handle,
                           bool        dashboard_log);
 
+/* ── Direct routing — SdkTracer::to(mask) ──────────────────────────────────
+ *
+ * `target_mask` is a bitmask of OutputTarget bits, which are wire-stable and
+ * must match `videosdk::stats::tracer::OutputTarget` in the core (and the
+ * Kotlin/Swift `OutputTarget` mirrors) exactly:
+ *
+ *   TO_LOGCAT 1 | TO_SIGNOZ 2 | TO_INSPECTOR 4
+ *   TO_CLIENT_LOGCAT 8 | TO_BACKEND 16 | TO_TELEMETRY 32
+ *
+ * A mask of 0 means "route by category", i.e. identical to the unrouted call
+ * above. These symbols have always been exported by the core; they were simply
+ * never declared here, which is what made `.to(...)` unreachable from Swift.
+ */
+uint64_t videosdk_tracerStartSpanTo(int32_t     target_mask,
+                                    const char *name,
+                                    const char *attrs_json,
+                                    uint64_t    parent_handle,
+                                    int32_t     component,
+                                    int32_t     category);
+
+void videosdk_tracerEventTo(int32_t     target_mask,
+                            const char *name,
+                            int32_t     component,
+                            int32_t     category,
+                            const char *attrs_json,
+                            bool        dashboard_log);
+
+/* Level convenience methods, routed to `target_mask`. */
+void videosdk_tracerErrorTo(int32_t target_mask, const char *msg,
+                            int32_t component, const char *attrs_json,
+                            bool dashboard_log);
+void videosdk_tracerBackendErrorTo(int32_t target_mask, const char *msg,
+                                   int32_t component, const char *attrs_json,
+                                   bool dashboard_log);
+void videosdk_tracerWarnTo(int32_t target_mask, const char *msg,
+                           int32_t component, const char *attrs_json,
+                           bool dashboard_log);
+void videosdk_tracerInfoTo(int32_t target_mask, const char *msg,
+                           int32_t component, const char *attrs_json,
+                           bool dashboard_log);
+void videosdk_tracerDebugTo(int32_t target_mask, const char *msg,
+                            int32_t component, const char *attrs_json,
+                            bool dashboard_log);
+void videosdk_tracerInternalLogTo(int32_t target_mask, const char *msg,
+                                  int32_t component, const char *attrs_json,
+                                  bool dashboard_log);
+
 /* ── Inspector buffer ──────────────────────────────────────────────────────
  *
  * The debug-UI event buffer lives in the shared core, so iOS and Android read
@@ -572,6 +668,22 @@ typedef void (*VideoSDKInspectorEventCallback)(const char *json);
 void videosdk_setInspectorCallback(VideoSDKInspectorEventCallback callback);
 
 /* Start/stop buffering. Both idempotent. */
+/// Forward the SDK's client-facing log lines to the event callback set with
+/// `videosdk_setEventCallback`, as event `logMessage` with payload
+/// `{"level":"error|warn|info|debug","message":"VideoSDK: ..."}`.
+///
+/// On iOS the stock console output writes to stdout, which is invisible to
+/// os_log, Console.app and any embedding host's console (Metro, `flutter run`)
+/// — only Xcode sees it. This is how a host surfaces those lines itself.
+///
+/// Idempotent. Filtering follows `videosdk_setLogLevel`; there is no second
+/// level to keep in step. The callback owns both strings and must free them
+/// with `videosdk_freeString`, as for every other event.
+void videosdk_tracerEnableConsoleForwarding(void);
+
+/// Stop forwarding log lines. Idempotent.
+void videosdk_tracerDisableConsoleForwarding(void);
+
 void videosdk_inspectorEnable(void);
 void videosdk_inspectorDisable(void);
 
