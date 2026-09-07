@@ -6900,7 +6900,8 @@
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
               "AccessControl",
-              "Documentation"
+              "Documentation",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -7642,7 +7643,10 @@
             "declKind": "EnumElement",
             "usr": "s:11VideoSDKRTC22CustomAudioTrackConfigO18speech_low_qualityyA2CmF",
             "mangledName": "$s11VideoSDKRTC22CustomAudioTrackConfigO18speech_low_qualityyA2CmF",
-            "moduleName": "VideoSDKRTC"
+            "moduleName": "VideoSDKRTC",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -7679,7 +7683,10 @@
             "declKind": "EnumElement",
             "usr": "s:11VideoSDKRTC22CustomAudioTrackConfigO15speech_standardyA2CmF",
             "mangledName": "$s11VideoSDKRTC22CustomAudioTrackConfigO15speech_standardyA2CmF",
-            "moduleName": "VideoSDKRTC"
+            "moduleName": "VideoSDKRTC",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -7716,7 +7723,10 @@
             "declKind": "EnumElement",
             "usr": "s:11VideoSDKRTC22CustomAudioTrackConfigO14music_standardyA2CmF",
             "mangledName": "$s11VideoSDKRTC22CustomAudioTrackConfigO14music_standardyA2CmF",
-            "moduleName": "VideoSDKRTC"
+            "moduleName": "VideoSDKRTC",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -7753,7 +7763,10 @@
             "declKind": "EnumElement",
             "usr": "s:11VideoSDKRTC22CustomAudioTrackConfigO15standard_stereoyA2CmF",
             "mangledName": "$s11VideoSDKRTC22CustomAudioTrackConfigO15standard_stereoyA2CmF",
-            "moduleName": "VideoSDKRTC"
+            "moduleName": "VideoSDKRTC",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -7790,7 +7803,10 @@
             "declKind": "EnumElement",
             "usr": "s:11VideoSDKRTC22CustomAudioTrackConfigO12high_qualityyA2CmF",
             "mangledName": "$s11VideoSDKRTC22CustomAudioTrackConfigO12high_qualityyA2CmF",
-            "moduleName": "VideoSDKRTC"
+            "moduleName": "VideoSDKRTC",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -7827,7 +7843,10 @@
             "declKind": "EnumElement",
             "usr": "s:11VideoSDKRTC22CustomAudioTrackConfigO19high_quality_stereoyA2CmF",
             "mangledName": "$s11VideoSDKRTC22CustomAudioTrackConfigO19high_quality_stereoyA2CmF",
-            "moduleName": "VideoSDKRTC"
+            "moduleName": "VideoSDKRTC",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Function",
@@ -7931,7 +7950,8 @@
         "mangledName": "$s11VideoSDKRTC22CustomAudioTrackConfigO",
         "moduleName": "VideoSDKRTC",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -8010,7 +8030,8 @@
         "declAttributes": [
           "HasInitialValue",
           "HasStorage",
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "isLet": true,
         "hasStorage": true,
@@ -16386,7 +16407,8 @@
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -16434,7 +16456,8 @@
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -16482,7 +16505,8 @@
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -16530,7 +16554,8 @@
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -16578,7 +16603,8 @@
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -16626,7 +16652,8 @@
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -16674,7 +16701,8 @@
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -16770,7 +16798,8 @@
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
               "AccessControl",
-              "Documentation"
+              "Documentation",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           }
@@ -16830,7 +16859,8 @@
             "mangledName": "$s11VideoSDKRTC15BaseKeyProviderC31discardFrameWhenCryptorNotReadyACSb_tcfc",
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           },
@@ -21454,7 +21484,8 @@
             "mangledName": "$s11VideoSDKRTC7MeetingC13disableWebcamyyF",
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -45899,7 +45930,10 @@
             "declKind": "EnumElement",
             "usr": "s:11VideoSDKRTC18RealtimeStoreErrorO15operationFailedyACSScACmF",
             "mangledName": "$s11VideoSDKRTC18RealtimeStoreErrorO15operationFailedyACSScACmF",
-            "moduleName": "VideoSDKRTC"
+            "moduleName": "VideoSDKRTC",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -45936,7 +45970,10 @@
             "declKind": "EnumElement",
             "usr": "s:11VideoSDKRTC18RealtimeStoreErrorO11keyNotFoundyA2CmF",
             "mangledName": "$s11VideoSDKRTC18RealtimeStoreErrorO11keyNotFoundyA2CmF",
-            "moduleName": "VideoSDKRTC"
+            "moduleName": "VideoSDKRTC",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -45973,7 +46010,10 @@
             "declKind": "EnumElement",
             "usr": "s:11VideoSDKRTC18RealtimeStoreErrorO10invalidKeyyA2CmF",
             "mangledName": "$s11VideoSDKRTC18RealtimeStoreErrorO10invalidKeyyA2CmF",
-            "moduleName": "VideoSDKRTC"
+            "moduleName": "VideoSDKRTC",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -46010,7 +46050,10 @@
             "declKind": "EnumElement",
             "usr": "s:11VideoSDKRTC18RealtimeStoreErrorO13valueTooLargeyA2CmF",
             "mangledName": "$s11VideoSDKRTC18RealtimeStoreErrorO13valueTooLargeyA2CmF",
-            "moduleName": "VideoSDKRTC"
+            "moduleName": "VideoSDKRTC",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -46037,7 +46080,8 @@
             "mangledName": "$s11VideoSDKRTC18RealtimeStoreErrorO16errorDescriptionSSSgvp",
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "accessors": [
               {
@@ -51264,6 +51308,42 @@
           },
           {
             "kind": "Function",
+            "name": "setSdkInfo",
+            "printedName": "setSdkInfo(name:version:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11VideoSDKRTC0A3SDKC10setSdkInfo4name7versionySS_SStFZ",
+            "mangledName": "$s11VideoSDKRTC0A3SDKC10setSdkInfo4name7versionySS_SStFZ",
+            "moduleName": "VideoSDKRTC",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Documentation",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "initMeeting",
             "printedName": "initMeeting(meetingId:participantId:participantName:micEnabled:webcamEnabled:customCameraVideoStream:customAudioTrack:multiStream:mode:preferredProtocol:signalingBaseUrl:metaData:secureKey:codecSwitchEnabled:enableBatching:translationLanguage:speakingLanguage:)",
             "children": [
@@ -52524,7 +52604,10 @@
             "declKind": "EnumElement",
             "usr": "s:11VideoSDKRTC19AuthorisationStatusO10authorizedyA2CmF",
             "mangledName": "$s11VideoSDKRTC19AuthorisationStatusO10authorizedyA2CmF",
-            "moduleName": "VideoSDKRTC"
+            "moduleName": "VideoSDKRTC",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -52561,7 +52644,10 @@
             "declKind": "EnumElement",
             "usr": "s:11VideoSDKRTC19AuthorisationStatusO6deniedyA2CmF",
             "mangledName": "$s11VideoSDKRTC19AuthorisationStatusO6deniedyA2CmF",
-            "moduleName": "VideoSDKRTC"
+            "moduleName": "VideoSDKRTC",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -52598,7 +52684,10 @@
             "declKind": "EnumElement",
             "usr": "s:11VideoSDKRTC19AuthorisationStatusO10restrictedyA2CmF",
             "mangledName": "$s11VideoSDKRTC19AuthorisationStatusO10restrictedyA2CmF",
-            "moduleName": "VideoSDKRTC"
+            "moduleName": "VideoSDKRTC",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -52635,7 +52724,10 @@
             "declKind": "EnumElement",
             "usr": "s:11VideoSDKRTC19AuthorisationStatusO13notDeterminedyA2CmF",
             "mangledName": "$s11VideoSDKRTC19AuthorisationStatusO13notDeterminedyA2CmF",
-            "moduleName": "VideoSDKRTC"
+            "moduleName": "VideoSDKRTC",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Function",
@@ -53697,6 +53789,42 @@
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
               "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFrameReceived",
+            "printedName": "onFrameReceived(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "VideoSDKRTC.RTCVideoFrame?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCVideoFrame",
+                    "printedName": "VideoSDKRTC.RTCVideoFrame",
+                    "usr": "s:11VideoSDKRTC13RTCVideoFrameV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCVideoFrame",
+                "printedName": "VideoSDKRTC.RTCVideoFrame",
+                "usr": "s:11VideoSDKRTC13RTCVideoFrameV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11VideoSDKRTC0A22SDKBackgroundProcessorC15onFrameReceived5frameAA08RTCVideoF0VSgAG_tF",
+            "mangledName": "$s11VideoSDKRTC0A22SDKBackgroundProcessorC15onFrameReceived5frameAA08RTCVideoF0VSgAG_tF",
+            "moduleName": "VideoSDKRTC",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -56744,7 +56872,7 @@
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomRTCMediaStream.swift",
       "kind": "BooleanLiteral",
-      "offset": 3984,
+      "offset": 4274,
       "length": 5,
       "value": "false"
     },
@@ -57661,1351 +57789,1351 @@
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11534,
+      "offset": 12804,
       "length": 12,
       "value": "\"sampleRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 11548,
+      "offset": 12818,
       "length": 5,
       "value": "16000"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11563,
+      "offset": 12833,
       "length": 9,
       "value": "\"bitRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 11574,
+      "offset": 12844,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11586,
+      "offset": 12856,
       "length": 12,
       "value": "\"sampleSize\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 11600,
+      "offset": 12870,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11612,
+      "offset": 12882,
       "length": 8,
       "value": "\"stereo\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 11622,
+      "offset": 12892,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11637,
+      "offset": 12907,
       "length": 5,
       "value": "\"dtx\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 11644,
+      "offset": 12914,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11658,
+      "offset": 12928,
       "length": 5,
       "value": "\"fec\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 11665,
+      "offset": 12935,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11679,
+      "offset": 12949,
       "length": 17,
       "value": "\"maxPlaybackRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 11698,
+      "offset": 12968,
       "length": 5,
       "value": "16000"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11713,
+      "offset": 12983,
       "length": 12,
       "value": "\"packetTime\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 11727,
+      "offset": 12997,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11739,
+      "offset": 13009,
       "length": 17,
       "value": "\"autoGainControl\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 11758,
+      "offset": 13028,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11772,
+      "offset": 13042,
       "length": 18,
       "value": "\"echoCancellation\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 11792,
+      "offset": 13062,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11806,
+      "offset": 13076,
       "length": 18,
       "value": "\"noiseSuppression\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 11826,
+      "offset": 13096,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11840,
+      "offset": 13110,
       "length": 14,
       "value": "\"channelCount\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 11856,
+      "offset": 13126,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11897,
+      "offset": 13167,
       "length": 12,
       "value": "\"sampleRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 11911,
+      "offset": 13181,
       "length": 5,
       "value": "32000"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11926,
+      "offset": 13196,
       "length": 9,
       "value": "\"bitRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 11937,
+      "offset": 13207,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11949,
+      "offset": 13219,
       "length": 12,
       "value": "\"sampleSize\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 11963,
+      "offset": 13233,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 11975,
+      "offset": 13245,
       "length": 8,
       "value": "\"stereo\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 11985,
+      "offset": 13255,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12000,
+      "offset": 13270,
       "length": 5,
       "value": "\"dtx\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 12007,
+      "offset": 13277,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12021,
+      "offset": 13291,
       "length": 5,
       "value": "\"fec\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 12028,
+      "offset": 13298,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12042,
+      "offset": 13312,
       "length": 17,
       "value": "\"maxPlaybackRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 12061,
+      "offset": 13331,
       "length": 5,
       "value": "32000"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12076,
+      "offset": 13346,
       "length": 12,
       "value": "\"packetTime\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 12090,
+      "offset": 13360,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12102,
+      "offset": 13372,
       "length": 17,
       "value": "\"autoGainControl\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 12121,
+      "offset": 13391,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12135,
+      "offset": 13405,
       "length": 18,
       "value": "\"echoCancellation\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 12155,
+      "offset": 13425,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12169,
+      "offset": 13439,
       "length": 18,
       "value": "\"noiseSuppression\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 12189,
+      "offset": 13459,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12203,
+      "offset": 13473,
       "length": 14,
       "value": "\"channelCount\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 12219,
+      "offset": 13489,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12259,
+      "offset": 13529,
       "length": 12,
       "value": "\"sampleRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 12273,
+      "offset": 13543,
       "length": 5,
       "value": "48000"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12288,
+      "offset": 13558,
       "length": 9,
       "value": "\"bitRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 12299,
+      "offset": 13569,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12311,
+      "offset": 13581,
       "length": 12,
       "value": "\"sampleSize\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 12325,
+      "offset": 13595,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12337,
+      "offset": 13607,
       "length": 8,
       "value": "\"stereo\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 12347,
+      "offset": 13617,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12362,
+      "offset": 13632,
       "length": 5,
       "value": "\"dtx\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 12369,
+      "offset": 13639,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12384,
+      "offset": 13654,
       "length": 5,
       "value": "\"fec\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 12391,
+      "offset": 13661,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12405,
+      "offset": 13675,
       "length": 17,
       "value": "\"maxPlaybackRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 12424,
+      "offset": 13694,
       "length": 5,
       "value": "48000"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12439,
+      "offset": 13709,
       "length": 12,
       "value": "\"packetTime\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 12453,
+      "offset": 13723,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12465,
+      "offset": 13735,
       "length": 17,
       "value": "\"autoGainControl\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 12484,
+      "offset": 13754,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12499,
+      "offset": 13769,
       "length": 18,
       "value": "\"echoCancellation\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 12519,
+      "offset": 13789,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12534,
+      "offset": 13804,
       "length": 18,
       "value": "\"noiseSuppression\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 12554,
+      "offset": 13824,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12569,
+      "offset": 13839,
       "length": 14,
       "value": "\"channelCount\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 12585,
+      "offset": 13855,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12626,
+      "offset": 13896,
       "length": 12,
       "value": "\"sampleRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 12640,
+      "offset": 13910,
       "length": 5,
       "value": "48000"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12655,
+      "offset": 13925,
       "length": 12,
       "value": "\"sampleSize\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 12669,
+      "offset": 13939,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12681,
+      "offset": 13951,
       "length": 9,
       "value": "\"bitRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 12692,
+      "offset": 13962,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12704,
+      "offset": 13974,
       "length": 8,
       "value": "\"stereo\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 12714,
+      "offset": 13984,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12728,
+      "offset": 13998,
       "length": 5,
       "value": "\"dtx\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 12735,
+      "offset": 14005,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12750,
+      "offset": 14020,
       "length": 5,
       "value": "\"fec\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 12757,
+      "offset": 14027,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12771,
+      "offset": 14041,
       "length": 17,
       "value": "\"maxPlaybackRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 12790,
+      "offset": 14060,
       "length": 5,
       "value": "48000"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12805,
+      "offset": 14075,
       "length": 12,
       "value": "\"packetTime\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 12819,
+      "offset": 14089,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12831,
+      "offset": 14101,
       "length": 17,
       "value": "\"autoGainControl\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 12850,
+      "offset": 14120,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12865,
+      "offset": 14135,
       "length": 18,
       "value": "\"echoCancellation\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 12885,
+      "offset": 14155,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12900,
+      "offset": 14170,
       "length": 18,
       "value": "\"noiseSuppression\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 12920,
+      "offset": 14190,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12935,
+      "offset": 14205,
       "length": 14,
       "value": "\"channelCount\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 12951,
+      "offset": 14221,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12989,
+      "offset": 14259,
       "length": 12,
       "value": "\"sampleRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 13003,
+      "offset": 14273,
       "length": 5,
       "value": "48000"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13018,
+      "offset": 14288,
       "length": 12,
       "value": "\"sampleSize\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 13032,
+      "offset": 14302,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13044,
+      "offset": 14314,
       "length": 9,
       "value": "\"bitRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 13055,
+      "offset": 14325,
       "length": 3,
       "value": "128"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13068,
+      "offset": 14338,
       "length": 8,
       "value": "\"stereo\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 13078,
+      "offset": 14348,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13093,
+      "offset": 14363,
       "length": 5,
       "value": "\"dtx\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 13100,
+      "offset": 14370,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13115,
+      "offset": 14385,
       "length": 5,
       "value": "\"fec\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 13122,
+      "offset": 14392,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13136,
+      "offset": 14406,
       "length": 17,
       "value": "\"maxPlaybackRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 13155,
+      "offset": 14425,
       "length": 5,
       "value": "48000"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13170,
+      "offset": 14440,
       "length": 12,
       "value": "\"packetTime\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 13184,
+      "offset": 14454,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13196,
+      "offset": 14466,
       "length": 17,
       "value": "\"autoGainControl\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 13215,
+      "offset": 14485,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13230,
+      "offset": 14500,
       "length": 18,
       "value": "\"echoCancellation\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 13250,
+      "offset": 14520,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13265,
+      "offset": 14535,
       "length": 18,
       "value": "\"noiseSuppression\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 13285,
+      "offset": 14555,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13300,
+      "offset": 14570,
       "length": 14,
       "value": "\"channelCount\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 13316,
+      "offset": 14586,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13361,
+      "offset": 14631,
       "length": 12,
       "value": "\"sampleRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 13375,
+      "offset": 14645,
       "length": 5,
       "value": "48000"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13390,
+      "offset": 14660,
       "length": 12,
       "value": "\"sampleSize\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 13404,
+      "offset": 14674,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13416,
+      "offset": 14686,
       "length": 9,
       "value": "\"bitRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 13427,
+      "offset": 14697,
       "length": 3,
       "value": "192"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13440,
+      "offset": 14710,
       "length": 8,
       "value": "\"stereo\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 13450,
+      "offset": 14720,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13464,
+      "offset": 14734,
       "length": 5,
       "value": "\"dtx\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 13471,
+      "offset": 14741,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13486,
+      "offset": 14756,
       "length": 5,
       "value": "\"fec\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 13493,
+      "offset": 14763,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13507,
+      "offset": 14777,
       "length": 17,
       "value": "\"maxPlaybackRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 13526,
+      "offset": 14796,
       "length": 5,
       "value": "48000"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13541,
+      "offset": 14811,
       "length": 12,
       "value": "\"packetTime\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 13555,
+      "offset": 14825,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13567,
+      "offset": 14837,
       "length": 17,
       "value": "\"autoGainControl\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 13586,
+      "offset": 14856,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13601,
+      "offset": 14871,
       "length": 18,
       "value": "\"echoCancellation\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 13621,
+      "offset": 14891,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13636,
+      "offset": 14906,
       "length": 18,
       "value": "\"noiseSuppression\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 13656,
+      "offset": 14926,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 13671,
+      "offset": 14941,
       "length": 14,
       "value": "\"channelCount\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 13687,
+      "offset": 14957,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14013,
+      "offset": 15283,
       "length": 7,
       "value": "\"width\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14022,
+      "offset": 15292,
       "length": 3,
       "value": "640"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14035,
+      "offset": 15305,
       "length": 8,
       "value": "\"height\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14045,
+      "offset": 15315,
       "length": 3,
       "value": "360"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14058,
+      "offset": 15328,
       "length": 9,
       "value": "\"bitRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14069,
+      "offset": 15339,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14075,
+      "offset": 15345,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14089,
+      "offset": 15359,
       "length": 11,
       "value": "\"frameRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14102,
+      "offset": 15372,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14138,
+      "offset": 15408,
       "length": 7,
       "value": "\"width\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14147,
+      "offset": 15417,
       "length": 4,
       "value": "1280"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14161,
+      "offset": 15431,
       "length": 8,
       "value": "\"height\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14171,
+      "offset": 15441,
       "length": 3,
       "value": "720"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14184,
+      "offset": 15454,
       "length": 9,
       "value": "\"bitRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14195,
+      "offset": 15465,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14201,
+      "offset": 15471,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14215,
+      "offset": 15485,
       "length": 11,
       "value": "\"frameRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14228,
+      "offset": 15498,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14265,
+      "offset": 15535,
       "length": 7,
       "value": "\"width\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14274,
+      "offset": 15544,
       "length": 4,
       "value": "1280"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14288,
+      "offset": 15558,
       "length": 8,
       "value": "\"height\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14298,
+      "offset": 15568,
       "length": 3,
       "value": "720"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14311,
+      "offset": 15581,
       "length": 9,
       "value": "\"bitRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14322,
+      "offset": 15592,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14329,
+      "offset": 15599,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14343,
+      "offset": 15613,
       "length": 11,
       "value": "\"frameRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14356,
+      "offset": 15626,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14395,
+      "offset": 15665,
       "length": 7,
       "value": "\"width\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14404,
+      "offset": 15674,
       "length": 4,
       "value": "1920"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14418,
+      "offset": 15688,
       "length": 8,
       "value": "\"height\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14428,
+      "offset": 15698,
       "length": 4,
       "value": "1080"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14442,
+      "offset": 15712,
       "length": 9,
       "value": "\"bitRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14453,
+      "offset": 15723,
       "length": 4,
       "value": "1500"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14460,
+      "offset": 15730,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14474,
+      "offset": 15744,
       "length": 11,
       "value": "\"frameRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14487,
+      "offset": 15757,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14526,
+      "offset": 15796,
       "length": 7,
       "value": "\"width\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14535,
+      "offset": 15805,
       "length": 4,
       "value": "1920"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14549,
+      "offset": 15819,
       "length": 8,
       "value": "\"height\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14559,
+      "offset": 15829,
       "length": 4,
       "value": "1080"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14573,
+      "offset": 15843,
       "length": 9,
       "value": "\"bitRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14584,
+      "offset": 15854,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14591,
+      "offset": 15861,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "StringLiteral",
-      "offset": 14605,
+      "offset": 15875,
       "length": 11,
       "value": "\"frameRate\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 14618,
+      "offset": 15888,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 15577,
+      "offset": 16847,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 15745,
+      "offset": 17015,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 15904,
+      "offset": 17174,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomTrackConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 16047,
+      "offset": 17317,
       "length": 5,
       "value": "false"
     },
@@ -59334,28 +59462,28 @@
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/KeyProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 1154,
+      "offset": 2485,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/KeyProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 2553,
+      "offset": 3884,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/KeyProvider.swift",
       "kind": "Dictionary",
-      "offset": 3024,
+      "offset": 4355,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/KeyProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 3221,
+      "offset": 4751,
       "length": 5,
       "value": "false"
     },
@@ -59425,168 +59553,168 @@
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 10700,
+      "offset": 11018,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "StringLiteral",
-      "offset": 11720,
+      "offset": 12038,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 11758,
+      "offset": 12076,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 11802,
+      "offset": 12120,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 11844,
+      "offset": 12162,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 11925,
+      "offset": 12243,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 11966,
+      "offset": 12284,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 12019,
+      "offset": 12337,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 12050,
+      "offset": 12368,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 12081,
+      "offset": 12399,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 12551,
+      "offset": 12869,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "StringLiteral",
-      "offset": 13798,
+      "offset": 14116,
       "length": 27,
       "value": "\"com.sdk.participant.queue\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "StringLiteral",
-      "offset": 14242,
+      "offset": 14560,
       "length": 25,
       "value": "\"com.sdk.media.ffi.queue\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 16110,
+      "offset": 16474,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 16352,
+      "offset": 16716,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 16529,
+      "offset": 16893,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 16565,
+      "offset": 16929,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 16699,
+      "offset": 17063,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 16979,
+      "offset": 17343,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 17016,
+      "offset": 17380,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 68819,
+      "offset": 77334,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 70153,
+      "offset": 78668,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 71057,
+      "offset": 79572,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 71818,
+      "offset": 80333,
       "length": 4,
       "value": "true"
     },
@@ -61455,14 +61583,14 @@
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Participant.swift",
       "kind": "BooleanLiteral",
-      "offset": 40172,
+      "offset": 41027,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Participant.swift",
       "kind": "BooleanLiteral",
-      "offset": 41086,
+      "offset": 41941,
       "length": 5,
       "value": "false"
     },
@@ -61898,7 +62026,7 @@
       "kind": "StringLiteral",
       "offset": 297,
       "length": 14,
-      "value": "\"4.0.0-beta.4\""
+      "value": "\"4.0.0-beta.5\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/SDKConfig.swift",
@@ -62225,63 +62353,63 @@
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/VideoSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3791,
+      "offset": 5073,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/VideoSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3829,
+      "offset": 5111,
       "length": 7,
       "value": "\"Guest\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/VideoSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 3865,
+      "offset": 5147,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/VideoSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 3901,
+      "offset": 5183,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/VideoSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 4053,
+      "offset": 5335,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/VideoSDK.swift",
       "kind": "Dictionary",
-      "offset": 4236,
+      "offset": 5518,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/VideoSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 4310,
+      "offset": 5592,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/VideoSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 4347,
+      "offset": 5629,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/VideoSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 9250,
+      "offset": 11734,
       "length": 4,
       "value": "true"
     },

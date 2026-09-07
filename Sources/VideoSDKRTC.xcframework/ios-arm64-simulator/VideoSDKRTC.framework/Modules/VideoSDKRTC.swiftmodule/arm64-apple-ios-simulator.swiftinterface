@@ -287,7 +287,12 @@ public enum CustomVideoTrackConfig {
   }
 }
 public enum CustomAudioTrackConfig {
-  case speech_low_quality, speech_standard, music_standard, standard_stereo, high_quality, high_quality_stereo
+  case speech_low_quality
+  case speech_standard
+  case music_standard
+  case standard_stereo
+  case high_quality
+  case high_quality_stereo
   public static func == (a: VideoSDKRTC.CustomAudioTrackConfig, b: VideoSDKRTC.CustomAudioTrackConfig) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -1883,6 +1888,7 @@ public protocol RTCVideoRenderer : AnyObject {
     set
   }
   public static func config(token: Swift.String)
+  @_documentation(visibility: internal) public static func setSdkInfo(name: Swift.String, version: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
   public static func initMeeting(meetingId: Swift.String, participantId: Swift.String = "", participantName: Swift.String = "Guest", micEnabled: Swift.Bool = true, webcamEnabled: Swift.Bool = true, customCameraVideoStream: VideoSDKRTC.CustomRTCMediaStream? = nil, customAudioTrack: VideoSDKRTC.CustomRTCMediaStream? = nil, multiStream: Swift.Bool? = true, mode: VideoSDKRTC.Mode? = .SEND_AND_RECV, preferredProtocol: VideoSDKRTC.PreferredProtocol? = .UDP_OVER_TCP, signalingBaseUrl: Swift.String? = nil, metaData: [Swift.String : Any]? = [:], secureKey: Swift.String? = nil, codecSwitchEnabled: Swift.Bool = true, enableBatching: Swift.Bool = true, translationLanguage: Swift.String? = nil, speakingLanguage: Swift.String? = nil) -> VideoSDKRTC.Meeting
   #endif
@@ -1982,6 +1988,9 @@ extension VideoSDKRTC.VideoSDKVideoProcessor {
   public init(backgroundSource: Foundation.URL)
   #if compiler(>=5.3) && $NonescapableTypes
   public func onFrameReceived(pixelBuffer: CoreVideo.CVPixelBuffer) -> CoreVideo.CVPixelBuffer?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func onFrameReceived(frame: VideoSDKRTC.RTCVideoFrame) -> VideoSDKRTC.RTCVideoFrame?
   #endif
   public func changeBackground(backgroundSource: Foundation.URL)
   @objc deinit
