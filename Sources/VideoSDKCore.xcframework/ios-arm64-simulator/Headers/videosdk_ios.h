@@ -42,13 +42,19 @@ int32_t meeting_join(const char *token, const char *meeting_id, const char *name
                   const char *device_info_json, const char *mode,
                   const char *signaling_base_url, const char *participant_id,
                   const char *extra_config_json);
-/// Leave the current meeting. Only the local participant departs.
-void meeting_leave(void);
+/// Leave the current meeting. Only the local participant departs; a join
+/// still in flight is cancelled. Returns 0 on success, a negative catalogue
+/// code on refusal (read via `videosdk_take_last_error`): 3054 once the
+/// meeting was already left or closed, 3035 before any join.
+int32_t meeting_leave(void);
 
 /// End the meeting for all participants. Sends the `closeRoom`
 /// signaling event so the server disconnects every remote participant,
-/// then tears down the local session.
-void meeting_end(void);
+/// then tears down the local session. Returns 0 on success, a negative
+/// catalogue code on failure (read via `videosdk_take_last_error`):
+/// 3065 reconnecting, 3035 not in the meeting, 3057 refused by the server,
+/// 3079 no acknowledgement. A refused end leaves the local session untouched.
+int32_t meeting_end(void);
 
 /// Configure the room-wide shared key for end-to-end encryption.
 /// Must be called BEFORE meeting_join so the key is in place when
@@ -87,8 +93,17 @@ int32_t meeting_setE2EEAlgorithm(int32_t algorithm);
 
 
 // Audio
-void meeting_enableMic(void);
-void meeting_disableMic(void);
+//
+// meeting_enableMic / meeting_disableMic: typed-error path.
+// Return `0` on success, a negative catalogue code on server rejection
+// (e.g. -3055 for `ERROR_OPERATION_IN_PROGRESS`), or `-2` when no meeting
+// is joined. On non-zero, read the full `{code, name, message}` triple
+// via `videosdk_take_last_error` and rethrow a typed error at the
+// Swift/RN boundary. The pre-existing `void`-return contract was
+// upgraded to `int32_t`; the Swift wrapper may keep discarding it and
+// stay source-compatible.
+int32_t meeting_enableMic(void);
+int32_t meeting_disableMic(void);
 uint32_t videosdk_pushAudioCapture(const int16_t *samples, uint32_t count);
 uint32_t videosdk_pullAudioPlayback(int16_t *out_samples, uint32_t count);
 uint32_t videosdk_audioPlaybackAvailable(void);
@@ -103,8 +118,12 @@ int32_t videosdk_pushVideoCaptureNV12(const uint8_t *y_src, uint32_t y_stride,
                                      uint32_t width, uint32_t height,
                                      int64_t pts_us);
 
-void meeting_enableWebcam(void);
-void meeting_disableWebcam(void);
+/// Enable/disable the local webcam. Same typed-error contract as
+/// `meeting_enableMic` / `meeting_disableMic`: `0` on success, a
+/// negative catalogue code on failure — read the full `{code, name,
+/// message}` triple via `videosdk_take_last_error`.
+int32_t meeting_enableWebcam(void);
+int32_t meeting_disableWebcam(void);
 
 /// Force the next encoded frame to be a keyframe (IDR).
 void stream_requestKeyframe(void);
@@ -160,6 +179,15 @@ char *meeting_getParticipants(void);
 /// with `videosdk_freeString`.
 char *meeting_getSessionId(void);
 void videosdk_freeString(char *s);
+
+/// Consume the current thread's pending `{code, name, message}` error
+/// record, if any, and return it as a JSON string. Every fallible FFI
+/// method (any that now returns `int32_t`) sets this on the failure
+/// path; the Swift/RN wrapper reads it to build a typed `VideoSDKError`
+/// to throw. Caller must free the returned string with
+/// `videosdk_freeString`. Returns NULL when the thread has no pending
+/// error.
+char *videosdk_take_last_error(void);
 
 // ── B.1: Recording / HLS / Livestream / Whiteboard / Transcription ──────────
 //
@@ -303,6 +331,86 @@ char *videosdk_getActiveVideoCodec(void);
 
 char *videosdk_getNoiseConfig(void);
 
+// ── Phase 1 measurement harness ─────────────────────────────────────────────
+// docs/design/effects-core/effects-in-core-design-2026-09-08.md §4.7, §6 "Phase 1".
+
+/// One-second `EffectsStats` snapshot as JSON. Caller frees it with
+/// `videosdk_freeString`. The live row arrives once a second on the
+/// `videoEffectsStats` event instead.
+char *videosdk_effectsStatsSnapshot(void);
+
+/// Push what only the platform can read: `ProcessInfo.thermalState` mapped to
+/// the Android `PowerManager.THERMAL_STATUS_*` scale (nominal 0, fair 1,
+/// serious 3 = SEVERE, critical 4 = CRITICAL), and whole-process CPU percent.
+/// Pass a negative `headroom` — iOS has no `getThermalHeadroom()` equivalent.
+void videosdk_telemetryPushDeviceLoad(int32_t thermal, float headroom, float cpu_pct);
+
+/// Turn the `videosdk.effects.stats` harness on or off. OFF is the shipped
+/// default; turning it on starts the 1 Hz aggregator. The env variable
+/// `VIDEOSDK_EFFECTS_STATS=1` does the same at init.
+void videosdk_setEffectsStatsEnabled(bool enabled);
+
+/// Is the harness on? Ask before starting the device-load pump.
+bool videosdk_effectsStatsEnabled(void);
+
+/// Debug-only: force a drop counter so a rig can prove a non-zero count reaches
+/// the `fx_stats` row. Inert unless the harness flag is on. `kind`: 0
+/// halSkipped, 1 graphBackpressure, 2 readbackStall, 3 encoderDropped,
+/// 4 geometryChanges.
+void videosdk_effectsStatsInjectDrop(int32_t kind, int32_t count);
+
+/// Ask for a video encoder backend: 0 auto (default), 1 software, 2 hardware,
+/// 3 videotoolbox. Takes effect on the next produce.
+void videosdk_setVideoEncoderBackend(int32_t backend);
+
+// ── Phase 2: the effects graph ──────────────────────────────────────────────
+// docs/design/effects-core/effects-in-core-design-2026-09-08.md §4.7.
+//
+// JSON in, JSON out. Adding an effect adds a key to the config document, never
+// a function here.
+
+/// Initialise or reconfigure the graph from an `EffectsConfig` document.
+/// Returns the APPLIED config as JSON (adds `applied`, `tier`, `degradeLevel`,
+/// `reason`). Caller frees with `videosdk_freeString`.
+/// The default is `"pipeline":"LEGACY"` — the capture path is unchanged unless
+/// a document asks for `GRAPH`.
+char *videosdk_setVideoEffects(const char *config_json);
+
+/// Design §4.7's name for the same call; `w`/`h` are accepted and ignored (the
+/// graph follows the capturer's geometry).
+char *videosdk_effectsInit(const char *config_json, int32_t w, int32_t h);
+
+/// The config in force, as JSON. Caller frees with `videosdk_freeString`.
+/// Publish a subject box for auto-framing, normalised 0..1 against the frame the
+/// effects see. A `w` or `h` of zero or less means "no subject", which starts
+/// the framer's hold and then eases the crop home.
+///
+/// Until a real face detector lands this is the only thing that moves the
+/// framing crop, so framing switched on with nothing publishing is a clean
+/// no-op. Wait-free; safe from any thread.
+void videosdk_effectsPublishFaceBox(float cx, float cy, float w, float h);
+
+char *videosdk_effectsGetAppliedConfig(void);
+
+/// Tear the graph down and return the capture path to `LEGACY`.
+void videosdk_effectsShutdown(void);
+
+/// Is the graph handling capture frames right now? Not the same question as
+/// "was GRAPH asked for": a device whose runtime failed to create reports
+/// false here and keeps publishing down the legacy path.
+bool videosdk_effectsGraphEnabled(void);
+
+/// Register the self-view sink. The callback receives a RETAINED (+1)
+/// CVPixelBufferRef and the frame's pts; the receiver owns it and must
+/// CFRelease it. Pass NULL to detach.
+void videosdk_effectsSetPreviewCallback(void (*cb)(void *pixel_buffer, int64_t pts_us));
+
+/// Push one camera CVPixelBuffer into the graph. The buffer is BORROWED — this
+/// call does not retain it. Returns 0 when a frame reached the encoder, -1
+/// otherwise (already counted at the right drop site).
+int32_t videosdk_pushVideoCaptureCVPixelBuffer(void *pixel_buffer, uint32_t width,
+                                               uint32_t height, int64_t pts_us);
+
 /// Set the opus audio encoder config for the mic track. `bitrate_kbps` 0 or
 /// >128 means "no override". The `*_valid` flags gate whether the paired
 /// DTX/FEC/stereo value is applied. `stereo_on` maps to the `opusStereo`
@@ -344,6 +452,7 @@ int32_t meeting_changeMode(const char *mode);
 /// only, so capturing under RECV_ONLY/SIGNALLING_ONLY is a silent privacy leak.
 /// Returns true when no meeting exists yet (pre-join intents still queue).
 bool meeting_canProduce(void);
+int32_t meeting_assertPublishAllowed(const char *method);
 
 /// Switch the active session to a different meeting room without
 /// destroying the local Meeting object. The server validates the
