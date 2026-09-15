@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name VideoSDKRTC
+// swift-module-flags: -target arm64-apple-ios18.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name VideoSDKRTC
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import AVFoundation
 import Accelerate
@@ -258,9 +258,10 @@ public enum CameraPosition : Swift.Int {
   @_documentation(visibility: internal) public var encoderConfig: VideoSDKRTC.CustomVideoTrackConfig?
   @_documentation(visibility: internal) public var facingMode: AVFoundation.AVCaptureDevice.Position?
   @_documentation(visibility: internal) public var noiseConfig: VideoSDKRTC.NoiseConfig?
-  @_documentation(visibility: internal) public var startBitrate: Swift.Int?
+  @_documentation(visibility: internal) public var cameraId: Swift.String?
+  @_documentation(visibility: internal) public var microphoneId: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
-  @_documentation(visibility: internal) public init(videoTrack: VideoSDKRTC.RTCVideoTrack? = nil, multiStream: Swift.Bool? = nil, audioTrack: VideoSDKRTC.RTCAudioTrack? = nil, videoCodec: VideoSDKRTC.VideoCodec? = .VP8, bitrateMode: VideoSDKRTC.BitrateMode? = BitrateMode.BALANCED, maxLayer: VideoSDKRTC.EncodingLayer? = EncodingLayer.MAX_LAYER_3, audioEncoderConfig: VideoSDKRTC.CustomAudioTrackConfig? = nil, encoderConfig: VideoSDKRTC.CustomVideoTrackConfig? = nil, facingMode: AVFoundation.AVCaptureDevice.Position? = nil, noiseConfig: VideoSDKRTC.NoiseConfig? = nil, startBitrate: Swift.Int? = nil)
+  @_documentation(visibility: internal) public init(videoTrack: VideoSDKRTC.RTCVideoTrack? = nil, multiStream: Swift.Bool? = nil, audioTrack: VideoSDKRTC.RTCAudioTrack? = nil, videoCodec: VideoSDKRTC.VideoCodec? = .VP8, bitrateMode: VideoSDKRTC.BitrateMode? = BitrateMode.BALANCED, maxLayer: VideoSDKRTC.EncodingLayer? = EncodingLayer.MAX_LAYER_3, audioEncoderConfig: VideoSDKRTC.CustomAudioTrackConfig? = nil, encoderConfig: VideoSDKRTC.CustomVideoTrackConfig? = nil, facingMode: AVFoundation.AVCaptureDevice.Position? = nil, noiseConfig: VideoSDKRTC.NoiseConfig? = nil)
   #endif
   @_documentation(visibility: internal) public func toJson() -> [Swift.String : Any]
   @_documentation(visibility: internal) public func toJsonString(forAudio: Swift.Bool = false) -> Swift.String
@@ -828,9 +829,10 @@ extension VideoSDKRTC.Meeting {
   public func getActiveVideoCodec() -> Swift.String?
   #endif
   public func disableWebcam() async throws
-  public func changeWebcam()
-  @available(*, deprecated, renamed: "changeWebcam()")
-  public func switchWebcam()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func changeWebcam(deviceId: Swift.String? = nil) async throws
+  #endif
+  public func changeWebcam(customVideoStream: VideoSDKRTC.CustomRTCMediaStream) async throws
   #if compiler(>=5.3) && $NonescapableTypes
   public func setVideoProcessor(processor: (any VideoSDKRTC.VideoSDKVideoProcessor)?)
   #endif
@@ -841,7 +843,10 @@ extension VideoSDKRTC.Meeting {
   public func toggleMic() async throws
   public func toggleWebcam() async throws
   public func getMics() -> [(deviceName: Swift.String, deviceType: Swift.String)]
-  public func changeMic(selectedDevice: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func changeMic(selectedDevice: Swift.String? = nil) async throws
+  #endif
+  public func changeMic(customAudioStream: VideoSDKRTC.CustomRTCMediaStream) async throws
   public var isScreenSharing: Swift.Bool {
     get
   }
@@ -2032,10 +2037,10 @@ public protocol RTCVideoRenderer : AnyObject {
   #endif
   public static func getBuildId() -> Swift.String
   #if compiler(>=5.3) && $NonescapableTypes
-  public static func createCameraVideoTrack(encoderConfig: VideoSDKRTC.CustomVideoTrackConfig? = .h720p_w1280p, facingMode: AVFoundation.AVCaptureDevice.Position? = .front, multiStream: Swift.Bool? = true, codec: VideoSDKRTC.VideoCodec? = .VP8, bitrateMode: VideoSDKRTC.BitrateMode? = .BALANCED, maxLayer: VideoSDKRTC.EncodingLayer? = .MAX_LAYER_3, startBitrate: Swift.Int? = nil) throws -> VideoSDKRTC.CustomRTCMediaStream?
+  public static func createCameraVideoTrack(encoderConfig: VideoSDKRTC.CustomVideoTrackConfig? = .h720p_w1280p, facingMode: AVFoundation.AVCaptureDevice.Position? = .front, multiStream: Swift.Bool? = true, codec: VideoSDKRTC.VideoCodec? = .VP8, bitrateMode: VideoSDKRTC.BitrateMode? = .BALANCED, maxLayer: VideoSDKRTC.EncodingLayer? = .MAX_LAYER_3, cameraId: Swift.String? = nil) throws -> VideoSDKRTC.CustomRTCMediaStream?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public static func createMicrophoneAudioTrack(noiseConfig: VideoSDKRTC.NoiseConfig? = nil, encoderConfig: VideoSDKRTC.CustomAudioTrackConfig? = .speech_standard) throws -> VideoSDKRTC.CustomRTCMediaStream?
+  public static func createMicrophoneAudioTrack(noiseConfig: VideoSDKRTC.NoiseConfig? = nil, encoderConfig: VideoSDKRTC.CustomAudioTrackConfig? = .speech_standard, microphoneId: Swift.String? = nil) throws -> VideoSDKRTC.CustomRTCMediaStream?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, renamed: "createMicrophoneAudioTrack(noiseConfig:encoderConfig:)")

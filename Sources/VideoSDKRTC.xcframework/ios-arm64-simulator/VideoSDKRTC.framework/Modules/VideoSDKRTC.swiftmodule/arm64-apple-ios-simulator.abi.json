@@ -6523,27 +6523,27 @@
           },
           {
             "kind": "Var",
-            "name": "startBitrate",
-            "printedName": "startBitrate",
+            "name": "cameraId",
+            "printedName": "cameraId",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Int?",
+                "printedName": "Swift.String?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:11VideoSDKRTC20CustomRTCMediaStreamC12startBitrateSiSgvp",
-            "mangledName": "$s11VideoSDKRTC20CustomRTCMediaStreamC12startBitrateSiSgvp",
+            "usr": "s:11VideoSDKRTC20CustomRTCMediaStreamC8cameraIdSSSgvp",
+            "mangledName": "$s11VideoSDKRTC20CustomRTCMediaStreamC8cameraIdSSSgvp",
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
               "HasInitialValue",
@@ -6562,21 +6562,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Int?",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11VideoSDKRTC20CustomRTCMediaStreamC12startBitrateSiSgvg",
-                "mangledName": "$s11VideoSDKRTC20CustomRTCMediaStreamC12startBitrateSiSgvg",
+                "usr": "s:11VideoSDKRTC20CustomRTCMediaStreamC8cameraIdSSSgvg",
+                "mangledName": "$s11VideoSDKRTC20CustomRTCMediaStreamC8cameraIdSSSgvg",
                 "moduleName": "VideoSDKRTC",
                 "implicit": true,
                 "accessorKind": "get"
@@ -6594,21 +6594,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Int?",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11VideoSDKRTC20CustomRTCMediaStreamC12startBitrateSiSgvs",
-                "mangledName": "$s11VideoSDKRTC20CustomRTCMediaStreamC12startBitrateSiSgvs",
+                "usr": "s:11VideoSDKRTC20CustomRTCMediaStreamC8cameraIdSSSgvs",
+                "mangledName": "$s11VideoSDKRTC20CustomRTCMediaStreamC8cameraIdSSSgvs",
                 "moduleName": "VideoSDKRTC",
                 "implicit": true,
                 "accessorKind": "set"
@@ -6625,8 +6625,120 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11VideoSDKRTC20CustomRTCMediaStreamC12startBitrateSiSgvM",
-                "mangledName": "$s11VideoSDKRTC20CustomRTCMediaStreamC12startBitrateSiSgvM",
+                "usr": "s:11VideoSDKRTC20CustomRTCMediaStreamC8cameraIdSSSgvM",
+                "mangledName": "$s11VideoSDKRTC20CustomRTCMediaStreamC8cameraIdSSSgvM",
+                "moduleName": "VideoSDKRTC",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "microphoneId",
+            "printedName": "microphoneId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11VideoSDKRTC20CustomRTCMediaStreamC12microphoneIdSSSgvp",
+            "mangledName": "$s11VideoSDKRTC20CustomRTCMediaStreamC12microphoneIdSSSgvp",
+            "moduleName": "VideoSDKRTC",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "Documentation",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11VideoSDKRTC20CustomRTCMediaStreamC12microphoneIdSSSgvg",
+                "mangledName": "$s11VideoSDKRTC20CustomRTCMediaStreamC12microphoneIdSSSgvg",
+                "moduleName": "VideoSDKRTC",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11VideoSDKRTC20CustomRTCMediaStreamC12microphoneIdSSSgvs",
+                "mangledName": "$s11VideoSDKRTC20CustomRTCMediaStreamC12microphoneIdSSSgvs",
+                "moduleName": "VideoSDKRTC",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11VideoSDKRTC20CustomRTCMediaStreamC12microphoneIdSSSgvM",
+                "mangledName": "$s11VideoSDKRTC20CustomRTCMediaStreamC12microphoneIdSSSgvM",
                 "moduleName": "VideoSDKRTC",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -6636,7 +6748,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(videoTrack:multiStream:audioTrack:videoCodec:bitrateMode:maxLayer:audioEncoderConfig:encoderConfig:facingMode:noiseConfig:startBitrate:)",
+            "printedName": "init(videoTrack:multiStream:audioTrack:videoCodec:bitrateMode:maxLayer:audioEncoderConfig:encoderConfig:facingMode:noiseConfig:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6793,26 +6905,11 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Int?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:11VideoSDKRTC20CustomRTCMediaStreamC10videoTrack05multiE005audioG00F5Codec11bitrateMode8maxLayer0I13EncoderConfig07encoderP006facingL005noiseP012startBitrateAcA08RTCVideoG0CSg_SbSgAA08RTCAudioG0CSgAA0aJ0OSgAA0uL0OSgAA08EncodingN0OSgAA0c5AudiogP0OSgAA0cagP0OSgSo23AVCaptureDevicePositionVSgAA05NoiseP0VSgSiSgtcfc",
-            "mangledName": "$s11VideoSDKRTC20CustomRTCMediaStreamC10videoTrack05multiE005audioG00F5Codec11bitrateMode8maxLayer0I13EncoderConfig07encoderP006facingL005noiseP012startBitrateAcA08RTCVideoG0CSg_SbSgAA08RTCAudioG0CSgAA0aJ0OSgAA0uL0OSgAA08EncodingN0OSgAA0c5AudiogP0OSgAA0cagP0OSgSo23AVCaptureDevicePositionVSgAA05NoiseP0VSgSiSgtcfc",
+            "usr": "s:11VideoSDKRTC20CustomRTCMediaStreamC10videoTrack05multiE005audioG00F5Codec11bitrateMode8maxLayer0I13EncoderConfig07encoderP006facingL005noiseP0AcA08RTCVideoG0CSg_SbSgAA08RTCAudioG0CSgAA0aJ0OSgAA07BitrateL0OSgAA08EncodingN0OSgAA0c5AudiogP0OSgAA0cagP0OSgSo23AVCaptureDevicePositionVSgAA05NoiseP0VSgtcfc",
+            "mangledName": "$s11VideoSDKRTC20CustomRTCMediaStreamC10videoTrack05multiE005audioG00F5Codec11bitrateMode8maxLayer0I13EncoderConfig07encoderP006facingL005noiseP0AcA08RTCVideoG0CSg_SbSgAA08RTCAudioG0CSgAA0aJ0OSgAA07BitrateL0OSgAA08EncodingN0OSgAA0c5AudiogP0OSgAA0cagP0OSgSo23AVCaptureDevicePositionVSgAA05NoiseP0VSgtcfc",
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
               "AccessControl",
@@ -21561,47 +21658,68 @@
           {
             "kind": "Function",
             "name": "changeWebcam",
-            "printedName": "changeWebcam()",
+            "printedName": "changeWebcam(deviceId:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:11VideoSDKRTC7MeetingC12changeWebcamyyF",
-            "mangledName": "$s11VideoSDKRTC7MeetingC12changeWebcamyyF",
+            "usr": "s:11VideoSDKRTC7MeetingC12changeWebcam8deviceIdySSSg_tYaKF",
+            "mangledName": "$s11VideoSDKRTC7MeetingC12changeWebcam8deviceIdySSSg_tYaKF",
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
             ],
             "isFromExtension": true,
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "switchWebcam",
-            "printedName": "switchWebcam()",
+            "name": "changeWebcam",
+            "printedName": "changeWebcam(customVideoStream:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CustomRTCMediaStream",
+                "printedName": "VideoSDKRTC.CustomRTCMediaStream",
+                "usr": "s:11VideoSDKRTC20CustomRTCMediaStreamC"
               }
             ],
             "declKind": "Func",
-            "usr": "s:11VideoSDKRTC7MeetingC12switchWebcamyyF",
-            "mangledName": "$s11VideoSDKRTC7MeetingC12switchWebcamyyF",
+            "usr": "s:11VideoSDKRTC7MeetingC12changeWebcam06customA6StreamyAA014CustomRTCMediaG0C_tYaKF",
+            "mangledName": "$s11VideoSDKRTC7MeetingC12changeWebcam06customA6StreamyAA014CustomRTCMediaG0C_tYaKF",
             "moduleName": "VideoSDKRTC",
-            "deprecated": true,
             "declAttributes": [
               "AccessControl",
-              "Available",
               "RawDocComment"
             ],
             "isFromExtension": true,
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -21803,20 +21921,59 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:11VideoSDKRTC7MeetingC9changeMic14selectedDeviceySS_tF",
-            "mangledName": "$s11VideoSDKRTC7MeetingC9changeMic14selectedDeviceySS_tF",
+            "usr": "s:11VideoSDKRTC7MeetingC9changeMic14selectedDeviceySSSg_tYaKF",
+            "mangledName": "$s11VideoSDKRTC7MeetingC9changeMic14selectedDeviceySSSg_tYaKF",
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
             ],
             "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "changeMic",
+            "printedName": "changeMic(customAudioStream:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CustomRTCMediaStream",
+                "printedName": "VideoSDKRTC.CustomRTCMediaStream",
+                "usr": "s:11VideoSDKRTC20CustomRTCMediaStreamC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11VideoSDKRTC7MeetingC9changeMic17customAudioStreamyAA014CustomRTCMediaH0C_tYaKF",
+            "mangledName": "$s11VideoSDKRTC7MeetingC9changeMic17customAudioStreamyAA014CustomRTCMediaH0C_tYaKF",
+            "moduleName": "VideoSDKRTC",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -57015,7 +57172,7 @@
           {
             "kind": "Function",
             "name": "createCameraVideoTrack",
-            "printedName": "createCameraVideoTrack(encoderConfig:facingMode:multiStream:codec:bitrateMode:maxLayer:startBitrate:)",
+            "printedName": "createCameraVideoTrack(encoderConfig:facingMode:multiStream:codec:bitrateMode:maxLayer:cameraId:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -57124,13 +57281,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Int?",
+                "printedName": "Swift.String?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -57138,8 +57295,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11VideoSDKRTC0A3SDKC012createCameraA5Track13encoderConfig10facingMode11multiStream5codec07bitrateJ08maxLayer12startBitrateAA014CustomRTCMediaL0CSgAA0safH0OSg_So23AVCaptureDevicePositionVSgSbSgAA0A5CodecOSgAA0rJ0OSgAA08EncodingP0OSgSiSgtKFZ",
-            "mangledName": "$s11VideoSDKRTC0A3SDKC012createCameraA5Track13encoderConfig10facingMode11multiStream5codec07bitrateJ08maxLayer12startBitrateAA014CustomRTCMediaL0CSgAA0safH0OSg_So23AVCaptureDevicePositionVSgSbSgAA0A5CodecOSgAA0rJ0OSgAA08EncodingP0OSgSiSgtKFZ",
+            "usr": "s:11VideoSDKRTC0A3SDKC012createCameraA5Track13encoderConfig10facingMode11multiStream5codec07bitrateJ08maxLayer8cameraIdAA014CustomRTCMediaL0CSgAA0safH0OSg_So23AVCaptureDevicePositionVSgSbSgAA0A5CodecOSgAA07BitrateJ0OSgAA08EncodingP0OSgSSSgtKFZ",
+            "mangledName": "$s11VideoSDKRTC0A3SDKC012createCameraA5Track13encoderConfig10facingMode11multiStream5codec07bitrateJ08maxLayer8cameraIdAA014CustomRTCMediaL0CSgAA0safH0OSg_So23AVCaptureDevicePositionVSgSbSgAA0A5CodecOSgAA07BitrateJ0OSgAA08EncodingP0OSgSSSgtKFZ",
             "moduleName": "VideoSDKRTC",
             "static": true,
             "declAttributes": [
@@ -57153,7 +57310,7 @@
           {
             "kind": "Function",
             "name": "createMicrophoneAudioTrack",
-            "printedName": "createMicrophoneAudioTrack(noiseConfig:encoderConfig:)",
+            "printedName": "createMicrophoneAudioTrack(noiseConfig:encoderConfig:microphoneId:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -57198,11 +57355,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:11VideoSDKRTC0A3SDKC26createMicrophoneAudioTrack11noiseConfig07encoderI0AA20CustomRTCMediaStreamCSgAA05NoiseI0VSg_AA0kfgI0OSgtKFZ",
-            "mangledName": "$s11VideoSDKRTC0A3SDKC26createMicrophoneAudioTrack11noiseConfig07encoderI0AA20CustomRTCMediaStreamCSgAA05NoiseI0VSg_AA0kfgI0OSgtKFZ",
+            "usr": "s:11VideoSDKRTC0A3SDKC26createMicrophoneAudioTrack11noiseConfig07encoderI012microphoneIdAA20CustomRTCMediaStreamCSgAA05NoiseI0VSg_AA0mfgI0OSgSSSgtKFZ",
+            "mangledName": "$s11VideoSDKRTC0A3SDKC26createMicrophoneAudioTrack11noiseConfig07encoderI012microphoneIdAA20CustomRTCMediaStreamCSgAA05NoiseI0VSg_AA0mfgI0OSgSSSgtKFZ",
             "moduleName": "VideoSDKRTC",
             "static": true,
             "declAttributes": [
@@ -62071,189 +62243,189 @@
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1850,
+      "offset": 1978,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1894,
+      "offset": 2022,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1991,
+      "offset": 2119,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2098,
+      "offset": 2226,
       "length": 4,
       "value": "1280"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2142,
+      "offset": 2270,
       "length": 3,
       "value": "720"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2182,
+      "offset": 2310,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2222,
+      "offset": 2350,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2625,
+      "offset": 2753,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2660,
+      "offset": 2788,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2754,
+      "offset": 2882,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2794,
+      "offset": 2922,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "StringLiteral",
-      "offset": 41130,
+      "offset": 41939,
       "length": 19,
       "value": "\"VSDK_EFFECTS_DUMP\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 41595,
+      "offset": 42404,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "StringLiteral",
-      "offset": 41674,
+      "offset": 42483,
       "length": 12,
       "value": "\"effects_in\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "StringLiteral",
-      "offset": 42099,
+      "offset": 42908,
       "length": 12,
       "value": "\"effects_in\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 42462,
+      "offset": 43271,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 42528,
+      "offset": 43337,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 42611,
+      "offset": 43420,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 42671,
+      "offset": 43480,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 42795,
+      "offset": 43604,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 42799,
+      "offset": 43608,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 42821,
+      "offset": 43630,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 42930,
+      "offset": 43739,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 42939,
+      "offset": 43748,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "StringLiteral",
-      "offset": 43198,
+      "offset": 44007,
       "length": 14,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "StringLiteral",
-      "offset": 43206,
+      "offset": 44015,
       "length": 1,
       "value": "\".nv12\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/CameraManager.swift",
       "kind": "StringLiteral",
-      "offset": 43260,
+      "offset": 44069,
       "length": 68,
       "value": "\"[FXDUMP] wrote %@ %dx%d yStride=%d uvStride=%d fmt=%08x (%d bytes)\""
     },
@@ -62323,7 +62495,7 @@
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/CustomRTCMediaStream.swift",
       "kind": "BooleanLiteral",
-      "offset": 4274,
+      "offset": 4367,
       "length": 5,
       "value": "false"
     },
@@ -64668,42 +64840,42 @@
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "IntegerLiteral",
-      "offset": 7565,
+      "offset": 8119,
       "length": 2,
       "value": "-2"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "IntegerLiteral",
-      "offset": 34916,
+      "offset": 37007,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "IntegerLiteral",
-      "offset": 34945,
+      "offset": 37036,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "StringLiteral",
-      "offset": 48356,
+      "offset": 50447,
       "length": 25,
       "value": "\"com.videosdk.deviceload\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "IntegerLiteral",
-      "offset": 48496,
+      "offset": 50587,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "IntegerLiteral",
-      "offset": 48545,
+      "offset": 50636,
       "length": 1,
       "value": "0"
     },
@@ -65193,14 +65365,14 @@
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 90580,
+      "offset": 104982,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Meeting.swift",
       "kind": "BooleanLiteral",
-      "offset": 91523,
+      "offset": 105925,
       "length": 4,
       "value": "true"
     },
@@ -68268,7 +68440,7 @@
       "kind": "StringLiteral",
       "offset": 285,
       "length": 14,
-      "value": "\"4.0.0-beta.6\""
+      "value": "\"4.0.0-beta.7\""
     },
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/SDKConfig.swift",
@@ -68770,7 +68942,7 @@
     {
       "filePath": "\/Users\/admin\/Parth\/rust-worktree\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/VideoSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 26038,
+      "offset": 25607,
       "length": 4,
       "value": "true"
     },

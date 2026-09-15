@@ -304,8 +304,23 @@ int32_t meeting_respondEntry(const char *peer_id, const char *decision);
 // ── Phase F: Mode / attributes / log level ──────────────────────────────────
 
 /// Set the custom video track configuration. Call before
-/// `videosdk_videoInit`. Pass a JSON string matching CameraVideoTrackConfig.
+/// `videosdk_videoInit`. Pass a JSON string matching CameraVideoTrackConfig,
+/// optionally with a `deviceId` key (recorded on the camera slot, not on the
+/// core config type).
 void videosdk_setVideoTrackConfig(const char *config_json);
+
+/// Record the camera the platform actually opened — device fields only, the
+/// encoder settings are untouched. `facing` is "front" or "back"; either
+/// argument may be NULL.
+void videosdk_setCameraDevice(const char *device_id, const char *facing);
+
+/// Record the mic the platform actually opened. May be NULL.
+void videosdk_setAudioDevice(const char *device_id);
+
+/// The platform's opus profile name (e.g. "speech_standard"). Opaque to the
+/// core; handed back in `videosdk_getMediaConfig` so a restore rebuilds the
+/// same mic track.
+void videosdk_setAudioEncoderProfile(const char *profile);
 
 /// Set the audio-processing (APM) noise config for the mic track. Call before
 /// `meeting_enableMic`. Pass a JSON string matching NoiseConfig (camelCase
@@ -324,6 +339,11 @@ void videosdk_setNoiseConfig(const char *config_json);
 /// Publishable video codecs as a JSON array of names, "[]" before join.
 /// Caller owns the string (free it).
 char *videosdk_getAvailableVideoCodecs(void);
+
+/// The core's media-config snapshot: `{mic, webcam, camera, audio}`, with
+/// `camera` / `audio` null until seeded. Rebuild capture from this rather than
+/// from any Swift-side cache. Caller owns the string (free it).
+char *videosdk_getMediaConfig(void);
 
 /// Negotiated codec of the local webcam producer, or NULL when the webcam is
 /// off. Caller owns the string (free it).
@@ -453,6 +473,15 @@ int32_t meeting_changeMode(const char *mode);
 /// Returns true when no meeting exists yet (pre-join intents still queue).
 bool meeting_canProduce(void);
 int32_t meeting_assertPublishAllowed(const char *method);
+
+/// Re-publish the camera after a mode-up, a rejoin or a room switch, using the
+/// core's stored config. Call from the `restoreLocalMedia` event after opening
+/// the device. 0 = producing, 1 = the user's intent is gone so stop capture
+/// again, negative = error code.
+int32_t meeting_restoreWebcam(void);
+
+/// Mic twin of `meeting_restoreWebcam`.
+int32_t meeting_restoreMic(void);
 
 /// Switch the active session to a different meeting room without
 /// destroying the local Meeting object. The server validates the
