@@ -576,6 +576,10 @@ int32_t participant_stopConsumingWebcamStreams(const char *peer_id);
 /// media has stalled but whose signaling is still up.
 int32_t meeting_refreshConnection(void);
 
+/// The device has a usable network again — retry a reconnect now. Never blocks;
+/// a healthy session ignores it.
+int32_t meeting_notifyNetworkAvailable(void);
+
 /// Cap the live camera at `layer`, the 0-indexed simulcast rung the caller
 /// resolved from its own quality table.
 int32_t meeting_setWebcamQuality(int32_t layer);
@@ -838,5 +842,23 @@ void videosdk_inspectorClear(void);
 /* Ring size; the core clamps to its supported range (50..2000). */
 void    videosdk_inspectorSetCapacity(int32_t capacity);
 int32_t videosdk_inspectorCapacity(void);
+
+/* ── Pre-call test ─────────────────────────────────────────────────────────
+ * Run a pre-call test to completion. Blocks the calling thread; call it off
+ * the main thread. Returns {"ok":true,"result":…} or
+ * {"ok":false,"error":{code,name,message}}. Free with videosdk_freeString.
+ * While it runs the event callback receives "precall-open-media",
+ * "precall-release-media", "precall-provided-media" and "precall-stats". */
+char   *videosdk_precallRun(const char *options_json);
+
+/* Stop the running pre-call test; waits at most timeout_ms (no cap if < 0). */
+void    videosdk_precallStop(int64_t timeout_ms);
+
+/* Answer a "precall-open-media" request with its requestId and a JSON reply. */
+void    videosdk_precallMediaOpened(uint64_t request_id, const char *reply_json);
+
+/* VideoSDK.initMeeting created a meeting (true) or it was left (false).
+ * A pre-call test is refused in between. */
+void    videosdk_precallSetMeetingInitialized(bool initialized);
 
 #endif
