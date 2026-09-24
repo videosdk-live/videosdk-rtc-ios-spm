@@ -42,7 +42,7 @@ import _SwiftConcurrencyShims
   @_documentation(visibility: internal) override public func enableWebcam() async throws
   @_documentation(visibility: internal) override public func disableWebcam() async throws
   @_documentation(visibility: internal) override public func setQuality(_ quality: VideoSDKRTC.VideoQuality) async throws
-  @_documentation(visibility: internal) override public func captureImage(height: CoreFoundation.CGFloat? = nil, width: CoreFoundation.CGFloat? = nil) async throws -> Swift.String
+  @_documentation(visibility: internal) override public func captureImage(height: CoreFoundation.CGFloat? = nil, width: CoreFoundation.CGFloat? = nil, flash: VideoSDKRTC.CaptureFlash = .off) async throws -> Swift.String
   @_documentation(visibility: internal) override public func getShareStats() throws -> Any?
   @objc deinit
 }
@@ -233,6 +233,23 @@ public enum CameraPosition : Swift.Int {
   @_documentation(visibility: internal) public func toJsonString(forAudio: Swift.Bool = false) -> Swift.String
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class CustomScreenShareTrack {
+  final public let encoderConfig: VideoSDKRTC.CustomScreenShareTrackConfig
+  final public let multiStream: Swift.Bool
+  public var encoderConfigName: Swift.String {
+    get
+  }
+  @objc deinit
+}
+extension VideoSDKRTC.CustomScreenShareTrackConfig {
+  public var name: Swift.String {
+    get
+  }
+  public static var allNames: [Swift.String] {
+    get
+  }
+  public init?(name: Swift.String)
+}
 public enum CustomVideoTrackConfig {
   case h90p_w160p
   case h180p_w320p
@@ -268,7 +285,10 @@ public enum CustomAudioTrackConfig {
 }
 public let customAudioTrackConfigMap: [VideoSDKRTC.CustomAudioTrackConfig : [Swift.String : Any]]
 public enum CustomScreenShareTrackConfig {
-  case h360p_30fps, h720p_5fps, h720p_15fps, h1080p_15fps, h1080p_30fps
+  case h360p_30fps
+  case h480p_15fps, h480p_30fps
+  case h720p_5fps, h720p_15fps, h720p_30fps
+  case h1080p_15fps, h1080p_30fps
   public static func == (a: VideoSDKRTC.CustomScreenShareTrackConfig, b: VideoSDKRTC.CustomScreenShareTrackConfig) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -745,6 +765,7 @@ extension VideoSDKRTC.Meeting {
     get
   }
   public func enableScreenShare(_ config: VideoSDKRTC.CustomScreenShareTrackConfig = .h720p_15fps) async throws
+  public func enableScreenShare(_ customTrack: VideoSDKRTC.CustomScreenShareTrack?) async throws
   public func disableScreenShare() async throws
   public func startRecording(webhookUrl: Swift.String, awsDirPath: Swift.String? = nil, config: VideoSDKRTC.RecordingConfig? = nil, transcription: VideoSDKRTC.PostTranscriptionConfig? = nil) async throws
   public func stopRecording() async throws
@@ -945,10 +966,6 @@ public enum MeetingState : Swift.String {
   }
 }
 public enum Mode : Swift.String {
-  @available(*, deprecated, message: "Use SEND_AND_RECV instead.")
-  case CONFERENCE
-  @available(*, deprecated, message: "Use SIGNALLING_ONLY instead.")
-  case VIEWER
   case SEND_AND_RECV
   case SIGNALLING_ONLY
   case RECV_ONLY
@@ -1369,7 +1386,7 @@ public enum LeaveReason : Swift.Int, Swift.CaseIterable {
   public func getTransportStats() -> Any?
   public func pin(_ pinType: VideoSDKRTC.PinType = .SHARE_AND_CAM) async throws
   public func unpin(_ pinType: VideoSDKRTC.PinType = .SHARE_AND_CAM) async throws
-  public func captureImage(height: CoreFoundation.CGFloat? = nil, width: CoreFoundation.CGFloat? = nil) async throws -> Swift.String
+  public func captureImage(height: CoreFoundation.CGFloat? = nil, width: CoreFoundation.CGFloat? = nil, flash: VideoSDKRTC.CaptureFlash = .off) async throws -> Swift.String
   public func setQuality(_ quality: VideoSDKRTC.VideoQuality) async throws
   public func setScreenShareQuality(_ quality: VideoSDKRTC.VideoQuality) async throws
   public func setViewPort(width: Swift.Int, height: Swift.Int) async throws
@@ -1570,12 +1587,32 @@ public protocol RealtimeStoreEventListener {
 extension VideoSDKRTC.RealtimeStoreEventListener {
   public func onValueChanged(key: Swift.String, value: Swift.String?, updatedBy: Swift.String)
 }
+public enum CaptureFlash : Swift.Sendable {
+  case off
+  case on
+  public static func == (a: VideoSDKRTC.CaptureFlash, b: VideoSDKRTC.CaptureFlash) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_Concurrency.MainActor public protocol ScreenFlash : AnyObject {
+  @_Concurrency.MainActor func show() -> Swift.Bool
+  @_Concurrency.MainActor func hide()
+}
+@_Concurrency.MainActor final public class WhiteOverlayScreenFlash : VideoSDKRTC.ScreenFlash {
+  @_Concurrency.MainActor public init(window: UIKit.UIWindow?)
+  @_Concurrency.MainActor final public func show() -> Swift.Bool
+  @_Concurrency.MainActor final public func hide()
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers final public class ScreenShareManager {
   public static let shared: VideoSDKRTC.ScreenShareManager
   final public var isBroadcasting: Swift.Bool {
     get
   }
   final public func start(config: VideoSDKRTC.CustomScreenShareTrackConfig = .h720p_15fps)
+  final public func start(track: VideoSDKRTC.CustomScreenShareTrack, onBroadcastEndedExternally: (() -> Swift.Void)? = nil, onProducerFailed: ((Swift.Int32) -> Swift.Void)? = nil)
   final public func stop()
   @objc deinit
 }
@@ -1714,6 +1751,7 @@ public protocol RTCVideoRenderer : AnyObject {
     get
     set
   }
+  public static func setScreenFlash(_ handler: (any VideoSDKRTC.ScreenFlash)?)
   public static func config(token: Swift.String) throws
   public struct VideoEffectsConfig {
     public enum Pipeline : Swift.String {
@@ -1786,6 +1824,7 @@ public protocol RTCVideoRenderer : AnyObject {
   public static func setParticipantKey(_ participantId: Swift.String, key: Swift.String?)
   public static func getBuildId() -> Swift.String
   public static func createCameraVideoTrack(encoderConfig: VideoSDKRTC.CustomVideoTrackConfig? = .h720p_w1280p, facingMode: AVFoundation.AVCaptureDevice.Position? = .front, multiStream: Swift.Bool? = true, codec: VideoSDKRTC.VideoCodec? = .VP8, bitrateMode: VideoSDKRTC.BitrateMode? = .BALANCED, maxLayer: VideoSDKRTC.EncodingLayer? = .MAX_LAYER_3, cameraId: Swift.String? = nil) throws -> VideoSDKRTC.CustomRTCMediaStream?
+  public static func createScreenShareVideoTrack(encoderConfig: VideoSDKRTC.CustomScreenShareTrackConfig = .h720p_15fps, multiStream: Swift.Bool = false) -> VideoSDKRTC.CustomScreenShareTrack
   public static func createCameraVideoTrackAsync(encoderConfig: VideoSDKRTC.CustomVideoTrackConfig? = .h720p_w1280p, facingMode: AVFoundation.AVCaptureDevice.Position? = .front, multiStream: Swift.Bool? = true, codec: VideoSDKRTC.VideoCodec? = .VP8, bitrateMode: VideoSDKRTC.BitrateMode? = .BALANCED, maxLayer: VideoSDKRTC.EncodingLayer? = .MAX_LAYER_3, cameraId: Swift.String? = nil) async throws -> VideoSDKRTC.CustomRTCMediaStream?
   public static func createMicrophoneAudioTrack(noiseConfig: VideoSDKRTC.NoiseConfig? = nil, encoderConfig: VideoSDKRTC.CustomAudioTrackConfig? = .speech_standard, microphoneId: Swift.String? = nil) throws -> VideoSDKRTC.CustomRTCMediaStream?
   public static func createMicrophoneAudioTrackAsync(noiseConfig: VideoSDKRTC.NoiseConfig? = nil, encoderConfig: VideoSDKRTC.CustomAudioTrackConfig? = .speech_standard, microphoneId: Swift.String? = nil) async throws -> VideoSDKRTC.CustomRTCMediaStream?
@@ -1992,12 +2031,12 @@ extension VideoSDKRTC.CharacterMode : Swift.RawRepresentable {}
 extension VideoSDKRTC.CharacterState : Swift.Equatable {}
 extension VideoSDKRTC.CharacterState : Swift.Hashable {}
 extension VideoSDKRTC.CharacterState : Swift.RawRepresentable {}
+extension VideoSDKRTC.CustomScreenShareTrackConfig : Swift.Equatable {}
+extension VideoSDKRTC.CustomScreenShareTrackConfig : Swift.Hashable {}
 extension VideoSDKRTC.CustomVideoTrackConfig : Swift.Equatable {}
 extension VideoSDKRTC.CustomVideoTrackConfig : Swift.Hashable {}
 extension VideoSDKRTC.CustomAudioTrackConfig : Swift.Equatable {}
 extension VideoSDKRTC.CustomAudioTrackConfig : Swift.Hashable {}
-extension VideoSDKRTC.CustomScreenShareTrackConfig : Swift.Equatable {}
-extension VideoSDKRTC.CustomScreenShareTrackConfig : Swift.Hashable {}
 extension VideoSDKRTC.DataMessageReliability : Swift.Equatable {}
 extension VideoSDKRTC.DataMessageReliability : Swift.Hashable {}
 extension VideoSDKRTC.DataMessageReliability : Swift.RawRepresentable {}
@@ -2088,6 +2127,9 @@ extension VideoSDKRTC.PinType : Swift.RawRepresentable {}
 extension VideoSDKRTC.RealtimeOverflow : Swift.Equatable {}
 extension VideoSDKRTC.RealtimeOverflow : Swift.Hashable {}
 extension VideoSDKRTC.RealtimeOverflow : Swift.RawRepresentable {}
+extension VideoSDKRTC.CaptureFlash : Swift.Equatable {}
+extension VideoSDKRTC.CaptureFlash : Swift.Hashable {}
+extension VideoSDKRTC.WhiteOverlayScreenFlash : Swift.Sendable {}
 extension VideoSDKRTC.SdkTraceComponent : Swift.Equatable {}
 extension VideoSDKRTC.SdkTraceComponent : Swift.Hashable {}
 extension VideoSDKRTC.SdkTraceComponent : Swift.RawRepresentable {}

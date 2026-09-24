@@ -430,22 +430,19 @@ typedef SWIFT_ENUM(int32_t, SdkTraceComponent, open) {
 /// A UIView that presents the system’s broadcast picker for the app’s
 /// configured Broadcast Upload Extension. Tap the view (or call
 /// <code>triggerPicker()</code>) to show the system “Start Broadcast” UI.
-/// <h3>Usage</h3>
+/// <h3>Apps do not need this view</h3>
+/// <code>Meeting/enableScreenShare(_:)-(CustomScreenShareTrackConfig)</code> parks one
+/// of these off-screen and taps it for you, so a “Share screen” button in your
+/// app is one call:
 /// \code
-/// let picker = VideoSDKBroadcastButton(
-///     extensionBundleId: "com.zujo.videosdk.example.ScreenBroadcastiOS"
-/// )
-/// picker.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
-/// controlsStack.addArrangedSubview(picker)
+/// try await meeting.enableScreenShare()
 ///
-/// // Or trigger manually from your own button:
-/// myButton.addAction(UIAction { _ in picker.triggerPicker() }, for: .touchUpInside)
-///
-/// \endcodeimportant:
-/// You must also call
-/// <code>meeting.enableScreenShare()</code> (arms the consumer side) BEFORE
-/// the user taps the picker. A common pattern is to call both in
-/// the same “Share Screen” tap handler.
+/// \endcodeAdding your own alongside that call shows the picker twice. That was the
+/// documented pattern before 4.0, when <code>enableScreenShare()</code> only armed the
+/// consumer side; it is no longer.
+/// Still public for apps that must own where the picker sits in their
+/// hierarchy. If that is you, let the user tap the view and do not also call
+/// <code>enableScreenShare()</code>.
 SWIFT_CLASS("_TtC11VideoSDKRTC23VideoSDKBroadcastButton")
 @interface VideoSDKBroadcastButton : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;

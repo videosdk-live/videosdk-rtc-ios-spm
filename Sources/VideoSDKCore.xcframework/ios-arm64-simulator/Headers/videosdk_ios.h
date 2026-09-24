@@ -91,7 +91,6 @@ int32_t meeting_ratchetE2EEKey(void);
 /// the value is outside the supported range.
 int32_t meeting_setE2EEAlgorithm(int32_t algorithm);
 
-
 // Audio
 //
 // meeting_enableMic / meeting_disableMic: typed-error path.
@@ -104,6 +103,9 @@ int32_t meeting_setE2EEAlgorithm(int32_t algorithm);
 // stay source-compatible.
 int32_t meeting_enableMic(void);
 int32_t meeting_disableMic(void);
+
+/// meta_json: {"permissionGranted","customTrack","hasCustomTrack"}, all optional; NULL allowed.
+int32_t meeting_enableMicWithMeta(const char *meta_json);
 uint32_t videosdk_pushAudioCapture(const int16_t *samples, uint32_t count);
 uint32_t videosdk_pullAudioPlayback(int16_t *out_samples, uint32_t count);
 uint32_t videosdk_audioPlaybackAvailable(void);
@@ -124,6 +126,8 @@ int32_t videosdk_pushVideoCaptureNV12(const uint8_t *y_src, uint32_t y_stride,
 /// message}` triple via `videosdk_take_last_error`.
 int32_t meeting_enableWebcam(void);
 int32_t meeting_disableWebcam(void);
+
+int32_t meeting_enableWebcamWithMeta(const char *meta_json);
 
 /// Force the next encoded frame to be a keyframe (IDR).
 void stream_requestKeyframe(void);
@@ -483,6 +487,9 @@ int32_t meeting_restoreWebcam(void);
 /// Mic twin of `meeting_restoreWebcam`.
 int32_t meeting_restoreMic(void);
 
+int32_t meeting_restoreWebcamWithMeta(const char *meta_json);
+int32_t meeting_restoreMicWithMeta(const char *meta_json);
+
 /// Switch the active session to a different meeting room without
 /// destroying the local Meeting object. The server validates the
 /// request, replies with `entryResponded` carrying `switchingRoomId`,
@@ -504,20 +511,34 @@ int32_t meeting_setAttributes(const char *name, const char *version);
 
 /// Initialise the screen-share encoder. Call BEFORE the first
 /// `videosdk_pushScreenShareNV12` and before `meeting_enableScreenShare`.
-/// `codec`: 0 = VP8, 1 = H264. Screen content is always single-layer
-/// (no simulcast). Returns 0 on success.
+/// `codec`: 0 = VP8, 1 = H264. `fps` 0 means "use the frame rate of the
+/// profile set by `videosdk_screenShareSetEncodingProfile`". Screen content is a
+/// single layer unless that profile asked for `multi_stream`, in which case
+/// the producer publishes three. Returns 0 on success.
 int32_t videosdk_screenShareInit(uint32_t width, uint32_t height, uint32_t fps, int32_t codec);
 
-/// Cap the next share producer's bitrate/framerate from the resolved
-/// screen-share profile — without it the share publishes uncapped and
-/// never follows the selected profile. Call BEFORE
-/// `videosdk_screenShareInit`. `0`/`0` clears the cap. Returns 0 on success.
-int32_t videosdk_screenShareSetEncoding(uint32_t max_bitrate_bps, uint32_t max_framerate);
+/// Set the next share producer's encoding from a screen-share profile NAME.
+///
+/// The profile table lives in the core, so a platform sends only the name it
+/// was given ("h720p_15fps", …) and never its own copy of the numbers. NULL or
+/// empty uses the default profile. Call BEFORE `videosdk_screenShareInit`.
+///
+/// `multi_stream != 0` publishes three simulcast layers built from the
+/// profile's three bitrate tiers (S3T3/S2T3/S1T3); otherwise one encoding
+/// capped at the top tier.
+///
+/// Returns 0, -1 for an unknown profile name (the platforms' 3071
+/// ERROR_INVALID_CUSTOM_TRACK_CONFIG), -2 with no meeting.
+int32_t videosdk_screenShareSetEncodingProfile(const char *profile_name, int32_t multi_stream);
+
+/// The screen-share profile table as JSON. Caller frees with
+/// `videosdk_freeString`.
+char *videosdk_getScreenShareProfiles(void);
 
 /// Push one NV12 screen-capture frame into the screen-share encoder.
-/// Called by the main app per frame polled from the Broadcast Upload
-/// Extension's shared ring buffer. Returns 0 on success, -1 on bad
-/// args or a busy slot (drop this frame).
+/// Called by the main app for each frame it receives from the Broadcast
+/// Upload Extension. Returns 0 on success, -1 on bad args or a busy slot
+/// (drop this frame).
 int32_t videosdk_pushScreenShareNV12(const uint8_t *y_src, uint32_t y_stride,
                                      const uint8_t *uv_src, uint32_t uv_stride,
                                      uint32_t width, uint32_t height,
@@ -531,6 +552,14 @@ int32_t videosdk_screenShareStop(void);
 /// the SFU routes a new "share" stream. Call `videosdk_screenShareInit`
 /// FIRST so the track exists. Returns 0 on success.
 int32_t meeting_enableScreenShare(void);
+
+int32_t meeting_enableScreenShareWithMeta(const char *meta_json);
+
+/// Borrowed handle to a live core span (0 join, 1 entry, 2 send, 3 recv): release, never end.
+uint64_t videosdk_tracerCoreSpan(int32_t scope);
+uint64_t videosdk_tracerPeerSpan(const char *peer_id);
+uint64_t videosdk_tracerConsumerSpan(const char *consumer_id);
+void     videosdk_tracerReleaseSpan(uint64_t handle);
 
 /// Disable screen share: stops the encoder and removes the producer.
 int32_t meeting_disableScreenShare(void);
