@@ -283,7 +283,7 @@ public enum CustomAudioTrackConfig {
     get
   }
 }
-public let customAudioTrackConfigMap: [VideoSDKRTC.CustomAudioTrackConfig : [Swift.String : Any]]
+@_documentation(visibility: internal) public let customAudioTrackConfigMap: [VideoSDKRTC.CustomAudioTrackConfig : [Swift.String : Any]]
 public enum CustomScreenShareTrackConfig {
   case h360p_30fps
   case h480p_15fps, h480p_30fps
@@ -810,7 +810,7 @@ extension VideoSDKRTC.Meeting {
   public func unpinParticipant(_ peerId: Swift.String, kind: Swift.String? = nil)
   public func setQuality(_ quality: VideoSDKRTC.VideoQuality, forParticipantId peerId: Swift.String)
   public func setWebcamQuality(_ quality: VideoSDKRTC.VideoQuality) async throws
-  public func respondEntry(participantId: Swift.String, decision: Swift.String) async throws
+  @_documentation(visibility: internal) public func respondEntry(participantId: Swift.String, decision: Swift.String) async throws
   @available(*, deprecated, renamed: "respondEntry(participantId:decision:)")
   public func respondEntry(peerId: Swift.String, decision: Swift.String) async throws
   public func requestMediaRelay(destinationMeetingId: Swift.String, token: Swift.String, kinds: [Swift.String]? = nil) async throws
@@ -914,7 +914,7 @@ extension VideoSDKRTC.MeetingEventListener {
   public func onSpeakerChanged(participantId: Swift.String?)
   public func onMicRequested(participantId: Swift.String?, accept: @escaping () -> Swift.Void, reject: @escaping () -> Swift.Void)
   public func onWebcamRequested(participantId: Swift.String?, accept: @escaping () -> Swift.Void, reject: @escaping () -> Swift.Void)
-  @_documentation(visibility: internal) public func onSocketError(message: Swift.String)
+  public func onSocketError(message: Swift.String)
   public func onMeetingStateChanged(meetingState: VideoSDKRTC.MeetingState)
   public func onError(error: VideoSDKRTC.VideoSDKError)
   public func onHlsStateChanged(state: VideoSDKRTC.HLSState, hlsUrl: VideoSDKRTC.HLSUrl?)
@@ -1229,6 +1229,15 @@ public enum PreferredProtocol : Swift.String {
     get
   }
 }
+public enum MaxResolution : Swift.String {
+  case hd
+  case sd
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public enum VideoCodec : Swift.String, Swift.Sendable {
   case VP8
   case H264
@@ -1252,7 +1261,7 @@ public enum E2EEState : Swift.String {
     get
   }
 }
-public enum E2EEAlgorithm : Swift.Int32 {
+@_documentation(visibility: internal) public enum E2EEAlgorithm : Swift.Int32 {
   case vsdkAesGcm128
   case vsdkAesGcm256
   case aesGcm128
@@ -1274,7 +1283,6 @@ public enum BitrateMode : Swift.String {
   }
 }
 public enum EncodingLayer : Swift.Int {
-  case MAX_LAYER_1
   case MAX_LAYER_2
   case MAX_LAYER_3
   public init?(rawValue: Swift.Int)
@@ -1397,12 +1405,12 @@ public enum LeaveReason : Swift.Int, Swift.CaseIterable {
   public func addEventListener(_ listener: any VideoSDKRTC.ParticipantEventListener)
   public func removeEventListener(_ listener: any VideoSDKRTC.ParticipantEventListener)
   public func removeAllEventListeners()
-  public static func == (lhs: VideoSDKRTC.Participant, rhs: VideoSDKRTC.Participant) -> Swift.Bool
+  @_documentation(visibility: internal) public static func == (lhs: VideoSDKRTC.Participant, rhs: VideoSDKRTC.Participant) -> Swift.Bool
   @_documentation(visibility: internal) public func toJsonString() -> Swift.String
   @_documentation(visibility: internal) public func getVideoRenderView() -> VideoSDKRTC.RTCMTLVideoView?
   @objc deinit
 }
-extension VideoSDKRTC.Participant {
+@_documentation(visibility: internal) extension VideoSDKRTC.Participant {
   @_documentation(visibility: internal) public func addStream(_ stream: VideoSDKRTC.MediaStream)
   @discardableResult
   @_documentation(visibility: internal) public func removeStream(_ streamId: Swift.String) -> VideoSDKRTC.MediaStream?
@@ -1489,7 +1497,6 @@ extension VideoSDKRTC.PubSub {
   public func publish(topic: Swift.String, message: Swift.String, options: [Swift.String : Any] = [:], payload: [Swift.String : Any]? = nil) async throws
   public func subscribe(topic: Swift.String, forListener listener: any VideoSDKRTC.PubSubMessageListener, options: VideoSDKRTC.PubSubSubscribeOptions = PubSubSubscribeOptions()) async throws
   public func unsubscribe(topic: Swift.String, forListener listener: any VideoSDKRTC.PubSubMessageListener) async throws
-  @_documentation(visibility: internal) public func getMessagesForTopic(_ topic: Swift.String) -> [VideoSDKRTC.PubSubMessage]
 }
 @_hasMissingDesignatedInitializers public class PubSubMessage {
   public var id: Swift.String
@@ -1570,9 +1577,9 @@ extension VideoSDKRTC.RealtimeStore {
   public func stopObserving(key: Swift.String, forListener listener: any VideoSDKRTC.RealtimeStoreEventListener) async throws
 }
 public enum RealtimeStoreError : Swift.Error, Foundation.LocalizedError {
-  @_documentation(visibility: internal) case meetingNotJoined
-  @_documentation(visibility: internal) case meetingReconnecting
-  @_documentation(visibility: internal) case meetingAlreadyLeft
+  case meetingNotJoined
+  case meetingReconnecting
+  case meetingAlreadyLeft
   case operationFailed(Swift.String)
   case keyNotFound
   case invalidKey
@@ -1596,12 +1603,12 @@ public enum CaptureFlash : Swift.Sendable {
     get
   }
 }
-@_Concurrency.MainActor public protocol ScreenFlash : AnyObject {
+@_documentation(visibility: internal) @_Concurrency.MainActor public protocol ScreenFlash : AnyObject {
   @_Concurrency.MainActor func show() -> Swift.Bool
   @_Concurrency.MainActor func hide()
 }
 @_Concurrency.MainActor final public class WhiteOverlayScreenFlash : VideoSDKRTC.ScreenFlash {
-  @_Concurrency.MainActor public init(window: UIKit.UIWindow?)
+  @_documentation(visibility: internal) @_Concurrency.MainActor public init(window: UIKit.UIWindow?)
   @_Concurrency.MainActor final public func show() -> Swift.Bool
   @_Concurrency.MainActor final public func hide()
   @objc deinit
@@ -1819,10 +1826,10 @@ public protocol RTCVideoRenderer : AnyObject {
   public static func publishFramingSubject(cx: Swift.Float, cy: Swift.Float, width: Swift.Float, height: Swift.Float)
   public static func getAppliedVideoEffectsConfig() -> [Swift.String : Any]
   @_documentation(visibility: internal) public static func setSdkInfo(name: Swift.String, version: Swift.String)
-  public static func initMeeting(meetingId: Swift.String, participantId: Swift.String = "", participantName: Swift.String = "Guest", micEnabled: Swift.Bool = true, webcamEnabled: Swift.Bool = true, customCameraVideoStream: VideoSDKRTC.CustomRTCMediaStream? = nil, customAudioTrack: VideoSDKRTC.CustomRTCMediaStream? = nil, multiStream: Swift.Bool? = true, mode: VideoSDKRTC.Mode? = .SEND_AND_RECV, preferredProtocol: VideoSDKRTC.PreferredProtocol? = .UDP_OVER_TCP, signalingBaseUrl: Swift.String? = nil, metaData: [Swift.String : Any]? = [:], secureKey: Swift.String? = nil, codecSwitchEnabled: Swift.Bool = true, enableBatching: Swift.Bool = true, translationLanguage: Swift.String? = nil, speakingLanguage: Swift.String? = nil) throws -> VideoSDKRTC.Meeting
+  public static func initMeeting(meetingId: Swift.String, participantId: Swift.String = "", participantName: Swift.String = "Guest", micEnabled: Swift.Bool = true, webcamEnabled: Swift.Bool = true, customCameraVideoStream: VideoSDKRTC.CustomRTCMediaStream? = nil, customAudioTrack: VideoSDKRTC.CustomRTCMediaStream? = nil, multiStream: Swift.Bool? = true, mode: VideoSDKRTC.Mode? = .SEND_AND_RECV, preferredProtocol: VideoSDKRTC.PreferredProtocol? = .UDP_OVER_TCP, signalingBaseUrl: Swift.String? = nil, metaData: [Swift.String : Any]? = [:], secureKey: Swift.String? = nil, codecSwitchEnabled: Swift.Bool = true, enableBatching: Swift.Bool = true, translationLanguage: Swift.String? = nil, speakingLanguage: Swift.String? = nil, maxResolution: VideoSDKRTC.MaxResolution = .hd, defaultCamera: AVFoundation.AVCaptureDevice.Position = .front, autoConsume: Swift.Bool = true, dynaCast: Swift.Bool = false) throws -> VideoSDKRTC.Meeting
   public static func setKeyProvider(_ baseKeyProvider: VideoSDKRTC.BaseKeyProvider) throws
   public static func setParticipantKey(_ participantId: Swift.String, key: Swift.String?)
-  public static func getBuildId() -> Swift.String
+  @_documentation(visibility: internal) public static func getBuildId() -> Swift.String
   public static func createCameraVideoTrack(encoderConfig: VideoSDKRTC.CustomVideoTrackConfig? = .h720p_w1280p, facingMode: AVFoundation.AVCaptureDevice.Position? = .front, multiStream: Swift.Bool? = true, codec: VideoSDKRTC.VideoCodec? = .VP8, bitrateMode: VideoSDKRTC.BitrateMode? = .BALANCED, maxLayer: VideoSDKRTC.EncodingLayer? = .MAX_LAYER_3, cameraId: Swift.String? = nil) throws -> VideoSDKRTC.CustomRTCMediaStream?
   public static func createScreenShareVideoTrack(encoderConfig: VideoSDKRTC.CustomScreenShareTrackConfig = .h720p_15fps, multiStream: Swift.Bool = false) -> VideoSDKRTC.CustomScreenShareTrack
   public static func createCameraVideoTrackAsync(encoderConfig: VideoSDKRTC.CustomVideoTrackConfig? = .h720p_w1280p, facingMode: AVFoundation.AVCaptureDevice.Position? = .front, multiStream: Swift.Bool? = true, codec: VideoSDKRTC.VideoCodec? = .VP8, bitrateMode: VideoSDKRTC.BitrateMode? = .BALANCED, maxLayer: VideoSDKRTC.EncodingLayer? = .MAX_LAYER_3, cameraId: Swift.String? = nil) async throws -> VideoSDKRTC.CustomRTCMediaStream?
@@ -1832,13 +1839,13 @@ public protocol RTCVideoRenderer : AnyObject {
   public static func createAudioTrack(noiseConfig: VideoSDKRTC.NoiseConfig? = nil, encoderConfig: VideoSDKRTC.CustomAudioTrackConfig? = .speech_standard) throws -> VideoSDKRTC.CustomRTCMediaStream?
   @objc deinit
 }
-public struct AppliedAudioConfig : Swift.Equatable {
+@_documentation(visibility: internal) public struct AppliedAudioConfig : Swift.Equatable {
   public let noiseConfig: VideoSDKRTC.NoiseConfig
   public let isApplied: Swift.Bool
   public static func == (a: VideoSDKRTC.AppliedAudioConfig, b: VideoSDKRTC.AppliedAudioConfig) -> Swift.Bool
 }
 extension VideoSDKRTC.VideoSDK {
-  public static func getAppliedAudioConfig() -> VideoSDKRTC.AppliedAudioConfig?
+  @_documentation(visibility: internal) public static func getAppliedAudioConfig() -> VideoSDKRTC.AppliedAudioConfig?
 }
 extension VideoSDKRTC.VideoSDK {
   public static func getAudioPermissionStatus() -> VideoSDKRTC.AuthorisationStatus
@@ -1847,9 +1854,9 @@ extension VideoSDKRTC.VideoSDK {
   public static func getVideoPermission()
   public static func getCameras() -> [Swift.String]
   public static func getAudioDevices() -> [Swift.String]
-  public static func getLocalCaptureSession() -> AVFoundation.AVCaptureSession?
-  public static func enableLogForwarding(_ listener: @escaping (_ level: Swift.String, _ message: Swift.String) -> Swift.Void)
-  public static func disableLogForwarding()
+  @_documentation(visibility: internal) public static func getLocalCaptureSession() -> AVFoundation.AVCaptureSession?
+  @_documentation(visibility: internal) public static func enableLogForwarding(_ listener: @escaping (_ level: Swift.String, _ message: Swift.String) -> Swift.Void)
+  @_documentation(visibility: internal) public static func disableLogForwarding()
   @_documentation(visibility: internal) public static func enableInspector()
   @_documentation(visibility: internal) public static func disableInspector()
   @_documentation(visibility: internal) public static func inspectorSnapshot() -> [[Swift.String : Any]]
@@ -1866,7 +1873,7 @@ public enum AuthorisationStatus {
     get
   }
 }
-public enum RoomClientError : Swift.Error {
+@_documentation(visibility: internal) public enum RoomClientError : Swift.Error {
   case sharedKeyNotFound
   case couldNotCreateVideoProducer
   case couldNotCreateAudioProducer
@@ -1998,7 +2005,7 @@ public struct PreCallVideoQuality : Swift.Decodable {
   }
   @objc deinit
 }
-@_documentation(visibility: internal) public protocol VideoSDKVideoProcessor {
+public protocol VideoSDKVideoProcessor {
   func onFrameReceived(pixelBuffer: CoreVideo.CVPixelBuffer) -> CoreVideo.CVPixelBuffer?
   func onFrameReceived(frame: VideoSDKRTC.RTCVideoFrame) -> VideoSDKRTC.RTCVideoFrame?
 }
@@ -2006,7 +2013,7 @@ extension VideoSDKRTC.VideoSDKVideoProcessor {
   public func onFrameReceived(pixelBuffer: CoreVideo.CVPixelBuffer) -> CoreVideo.CVPixelBuffer?
   public func onFrameReceived(frame: VideoSDKRTC.RTCVideoFrame) -> VideoSDKRTC.RTCVideoFrame?
 }
-@_documentation(visibility: internal) public class VideoSDKBackgroundProcessor : VideoSDKRTC.VideoSDKVideoProcessor {
+public class VideoSDKBackgroundProcessor : VideoSDKRTC.VideoSDKVideoProcessor {
   public init(backgroundSource: Foundation.URL)
   public func onFrameReceived(pixelBuffer: CoreVideo.CVPixelBuffer) -> CoreVideo.CVPixelBuffer?
   public func onFrameReceived(frame: VideoSDKRTC.RTCVideoFrame) -> VideoSDKRTC.RTCVideoFrame?
@@ -2094,6 +2101,9 @@ extension VideoSDKRTC.TranslationState : Swift.RawRepresentable {}
 extension VideoSDKRTC.PreferredProtocol : Swift.Equatable {}
 extension VideoSDKRTC.PreferredProtocol : Swift.Hashable {}
 extension VideoSDKRTC.PreferredProtocol : Swift.RawRepresentable {}
+extension VideoSDKRTC.MaxResolution : Swift.Equatable {}
+extension VideoSDKRTC.MaxResolution : Swift.Hashable {}
+extension VideoSDKRTC.MaxResolution : Swift.RawRepresentable {}
 extension VideoSDKRTC.VideoCodec : Swift.Equatable {}
 extension VideoSDKRTC.VideoCodec : Swift.Hashable {}
 extension VideoSDKRTC.VideoCodec : Swift.RawRepresentable {}

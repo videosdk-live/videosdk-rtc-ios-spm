@@ -336,9 +336,9 @@ void videosdk_setNoiseConfig(const char *config_json);
 /// Read back the APM flags: the ones the mic track was actually built with
 /// once it exists, otherwise the ones last set. JSON
 /// `{noiseSuppression, echoCancellation, autoGainControl, highPassFilter,
-/// applied}`. With `applied` true a null flag means the engine does not apply
-/// that control; `echoCancellation` is always null today (no far-end
-/// reference on the custom-source path). Caller must free with
+/// applied}`. With `applied` true a null flag is one this capture path does not
+/// report: the pushed path nulls `echoCancellation`, having no far-end
+/// reference, and the device path nulls `highPassFilter`. Caller must free with
 /// `videosdk_freeString`.
 /// Publishable video codecs as a JSON array of names, "[]" before join.
 /// Caller owns the string (free it).
@@ -457,11 +457,38 @@ void videosdk_setAudioEncoderConfig(uint32_t bitrate_kbps,
 /// never sent to the server.
 void videosdk_setCodecSwitchEnabled(bool enabled);
 
+/// Route the engine's own log to stderr at informational level, so its audio
+/// configuration and failures reach the platform console. Off by default and
+/// for diagnosis only: it also logs candidate addresses and session details.
+void videosdk_setEngineLogToStderr(bool enabled);
+
+/// Declare that this platform can hand the audio device to the engine, letting
+/// capture and playout share one unit so the canceller has a far-end reference.
+/// Call before `meeting_enableMic`; the iOS wrapper declares it at first use.
+///
+/// A capability, not the user's choice — cancellation is asked for via
+/// `echoCancellation` in the noise config, and both must hold. The handover is
+/// decided per mic track, so keep your own audio engines available and stand
+/// them down only while `videosdk_platformAudioActive` reports true.
+void videosdk_setPlatformAudioEnabled(bool enabled);
+
+/// Whether the live mic track holds the platform audio device, and so renders
+/// the far end itself. The one source of truth for who owns playout.
+///
+/// False whenever no mic track exists — before the first publish, while muted in
+/// a mode that cannot produce, after a leave, and after a mode change replaced
+/// the media engine. Poll it on every media transition and run your own player
+/// whenever it reads false.
+bool videosdk_platformAudioActive(void);
+
 /// Enable/disable server-side notification batching. Default true. Call before
 /// `meeting_join`. Sent to the server on `join` as `batchingEnabled`; when the
 /// server batches participant events into `batchNotification` envelopes, the
 /// SDK unpacks and dispatches each inner entry through the normal path.
 void videosdk_setBatchingEnabled(bool enabled);
+
+/// Opt in to server-driven webcam layer caps (DynaCast). Call before meeting_join.
+void videosdk_setDynaCast(bool enabled);
 
 /// Set the SDK log level. Call before `meeting_join`. `level` accepts
 /// "none" | "error" | "warn" | "info" | "debug" | "all".

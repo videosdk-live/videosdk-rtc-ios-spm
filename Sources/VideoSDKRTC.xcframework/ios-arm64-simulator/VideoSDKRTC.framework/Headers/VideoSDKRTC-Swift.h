@@ -376,6 +376,7 @@ extern "C" {
 /// Captures camera frames and pushes NV12 data to Rust for encoding.
 SWIFT_CLASS("_TtC11VideoSDKRTC13CameraManager")
 @interface CameraManager : NSObject
+/// Private, so <code>shared</code> is the only instance.
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -445,6 +446,10 @@ typedef SWIFT_ENUM(int32_t, SdkTraceComponent, open) {
 /// <code>enableScreenShare()</code>.
 SWIFT_CLASS("_TtC11VideoSDKRTC23VideoSDKBroadcastButton")
 @interface VideoSDKBroadcastButton : UIView
+/// Not supported. Storyboard and nib decoding always traps with <code>fatalError</code>;
+/// use <code>init(extensionBundleId:)</code> instead.
+/// \param coder Unused.
+///
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 /// Tint the inner broadcast icon.
 @property (nonatomic, strong) UIColor * _Null_unspecified tintColor;
