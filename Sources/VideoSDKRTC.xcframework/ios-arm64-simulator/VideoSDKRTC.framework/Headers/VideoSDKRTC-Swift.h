@@ -346,10 +346,7 @@ extern "C" {
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import AVFoundation;
 @import CoreFoundation;
-@import CoreMedia;
-@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -372,20 +369,6 @@ extern "C" {
 #endif
 
 #if defined(__OBJC__)
-
-/// Captures camera frames and pushes NV12 data to Rust for encoding.
-SWIFT_CLASS("_TtC11VideoSDKRTC13CameraManager")
-@interface CameraManager : NSObject
-/// Private, so <code>shared</code> is the only instance.
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class AVCaptureOutput;
-@class AVCaptureConnection;
-@interface CameraManager (SWIFT_EXTENSION(VideoSDKRTC)) <AVCaptureVideoDataOutputSampleBufferDelegate>
-- (void)captureOutput:(AVCaptureOutput * _Nonnull)output didOutputSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer fromConnection:(AVCaptureConnection * _Nonnull)connection;
-@end
 
 @class NSCoder;
 /// A UIView that renders frames received via the <code>RTCVideoRenderer</code> protocol.
@@ -432,11 +415,11 @@ typedef SWIFT_ENUM(int32_t, SdkTraceComponent, open) {
 /// configured Broadcast Upload Extension. Tap the view (or call
 /// <code>triggerPicker()</code>) to show the system “Start Broadcast” UI.
 /// <h3>Apps do not need this view</h3>
-/// <code>Meeting/enableScreenShare(_:)-(CustomScreenShareTrackConfig)</code> parks one
+/// <code>Room/enableScreenShare(_:)-(CustomScreenShareTrackConfig)</code> parks one
 /// of these off-screen and taps it for you, so a “Share screen” button in your
 /// app is one call:
 /// \code
-/// try await meeting.enableScreenShare()
+/// try await room.enableScreenShare()
 ///
 /// \endcodeAdding your own alongside that call shows the picker twice. That was the
 /// documented pattern before 4.0, when <code>enableScreenShare()</code> only armed the

@@ -14,9 +14,13 @@ void videosdk_setEventCallback(VideoSDKEventCallback callback);
 /// compile time. Format: `<branch>@<short-hash>[+dirty] webrtc-build@<short-hash>`.
 /// Pointer is owned by the SDK; do NOT free.
 const char *videosdk_get_build_id(void);
+/// Core defaults used when the app passes no value. Static strings; do not free.
+const char *videosdk_get_default_max_resolution(void);
+const char *videosdk_get_default_mode(void);
+bool videosdk_get_default_multi_stream(void);
 
-/// Join a meeting.
-/// Join a meeting. `device_info_json` is a UTF-8 JSON string for the
+/// Join a room.
+/// Join a room. `device_info_json` is a UTF-8 JSON string for the
 /// `deviceInfo` object sent on join (NULL or empty falls back to the
 /// SDK default). `mode` is the participant mode string ("CONFERENCE" |
 /// "VIEWER" | "SEND_AND_RECV" | "RECV_ONLY" | "SIGNALLING_ONLY"); NULL,
@@ -26,42 +30,44 @@ const char *videosdk_get_build_id(void);
 /// `mic_enabled` / `webcam_enabled` are true. `signaling_base_url` is an
 /// optional custom signaling/proxy base URL (e.g. a dev environment); NULL
 /// or empty falls back to the SDK default (`api.videosdk.live`).
-/// `participant_id` pins the SFU peer id (`initMeeting(participantId:)`); NULL
+/// `participant_id` pins the SFU peer id (`createRoom(participantId:)`); NULL
 /// or empty makes the core mint one. Passing it is what lets a re-join replace
 /// the existing server-side peer instead of adding a duplicate.
-/// `extra_config_json` carries every remaining `initMeeting(...)` argument that
+/// `extra_config_json` carries every remaining `createRoom(...)` argument that
 /// has no positional parameter, as one UTF-8 JSON object; NULL, empty, or
 /// unparseable is ignored and each absent key keeps its core default. Uses the
-/// same key names as the Android bridge, so a new `initMeeting` argument is a
+/// same key names as the Android bridge, so a new `createRoom` argument is a
 /// JSON key on both platforms rather than another C-ABI change. Recognised
 /// keys: `metaData` (object — participant metadata sent on `join`),
 /// `preferredProtocol` ("UDP_ONLY" | "UDP_OVER_TCP" | "TCP_ONLY"),
-/// `secureKey` (room-wide E2EE key; a key set via `meeting_setE2EEKey` wins).
-int32_t meeting_join(const char *token, const char *meeting_id, const char *name,
-                  bool mic_enabled, bool webcam_enabled, bool multistream,
+/// `secureKey` (room-wide E2EE key; a key set via `room_setE2EEKey` wins).
+/// `name` NULL = core default (random 6 chars). `multiStream` is an optional
+/// bool key in `extra_config_json`; absent = core default (true).
+int32_t room_join(const char *token, const char *room_id, const char *name,
+                  bool mic_enabled, bool webcam_enabled,
                   const char *device_info_json, const char *mode,
                   const char *signaling_base_url, const char *participant_id,
                   const char *extra_config_json);
-/// Leave the current meeting. Only the local participant departs; a join
+/// Leave the current room. Only the local participant departs; a join
 /// still in flight is cancelled. Returns 0 on success, a negative catalogue
 /// code on refusal (read via `videosdk_take_last_error`): 3054 once the
-/// meeting was already left or closed, 3035 before any join.
-int32_t meeting_leave(void);
+/// room was already left or closed, 3035 before any join.
+int32_t room_leave(void);
 
-/// End the meeting for all participants. Sends the `closeRoom`
+/// End the room for all participants. Sends the `closeRoom`
 /// signaling event so the server disconnects every remote participant,
 /// then tears down the local session. Returns 0 on success, a negative
 /// catalogue code on failure (read via `videosdk_take_last_error`):
-/// 3065 reconnecting, 3035 not in the meeting, 3057 refused by the server,
+/// 3065 reconnecting, 3035 not in the room, 3057 refused by the server,
 /// 3079 no acknowledgement. A refused end leaves the local session untouched.
-int32_t meeting_end(void);
+int32_t room_end(void);
 
 /// Configure the room-wide shared key for end-to-end encryption.
-/// Must be called BEFORE meeting_join so the key is in place when
-/// the Rust layer builds its MeetingConfig. Passing NULL clears the
+/// Must be called BEFORE room_join so the key is in place when
+/// the Rust layer builds its RoomConfig. Passing NULL clears the
 /// key (disables E2EE for the next join). Returns 0 on success,
 /// -1 on invalid UTF-8.
-int32_t meeting_setE2EEKey(const char *key);
+int32_t room_setE2EEKey(const char *key);
 
 /// Set the E2EE key for a single participant (peer id). Mirrors
 /// production Android's BaseKeyProvider.setKey(participantId, key).
@@ -70,14 +76,14 @@ int32_t meeting_setE2EEKey(const char *key);
 /// removes that participant's key. Safe to call after join: the change
 /// is pushed onto the live transports. Returns 0 on success, -1 on a
 /// null/invalid participantId or invalid UTF-8.
-int32_t meeting_setE2EEParticipantKey(const char *participantId, const char *key);
+int32_t room_setE2EEParticipantKey(const char *participantId, const char *key);
 
 /// Advance the E2EE epoch by one ratchet step. The next encrypted
 /// frame carries the new kid; the previous epoch is retained by the
 /// receive ring so in-flight frames still decrypt until every
 /// sender has rotated. Returns 0 on success, -1 when no key is
 /// configured.
-int32_t meeting_ratchetE2EEKey(void);
+int32_t room_ratchetE2EEKey(void);
 /// Configure the E2EE AEAD algorithm. The wire format is selected by
 /// the algorithm choice — VideoSDK variants interoperate with
 /// the native-engine clients (PBKDF2 key derivation, trailer IV/key-id
@@ -87,25 +93,25 @@ int32_t meeting_ratchetE2EEKey(void);
 ///   1 = VSDK_AES_GCM_256 (native-engine-compatible)
 ///   2 = AES_GCM_128      (Rust-native, peer must be Rust SDK)
 ///   3 = AES_GCM_256      (Rust-native, peer must be Rust SDK)
-/// MUST be called before meeting_join. Returns 0 on success, -1 when
+/// MUST be called before room_join. Returns 0 on success, -1 when
 /// the value is outside the supported range.
-int32_t meeting_setE2EEAlgorithm(int32_t algorithm);
+int32_t room_setE2EEAlgorithm(int32_t algorithm);
 
 // Audio
 //
-// meeting_enableMic / meeting_disableMic: typed-error path.
+// room_enableMic / room_disableMic: typed-error path.
 // Return `0` on success, a negative catalogue code on server rejection
-// (e.g. -3055 for `ERROR_OPERATION_IN_PROGRESS`), or `-2` when no meeting
+// (e.g. -3055 for `ERROR_OPERATION_IN_PROGRESS`), or `-2` when no room
 // is joined. On non-zero, read the full `{code, name, message}` triple
 // via `videosdk_take_last_error` and rethrow a typed error at the
 // Swift/RN boundary. The pre-existing `void`-return contract was
 // upgraded to `int32_t`; the Swift wrapper may keep discarding it and
 // stay source-compatible.
-int32_t meeting_enableMic(void);
-int32_t meeting_disableMic(void);
+int32_t room_enableMic(void);
+int32_t room_disableMic(void);
 
 /// meta_json: {"permissionGranted","customTrack","hasCustomTrack"}, all optional; NULL allowed.
-int32_t meeting_enableMicWithMeta(const char *meta_json);
+int32_t room_enableMicWithMeta(const char *meta_json);
 uint32_t videosdk_pushAudioCapture(const int16_t *samples, uint32_t count);
 uint32_t videosdk_pullAudioPlayback(int16_t *out_samples, uint32_t count);
 uint32_t videosdk_audioPlaybackAvailable(void);
@@ -121,13 +127,13 @@ int32_t videosdk_pushVideoCaptureNV12(const uint8_t *y_src, uint32_t y_stride,
                                      int64_t pts_us);
 
 /// Enable/disable the local webcam. Same typed-error contract as
-/// `meeting_enableMic` / `meeting_disableMic`: `0` on success, a
+/// `room_enableMic` / `room_disableMic`: `0` on success, a
 /// negative catalogue code on failure — read the full `{code, name,
 /// message}` triple via `videosdk_take_last_error`.
-int32_t meeting_enableWebcam(void);
-int32_t meeting_disableWebcam(void);
+int32_t room_enableWebcam(void);
+int32_t room_disableWebcam(void);
 
-int32_t meeting_enableWebcamWithMeta(const char *meta_json);
+int32_t room_enableWebcamWithMeta(const char *meta_json);
 
 /// Force the next encoded frame to be a keyframe (IDR).
 void stream_requestKeyframe(void);
@@ -176,12 +182,12 @@ int32_t videosdk_pollScreenSharePlaybackNV12(const char *participant_id,
                                         uint32_t *out_width, uint32_t *out_height);
 
 // Participants
-char *meeting_getParticipants(void);
+char *room_getParticipants(void);
 /// Returns the current session ID issued by the server (the value
 /// observed in the latest `entryResponded` signaling event), or an
 /// empty string if no session is established yet. Caller must free
 /// with `videosdk_freeString`.
-char *meeting_getSessionId(void);
+char *room_getSessionId(void);
 void videosdk_freeString(char *s);
 
 /// Consume the current thread's pending `{code, name, message}` error
@@ -199,41 +205,41 @@ char *videosdk_take_last_error(void);
 // parameters. Pass NULL (or an empty string) to omit. Return codes:
 //   0  — success
 //  -1  — SDK returned an error (see logs)
-//  -2  — no active meeting
+//  -2  — no active room
 
-int32_t meeting_startRecording(const char *webhook_url,
+int32_t room_startRecording(const char *webhook_url,
                              const char *aws_dir_path,
                              const char *config_json,
                              const char *transcription_json);
-int32_t meeting_stopRecording(void);
+int32_t room_stopRecording(void);
 
 /// `outputs_json` must be a JSON array of `{"url":"...","streamKey":"..."}`.
 /// `config_json` is the optional livestream config object
 /// `{"layout":{...},"theme":"...","recording":{"enabled":bool}}`; pass NULL to omit.
-int32_t meeting_startLivestream(const char *outputs_json, const char *config_json);
-int32_t meeting_stopLivestream(void);
+int32_t room_startLivestream(const char *outputs_json, const char *config_json);
+int32_t room_stopLivestream(void);
 
-int32_t meeting_startHls(const char *config_json, const char *transcription_json);
-int32_t meeting_stopHls(void);
+int32_t room_startHls(const char *config_json, const char *transcription_json);
+int32_t room_stopHls(void);
 
-int32_t meeting_startTranscription(const char *config_json);
-int32_t meeting_stopTranscription(void);
+int32_t room_startTranscription(const char *config_json);
+int32_t room_stopTranscription(void);
 
 /* ── Translation ───────────────────────────────────────────────────────────
  *
  * Server-side translation. `config_json` is forwarded verbatim; its shape is
  * defined by the server, not by the SDK. Call
- * videosdk_setTranslationLanguages BEFORE meeting_join — the languages are
+ * videosdk_setTranslationLanguages BEFORE room_join — the languages are
  * merged into the join metaData, which is where the server reads them. */
-int32_t meeting_setTranslationLanguages(const char *translation_language,
+int32_t room_setTranslationLanguages(const char *translation_language,
                                         const char *speaking_language);
-int32_t meeting_startTranslation(const char *config_json);
-int32_t meeting_stopTranslation(void);
-int32_t meeting_changeTranslationLanguage(const char *language);
+int32_t room_startTranslation(const char *config_json);
+int32_t room_stopTranslation(void);
+int32_t room_changeTranslationLanguage(const char *language);
 
 /// Pass NULL to use the iOS default of "v2".
-int32_t meeting_startWhiteboard(const char *version);
-int32_t meeting_stopWhiteboard(void);
+int32_t room_startWhiteboard(const char *version);
+int32_t room_stopWhiteboard(void);
 
 // ── B.2: Stream pause/resume + bulk pause + adaptive subscription ──────────
 //
@@ -245,18 +251,17 @@ int32_t meeting_stopWhiteboard(void);
 int32_t stream_pause(const char *consumer_id);
 int32_t stream_resume(const char *consumer_id);
 
-int32_t meeting_pauseAllStreams(const char *kind);
-int32_t meeting_resumeAllStreams(const char *kind);
+int32_t room_pauseAllStreams(const char *kind);
+int32_t room_resumeAllStreams(const char *kind);
 
-int32_t meeting_enableAdaptiveSubscription(void);
-int32_t meeting_disableAdaptiveSubscription(void);
+int32_t room_enableAdaptiveSubscription(void);
+int32_t room_disableAdaptiveSubscription(void);
 
 // ── B.3: RealtimeStore key-value shared state ──────────────────────────────
 //
-// Observe/stop-observing are intentionally not surfaced across the FFI;
-// Swift should consume `realtimeStoreValueChanged` events via the
-// existing `VideoSDKEventCallback` and use these two helpers for the
-// mutation and read paths.
+// Values arrive as `realtimeStoreValueChanged` events on the existing
+// `VideoSDKEventCallback`, but the server only sends them for keys
+// subscribed with `realtimeStore_observe`.
 
 /// Set a realtime-store key. Pass NULL for `value` to clear the key.
 /// Return codes match the B.1/B.2 FFI block.
@@ -266,6 +271,13 @@ int32_t realtimeStore_set(const char *key, const char *value);
 /// returned string with `videosdk_freeString`. Returns NULL on error or
 /// when the key has no value.
 char *realtimeStore_get(const char *key);
+
+/// Subscribe to `key`'s `realtimeStoreValueChanged` events. Idempotent; the
+/// core re-subscribes after a rejoin. Return codes as `realtimeStore_set`.
+int32_t realtimeStore_observe(const char *key);
+
+/// Undo `realtimeStore_observe`. Idempotent. Return codes as `realtimeStore_set`.
+int32_t realtimeStore_stopObserve(const char *key);
 
 // ── B.4: Pin / set_quality / entry response / pubsub history ───────────────
 
@@ -281,7 +293,7 @@ int32_t participant_enableWebcam(const char *peer_id);
 /// Request a remote participant to disable their webcam.
 int32_t participant_disableWebcam(const char *peer_id);
 
-/// Remove a participant from the meeting.
+/// Remove a participant from the room.
 int32_t participant_remove(const char *peer_id);
 
 /// Pin a participant's streams. `kind` accepts "CAM" | "SHARE" |
@@ -294,7 +306,7 @@ int32_t participant_unpin(const char *peer_id, const char *kind);
 
 /// Snapshot of pinned participants as a JSON object
 /// `{peerId: {cam, share}}`. Caller must free with `videosdk_freeString`.
-char *meeting_getPinnedParticipants(void);
+char *room_getPinnedParticipants(void);
 
 /// Request a specific forwarding quality for a participant's video
 /// stream. `quality` accepts "low" | "medium" (or "med") | "high"
@@ -303,7 +315,7 @@ int32_t participant_setQuality(const char *peer_id, const char *quality);
 
 /// Respond to an outstanding entry request. `decision` must be
 /// "allowed" or "denied".
-int32_t meeting_respondEntry(const char *peer_id, const char *decision);
+int32_t room_respondEntry(const char *peer_id, const char *decision);
 
 // ── Phase F: Mode / attributes / log level ──────────────────────────────────
 
@@ -327,7 +339,7 @@ void videosdk_setAudioDevice(const char *device_id);
 void videosdk_setAudioEncoderProfile(const char *profile);
 
 /// Set the audio-processing (APM) noise config for the mic track. Call before
-/// `meeting_enableMic`. Pass a JSON string matching NoiseConfig (camelCase
+/// `room_enableMic`. Pass a JSON string matching NoiseConfig (camelCase
 /// keys: noiseSupression/noiseSuppression, echoCancellation, autoGainControl,
 /// highPassFilter). Absent/null fields keep the engine default. NOTE:
 /// highPassFilter is accepted but NOT applied by the native engine.
@@ -453,7 +465,7 @@ void videosdk_setAudioEncoderConfig(uint32_t bitrate_kbps,
 
 /// Enable/disable the client-side codec-switch fallback (downgrade the local
 /// camera to VP8 when the server reports a remote that cannot decode the
-/// current codec). Default true. Call before `meeting_join`. Client-side only —
+/// current codec). Default true. Call before `room_join`. Client-side only —
 /// never sent to the server.
 void videosdk_setCodecSwitchEnabled(bool enabled);
 
@@ -464,7 +476,7 @@ void videosdk_setEngineLogToStderr(bool enabled);
 
 /// Declare that this platform can hand the audio device to the engine, letting
 /// capture and playout share one unit so the canceller has a far-end reference.
-/// Call before `meeting_enableMic`; the iOS wrapper declares it at first use.
+/// Call before `room_enableMic`; the iOS wrapper declares it at first use.
 ///
 /// A capability, not the user's choice — cancellation is asked for via
 /// `echoCancellation` in the noise config, and both must hold. The handover is
@@ -482,62 +494,62 @@ void videosdk_setPlatformAudioEnabled(bool enabled);
 bool videosdk_platformAudioActive(void);
 
 /// Enable/disable server-side notification batching. Default true. Call before
-/// `meeting_join`. Sent to the server on `join` as `batchingEnabled`; when the
+/// `room_join`. Sent to the server on `join` as `batchingEnabled`; when the
 /// server batches participant events into `batchNotification` envelopes, the
 /// SDK unpacks and dispatches each inner entry through the normal path.
 void videosdk_setBatchingEnabled(bool enabled);
 
-/// Opt in to server-driven webcam layer caps (DynaCast). Call before meeting_join.
+/// Opt in to server-driven webcam layer caps (DynaCast). Call before room_join.
 void videosdk_setDynaCast(bool enabled);
 
-/// Set the SDK log level. Call before `meeting_join`. `level` accepts
+/// Set the SDK log level. Call before `room_join`. `level` accepts
 /// "none" | "error" | "warn" | "info" | "debug" | "all".
 void videosdk_setLogLevel(const char *level);
 
-/// Change the local participant's mode mid-meeting. `mode` accepts
+/// Change the local participant's mode mid-room. `mode` accepts
 /// "CONFERENCE" | "VIEWER" | "SEND_AND_RECV" | "RECV_ONLY" | "SIGNALLING_ONLY".
-int32_t meeting_changeMode(const char *mode);
+int32_t room_changeMode(const char *mode);
 
 /// Whether the live participant mode permits producing media. Ask BEFORE
 /// starting camera/mic capture — the core's produce-lock blocks transmission
 /// only, so capturing under RECV_ONLY/SIGNALLING_ONLY is a silent privacy leak.
-/// Returns true when no meeting exists yet (pre-join intents still queue).
-bool meeting_canProduce(void);
-int32_t meeting_assertPublishAllowed(const char *method);
+/// Returns true when no room exists yet (pre-join intents still queue).
+bool room_canProduce(void);
+int32_t room_assertPublishAllowed(const char *method);
 
 /// Re-publish the camera after a mode-up, a rejoin or a room switch, using the
 /// core's stored config. Call from the `restoreLocalMedia` event after opening
 /// the device. 0 = producing, 1 = the user's intent is gone so stop capture
 /// again, negative = error code.
-int32_t meeting_restoreWebcam(void);
+int32_t room_restoreWebcam(void);
 
-/// Mic twin of `meeting_restoreWebcam`.
-int32_t meeting_restoreMic(void);
+/// Mic twin of `room_restoreWebcam`.
+int32_t room_restoreMic(void);
 
-int32_t meeting_restoreWebcamWithMeta(const char *meta_json);
-int32_t meeting_restoreMicWithMeta(const char *meta_json);
+int32_t room_restoreWebcamWithMeta(const char *meta_json);
+int32_t room_restoreMicWithMeta(const char *meta_json);
 
-/// Switch the active session to a different meeting room without
-/// destroying the local Meeting object. The server validates the
+/// Switch the active session to a different room without
+/// destroying the local Room object. The server validates the
 /// request, replies with `entryResponded` carrying `switchingRoomId`,
 /// and the SDK soft-closes the current room and re-joins the new one.
-/// `mode` accepts the same values as `meeting_changeMode`.
-int32_t meeting_switchTo(const char *meeting_id, const char *token, const char *mode);
+/// `mode` accepts the same values as `room_changeMode`.
+int32_t room_switchTo(const char *room_id, const char *token, const char *mode);
 
 /// Reset the mic + video capture tracks so the next call to
-/// `videosdk_videoInit` and `meeting_enableMic` installs fresh ones.
-/// Required after `meeting_switchTo` because the old tracks remain
+/// `videosdk_videoInit` and `room_enableMic` installs fresh ones.
+/// Required after `room_switchTo` because the old tracks remain
 /// bound to the previous room's peer connection — re-using them
 /// silently deadlocks `add_track` on the new room's PC.
 void videosdk_resetMediaTracks(void);
 
-/// Store attributes on the meeting.
-int32_t meeting_setAttributes(const char *name, const char *version);
+/// Store attributes on the room.
+int32_t room_setAttributes(const char *name, const char *version);
 
 // ── Screen share + stats (Phase D) ──────────────────────────────────────────
 
 /// Initialise the screen-share encoder. Call BEFORE the first
-/// `videosdk_pushScreenShareNV12` and before `meeting_enableScreenShare`.
+/// `videosdk_pushScreenShareNV12` and before `room_enableScreenShare`.
 /// `codec`: 0 = VP8, 1 = H264. `fps` 0 means "use the frame rate of the
 /// profile set by `videosdk_screenShareSetEncodingProfile`". Screen content is a
 /// single layer unless that profile asked for `multi_stream`, in which case
@@ -555,7 +567,7 @@ int32_t videosdk_screenShareInit(uint32_t width, uint32_t height, uint32_t fps, 
 /// capped at the top tier.
 ///
 /// Returns 0, -1 for an unknown profile name (the platforms' 3071
-/// ERROR_INVALID_CUSTOM_TRACK_CONFIG), -2 with no meeting.
+/// ERROR_INVALID_CUSTOM_TRACK_CONFIG), -2 with no room.
 int32_t videosdk_screenShareSetEncodingProfile(const char *profile_name, int32_t multi_stream);
 
 /// The screen-share profile table as JSON. Caller frees with
@@ -572,15 +584,15 @@ int32_t videosdk_pushScreenShareNV12(const uint8_t *y_src, uint32_t y_stride,
                                      int64_t pts_us);
 
 /// Stop the screen-share encoder thread. Does NOT close the RTCRtpSender;
-/// use `meeting_disableScreenShare` for the full teardown.
+/// use `room_disableScreenShare` for the full teardown.
 int32_t videosdk_screenShareStop(void);
 
 /// Enable screen share: produce the pre-built screen-share track so
 /// the SFU routes a new "share" stream. Call `videosdk_screenShareInit`
 /// FIRST so the track exists. Returns 0 on success.
-int32_t meeting_enableScreenShare(void);
+int32_t room_enableScreenShare(void);
 
-int32_t meeting_enableScreenShareWithMeta(const char *meta_json);
+int32_t room_enableScreenShareWithMeta(const char *meta_json);
 
 /// Borrowed handle to a live core span (0 join, 1 entry, 2 send, 3 recv): release, never end.
 uint64_t videosdk_tracerCoreSpan(int32_t scope);
@@ -589,11 +601,11 @@ uint64_t videosdk_tracerConsumerSpan(const char *consumer_id);
 void     videosdk_tracerReleaseSpan(uint64_t handle);
 
 /// Disable screen share: stops the encoder and removes the producer.
-int32_t meeting_disableScreenShare(void);
+int32_t room_disableScreenShare(void);
 
 /// Return the active presenter's participant ID, or NULL. Caller must
 /// free with `videosdk_freeString`.
-char *meeting_getActivePresenterId(void);
+char *room_getActivePresenterId(void);
 
 /// Per-participant stream stats as JSON arrays. Caller must free with
 /// `videosdk_freeString`.
@@ -621,75 +633,57 @@ int32_t participant_setViewPort(const char *peer_id, int32_t width, int32_t heig
 int32_t participant_setScreenShareQuality(const char *peer_id, const char *quality);
 
 /// Start / stop consuming one peer's audio or video. The per-peer counterparts
-/// of `meeting_pauseAllStreams` — adaptive-subscription apps use these to drop
+/// of `room_pauseAllStreams` — adaptive-subscription apps use these to drop
 /// off-screen peers entirely rather than merely pausing them.
 int32_t participant_consumeMicStreams(const char *peer_id);
 int32_t participant_consumeWebcamStreams(const char *peer_id);
 int32_t participant_stopConsumingMicStreams(const char *peer_id);
 int32_t participant_stopConsumingWebcamStreams(const char *peer_id);
 
-/// Manual ICE restart — `meeting.refreshConnection()`. For a session whose
+/// Manual ICE restart — `room.refreshConnection()`. For a session whose
 /// media has stalled but whose signaling is still up.
-int32_t meeting_refreshConnection(void);
+int32_t room_refreshConnection(void);
 
 /// The device has a usable network again — retry a reconnect now. Never blocks;
 /// a healthy session ignores it.
-int32_t meeting_notifyNetworkAvailable(void);
+int32_t room_notifyNetworkAvailable(void);
 
 /// Cap the live camera at `layer`, the 0-indexed simulcast rung the caller
 /// resolved from its own quality table.
-int32_t meeting_setWebcamQuality(int32_t layer);
+int32_t room_setWebcamQuality(int32_t layer);
 
 /// Data-channel send. Text and binary are distinct frame types on the wire:
 /// pass `text` for a text frame, or `bytes`/`len` for a binary one. Exactly one
 /// of the two must be supplied.
-int32_t meeting_send(const char *text, const uint8_t *bytes, size_t len, bool reliable);
+int32_t room_send(const char *text, const uint8_t *bytes, size_t len, bool reliable);
 
-/// The meeting's custom attributes as a JSON object — the read side of
-/// `meeting_setAttributes`. Caller must free with `videosdk_freeString`.
-char *meeting_getAttributes(void);
+/// The room's custom attributes as a JSON object — the read side of
+/// `room_setAttributes`. Caller must free with `videosdk_freeString`.
+char *room_getAttributes(void);
 
 // ── Media relay ─────────────────────────────────────────────────────────────
 
-/// Request media relay from another meeting. `kinds_json` is an
+/// Request media relay from another room. `kinds_json` is an
 /// optional JSON array of kind strings e.g. `["audio","video"]`;
 /// pass NULL to relay all kinds.
-int32_t meeting_requestMediaRelay(const char *meeting_id,
+int32_t room_requestMediaRelay(const char *room_id,
                                   const char *token,
                                   const char *kinds_json);
 
 /// Stop an active media relay.
-int32_t meeting_stopMediaRelay(const char *meeting_id);
+int32_t room_stopMediaRelay(const char *room_id);
 
 /// Respond to an incoming relay request. `decision` is "accepted" or
 /// "rejected".
-int32_t meeting_handleRelayRequestResponse(const char *decision,
+int32_t room_handleRelayRequestResponse(const char *decision,
                                            const char *peer_id,
-                                           const char *meeting_id);
+                                           const char *room_id);
 
 /// Enable relayed media of a specific kind ("audio" | "video").
-int32_t meeting_enableRelayMedia(const char *meeting_id, const char *kind);
+int32_t room_enableRelayMedia(const char *room_id, const char *kind);
 
 /// Disable relayed media.
-int32_t meeting_disableRelayMedia(const char *meeting_id, const char *kind);
-
-// ── AI Character ────────────────────────────────────────────────────────────
-
-/// Add a new AI character to the meeting. `config_json` is the JSON
-/// representation of `CharacterConfig` (interactionId, characterId,
-/// displayName, characterMode, characterRole, knowledgeBases, metaData).
-/// Returns a JSON string of the server's response payload (caller frees
-/// with `videosdk_free_string`), or NULL on error.
-char *meeting_joinCharacter(const char *config_json);
-
-/// Remove an AI character by interaction id.
-int32_t meeting_leaveCharacter(const char *interaction_id);
-
-/// Send a text message to an AI character.
-int32_t meeting_sendCharacterMessage(const char *interaction_id, const char *text);
-
-/// Interrupt an AI character's current response.
-int32_t meeting_interruptCharacter(const char *interaction_id);
+int32_t room_disableRelayMedia(const char *room_id, const char *kind);
 
 /// Publish a message to a PubSub topic. `options_json` and `payload_json` are
 /// optional (NULL to omit). `payload_json` is a JSON object carried alongside
@@ -709,7 +703,7 @@ int32_t pubsub_subscribe(const char *topic);
 /// a replay reaches only the listener that asked for it (NULL to let the
 /// core derive one).
 /// Returns 0 on success, -3 when the pubsub socket is momentarily
-/// unavailable ("Operation Timeout."), -2 with no active meeting, -1 otherwise.
+/// unavailable ("Operation Timeout."), -2 with no active room, -1 otherwise.
 int32_t pubsub_subscribeWithOptions(const char *topic, const char *options_json,
                                     const char *subscription_id);
 
@@ -730,15 +724,15 @@ char *pubsub_getMessagesForTopic(const char *topic);
 
 /// Upload a base64-encoded file to VideoSDK temporary storage. Returns
 /// the public URL of the stored file as a C string (caller frees with
-/// `videosdk_freeString`), or NULL on error / no active meeting.
-char *meeting_uploadBase64File(const char *base64_data,
+/// `videosdk_freeString`), or NULL on error / no active room.
+char *room_uploadBase64File(const char *base64_data,
                                const char *token,
                                const char *file_name);
 
 /// Fetch a previously uploaded file from `url` and return it as a
 /// base64-encoded C string (caller frees with `videosdk_freeString`),
-/// or NULL on error / no active meeting.
-char *meeting_fetchBase64File(const char *url, const char *token);
+/// or NULL on error / no active room.
+char *room_fetchBase64File(const char *url, const char *token);
 
 /* ── Image capture ─────────────────────────────────────────────────────── */
 
@@ -768,7 +762,7 @@ char* videosdk_captureParticipantImage(
  * parent_handle to nest under it.
  *
  * attrs_json may be NULL or empty. parent_handle = 0 means root.
- * component: 0=Media 1=Transport 2=Network 3=Meeting 4=Participant
+ * component: 0=Media 1=Transport 2=Network 3=Room 4=Participant
  *            5=InternalLog 6=Info
  * category:  0=InternalLog 1=Debug 2=Realtime 3=Telemetry 4=Warn
  *            5=Error 6=BackendError */
@@ -913,8 +907,8 @@ void    videosdk_precallStop(int64_t timeout_ms);
 /* Answer a "precall-open-media" request with its requestId and a JSON reply. */
 void    videosdk_precallMediaOpened(uint64_t request_id, const char *reply_json);
 
-/* VideoSDK.initMeeting created a meeting (true) or it was left (false).
+/* VideoSDK.createRoom created a room (true) or it was left (false).
  * A pre-call test is refused in between. */
-void    videosdk_precallSetMeetingInitialized(bool initialized);
+void    videosdk_precallSetRoomInitialized(bool initialized);
 
 #endif
