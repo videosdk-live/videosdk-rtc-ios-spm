@@ -648,6 +648,9 @@ int32_t room_refreshConnection(void);
 /// a healthy session ignores it.
 int32_t room_notifyNetworkAvailable(void);
 
+/// The device has no network: rejoin attempts that fail until it returns don't count.
+int32_t room_notifyNetworkLost(void);
+
 /// Cap the live camera at `layer`, the 0-indexed simulcast rung the caller
 /// resolved from its own quality table.
 int32_t room_setWebcamQuality(int32_t layer);

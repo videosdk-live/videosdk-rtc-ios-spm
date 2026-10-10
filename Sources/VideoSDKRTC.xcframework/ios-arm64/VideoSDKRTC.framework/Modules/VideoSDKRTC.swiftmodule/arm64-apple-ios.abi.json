@@ -12181,8 +12181,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "video_and_audio",
-            "printedName": "video_and_audio",
+            "name": "VIDEO_AND_AUDIO",
+            "printedName": "VIDEO_AND_AUDIO",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -12212,8 +12212,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:11VideoSDKRTC10ConfigModeO15video_and_audioyA2CmF",
-            "mangledName": "$s11VideoSDKRTC10ConfigModeO15video_and_audioyA2CmF",
+            "usr": "s:11VideoSDKRTC10ConfigModeO15VIDEO_AND_AUDIOyA2CmF",
+            "mangledName": "$s11VideoSDKRTC10ConfigModeO15VIDEO_AND_AUDIOyA2CmF",
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
               "RawDocComment"
@@ -12221,8 +12221,8 @@
           },
           {
             "kind": "Var",
-            "name": "audio",
-            "printedName": "audio",
+            "name": "AUDIO",
+            "printedName": "AUDIO",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -12252,8 +12252,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:11VideoSDKRTC10ConfigModeO5audioyA2CmF",
-            "mangledName": "$s11VideoSDKRTC10ConfigModeO5audioyA2CmF",
+            "usr": "s:11VideoSDKRTC10ConfigModeO5AUDIOyA2CmF",
+            "mangledName": "$s11VideoSDKRTC10ConfigModeO5AUDIOyA2CmF",
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
               "RawDocComment"
@@ -12401,8 +12401,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "high",
-            "printedName": "high",
+            "name": "HIGH",
+            "printedName": "HIGH",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -12432,8 +12432,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:11VideoSDKRTC13ConfigQualityO4highyA2CmF",
-            "mangledName": "$s11VideoSDKRTC13ConfigQualityO4highyA2CmF",
+            "usr": "s:11VideoSDKRTC13ConfigQualityO4HIGHyA2CmF",
+            "mangledName": "$s11VideoSDKRTC13ConfigQualityO4HIGHyA2CmF",
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
               "RawDocComment"
@@ -12441,8 +12441,8 @@
           },
           {
             "kind": "Var",
-            "name": "med",
-            "printedName": "med",
+            "name": "MED",
+            "printedName": "MED",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -12472,8 +12472,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:11VideoSDKRTC13ConfigQualityO3medyA2CmF",
-            "mangledName": "$s11VideoSDKRTC13ConfigQualityO3medyA2CmF",
+            "usr": "s:11VideoSDKRTC13ConfigQualityO3MEDyA2CmF",
+            "mangledName": "$s11VideoSDKRTC13ConfigQualityO3MEDyA2CmF",
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
               "RawDocComment"
@@ -12481,8 +12481,8 @@
           },
           {
             "kind": "Var",
-            "name": "low",
-            "printedName": "low",
+            "name": "LOW",
+            "printedName": "LOW",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -12512,8 +12512,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:11VideoSDKRTC13ConfigQualityO3lowyA2CmF",
-            "mangledName": "$s11VideoSDKRTC13ConfigQualityO3lowyA2CmF",
+            "usr": "s:11VideoSDKRTC13ConfigQualityO3LOWyA2CmF",
+            "mangledName": "$s11VideoSDKRTC13ConfigQualityO3LOWyA2CmF",
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
               "RawDocComment"
@@ -14455,52 +14455,6 @@
         ]
       },
       {
-        "kind": "Var",
-        "name": "defaultDiscardFrameWhenCryptorNotReady",
-        "printedName": "defaultDiscardFrameWhenCryptorNotReady",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Bool",
-            "printedName": "Swift.Bool",
-            "usr": "s:Sb"
-          }
-        ],
-        "declKind": "Var",
-        "usr": "s:11VideoSDKRTC38defaultDiscardFrameWhenCryptorNotReadySbvp",
-        "mangledName": "$s11VideoSDKRTC38defaultDiscardFrameWhenCryptorNotReadySbvp",
-        "moduleName": "VideoSDKRTC",
-        "declAttributes": [
-          "HasInitialValue",
-          "HasStorage",
-          "AccessControl",
-          "Documentation"
-        ],
-        "isLet": true,
-        "hasStorage": true,
-        "accessors": [
-          {
-            "kind": "Accessor",
-            "name": "Get",
-            "printedName": "Get()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Accessor",
-            "usr": "s:11VideoSDKRTC38defaultDiscardFrameWhenCryptorNotReadySbvg",
-            "mangledName": "$s11VideoSDKRTC38defaultDiscardFrameWhenCryptorNotReadySbvg",
-            "moduleName": "VideoSDKRTC",
-            "implicit": true,
-            "accessorKind": "get"
-          }
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "KeyProviderOptions",
         "printedName": "KeyProviderOptions",
@@ -14800,58 +14754,9 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "discardFrameWhenCryptorNotReady",
-            "printedName": "discardFrameWhenCryptorNotReady",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11VideoSDKRTC18KeyProviderOptionsC31discardFrameWhenCryptorNotReadySbvp",
-            "mangledName": "$s11VideoSDKRTC18KeyProviderOptionsC31discardFrameWhenCryptorNotReadySbvp",
-            "moduleName": "VideoSDKRTC",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11VideoSDKRTC18KeyProviderOptionsC31discardFrameWhenCryptorNotReadySbvg",
-                "mangledName": "$s11VideoSDKRTC18KeyProviderOptionsC31discardFrameWhenCryptorNotReadySbvg",
-                "moduleName": "VideoSDKRTC",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(sharedKey:ratchetSalt:ratchetWindowSize:uncryptedMagicBytes:failureTolerance:keyRingSize:discardFrameWhenCryptorNotReady:)",
+            "printedName": "init(sharedKey:ratchetSalt:ratchetWindowSize:uncryptedMagicBytes:failureTolerance:keyRingSize:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -14900,18 +14805,11 @@
                 "printedName": "Swift.Int32",
                 "hasDefaultArg": true,
                 "usr": "s:s5Int32V"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:11VideoSDKRTC18KeyProviderOptionsC06sharedC011ratchetSalt0G10WindowSize19uncryptedMagicBytes16failureTolerance07keyRingJ031discardFrameWhenCryptorNotReadyACSb_10Foundation4DataVs5Int32VAm2OSbtcfc",
-            "mangledName": "$s11VideoSDKRTC18KeyProviderOptionsC06sharedC011ratchetSalt0G10WindowSize19uncryptedMagicBytes16failureTolerance07keyRingJ031discardFrameWhenCryptorNotReadyACSb_10Foundation4DataVs5Int32VAm2OSbtcfc",
+            "usr": "s:11VideoSDKRTC18KeyProviderOptionsC06sharedC011ratchetSalt0G10WindowSize19uncryptedMagicBytes16failureTolerance07keyRingJ0ACSb_10Foundation4DataVs5Int32VAl2Ntcfc",
+            "mangledName": "$s11VideoSDKRTC18KeyProviderOptionsC06sharedC011ratchetSalt0G10WindowSize19uncryptedMagicBytes16failureTolerance07keyRingJ0ACSb_10Foundation4DataVs5Int32VAl2Ntcfc",
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
               "AccessControl",
@@ -14955,25 +14853,18 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(discardFrameWhenCryptorNotReady:)",
+            "printedName": "init()",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "BaseKeyProvider",
                 "printedName": "VideoSDKRTC.BaseKeyProvider",
                 "usr": "s:11VideoSDKRTC15BaseKeyProviderC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:11VideoSDKRTC15BaseKeyProviderC31discardFrameWhenCryptorNotReadyACSb_tcfc",
-            "mangledName": "$s11VideoSDKRTC15BaseKeyProviderC31discardFrameWhenCryptorNotReadyACSb_tcfc",
+            "usr": "s:11VideoSDKRTC15BaseKeyProviderCACycfc",
+            "mangledName": "$s11VideoSDKRTC15BaseKeyProviderCACycfc",
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
               "AccessControl",
@@ -23006,6 +22897,13 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VideoSDKRTC"
+      },
+      {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
         "declKind": "Import",
         "moduleName": "VideoSDKRTC"
       },
@@ -33823,6 +33721,54 @@
                 "declKind": "Accessor",
                 "usr": "s:11VideoSDKRTC0A8SDKErrorV25ERROR_OPERATION_TIMED_OUTACvgZ",
                 "mangledName": "$s11VideoSDKRTC0A8SDKErrorV25ERROR_OPERATION_TIMED_OUTACvgZ",
+                "moduleName": "VideoSDKRTC",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ERROR_VIDEO_EFFECTS_GRAPH_UNAVAILABLE",
+            "printedName": "ERROR_VIDEO_EFFECTS_GRAPH_UNAVAILABLE",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VideoSDKError",
+                "printedName": "VideoSDKRTC.VideoSDKError",
+                "usr": "s:11VideoSDKRTC0A8SDKErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11VideoSDKRTC0A8SDKErrorV37ERROR_VIDEO_EFFECTS_GRAPH_UNAVAILABLEACvpZ",
+            "mangledName": "$s11VideoSDKRTC0A8SDKErrorV37ERROR_VIDEO_EFFECTS_GRAPH_UNAVAILABLEACvpZ",
+            "moduleName": "VideoSDKRTC",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoSDKError",
+                    "printedName": "VideoSDKRTC.VideoSDKError",
+                    "usr": "s:11VideoSDKRTC0A8SDKErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11VideoSDKRTC0A8SDKErrorV37ERROR_VIDEO_EFFECTS_GRAPH_UNAVAILABLEACvgZ",
+                "mangledName": "$s11VideoSDKRTC0A8SDKErrorV37ERROR_VIDEO_EFFECTS_GRAPH_UNAVAILABLEACvgZ",
                 "moduleName": "VideoSDKRTC",
                 "static": true,
                 "implicit": true,
@@ -57056,117 +57002,6 @@
           },
           {
             "kind": "Var",
-            "name": "optimizationMode",
-            "printedName": "optimizationMode",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "VideoSDKRTC.PreCallOptimizationMode?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PreCallOptimizationMode",
-                    "printedName": "VideoSDKRTC.PreCallOptimizationMode",
-                    "usr": "s:11VideoSDKRTC23PreCallOptimizationModeO"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11VideoSDKRTC07PreCallA6ConfigV16optimizationModeAA0cd12OptimizationG0OSgvp",
-            "mangledName": "$s11VideoSDKRTC07PreCallA6ConfigV16optimizationModeAA0cd12OptimizationG0OSgvp",
-            "moduleName": "VideoSDKRTC",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "VideoSDKRTC.PreCallOptimizationMode?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PreCallOptimizationMode",
-                        "printedName": "VideoSDKRTC.PreCallOptimizationMode",
-                        "usr": "s:11VideoSDKRTC23PreCallOptimizationModeO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11VideoSDKRTC07PreCallA6ConfigV16optimizationModeAA0cd12OptimizationG0OSgvg",
-                "mangledName": "$s11VideoSDKRTC07PreCallA6ConfigV16optimizationModeAA0cd12OptimizationG0OSgvg",
-                "moduleName": "VideoSDKRTC",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "VideoSDKRTC.PreCallOptimizationMode?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PreCallOptimizationMode",
-                        "printedName": "VideoSDKRTC.PreCallOptimizationMode",
-                        "usr": "s:11VideoSDKRTC23PreCallOptimizationModeO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11VideoSDKRTC07PreCallA6ConfigV16optimizationModeAA0cd12OptimizationG0OSgvs",
-                "mangledName": "$s11VideoSDKRTC07PreCallA6ConfigV16optimizationModeAA0cd12OptimizationG0OSgvs",
-                "moduleName": "VideoSDKRTC",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11VideoSDKRTC07PreCallA6ConfigV16optimizationModeAA0cd12OptimizationG0OSgvM",
-                "mangledName": "$s11VideoSDKRTC07PreCallA6ConfigV16optimizationModeAA0cd12OptimizationG0OSgvM",
-                "moduleName": "VideoSDKRTC",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "multiStream",
             "printedName": "multiStream",
             "children": [
@@ -57501,7 +57336,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(cameraId:encoderConfig:facingMode:optimizationMode:multiStream:bitrateMode:maxLayer:)",
+            "printedName": "init(cameraId:encoderConfig:facingMode:multiStream:bitrateMode:maxLayer:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -57557,21 +57392,6 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "VideoSDKRTC.PreCallOptimizationMode?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PreCallOptimizationMode",
-                    "printedName": "VideoSDKRTC.PreCallOptimizationMode",
-                    "usr": "s:11VideoSDKRTC23PreCallOptimizationModeO"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
                 "printedName": "Swift.Bool?",
                 "children": [
                   {
@@ -57616,8 +57436,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:11VideoSDKRTC07PreCallA6ConfigV8cameraId07encoderE010facingMode012optimizationJ011multiStream07bitrateJ08maxLayerACSSSg_AA017CustomCameraTrackE0OSgAA06FacingJ0OSgAA0cd12OptimizationJ0OSgSbSgAA07BitrateJ0OSgAA08EncodingP0OSgtcfc",
-            "mangledName": "$s11VideoSDKRTC07PreCallA6ConfigV8cameraId07encoderE010facingMode012optimizationJ011multiStream07bitrateJ08maxLayerACSSSg_AA017CustomCameraTrackE0OSgAA06FacingJ0OSgAA0cd12OptimizationJ0OSgSbSgAA07BitrateJ0OSgAA08EncodingP0OSgtcfc",
+            "usr": "s:11VideoSDKRTC07PreCallA6ConfigV8cameraId07encoderE010facingMode11multiStream07bitrateJ08maxLayerACSSSg_AA017CustomCameraTrackE0OSgAA06FacingJ0OSgSbSgAA07BitrateJ0OSgAA08EncodingO0OSgtcfc",
+            "mangledName": "$s11VideoSDKRTC07PreCallA6ConfigV8cameraId07encoderE010facingMode11multiStream07bitrateJ08maxLayerACSSSg_AA017CustomCameraTrackE0OSgAA06FacingJ0OSgSbSgAA07BitrateJ0OSgAA08EncodingO0OSgtcfc",
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
               "AccessControl",
@@ -57648,257 +57468,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PreCallOptimizationMode",
-        "printedName": "PreCallOptimizationMode",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "text",
-            "printedName": "text",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(VideoSDKRTC.PreCallOptimizationMode.Type) -> VideoSDKRTC.PreCallOptimizationMode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PreCallOptimizationMode",
-                    "printedName": "VideoSDKRTC.PreCallOptimizationMode",
-                    "usr": "s:11VideoSDKRTC23PreCallOptimizationModeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "VideoSDKRTC.PreCallOptimizationMode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PreCallOptimizationMode",
-                        "printedName": "VideoSDKRTC.PreCallOptimizationMode",
-                        "usr": "s:11VideoSDKRTC23PreCallOptimizationModeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:11VideoSDKRTC23PreCallOptimizationModeO4textyA2CmF",
-            "mangledName": "$s11VideoSDKRTC23PreCallOptimizationModeO4textyA2CmF",
-            "moduleName": "VideoSDKRTC"
-          },
-          {
-            "kind": "Var",
-            "name": "motion",
-            "printedName": "motion",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(VideoSDKRTC.PreCallOptimizationMode.Type) -> VideoSDKRTC.PreCallOptimizationMode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PreCallOptimizationMode",
-                    "printedName": "VideoSDKRTC.PreCallOptimizationMode",
-                    "usr": "s:11VideoSDKRTC23PreCallOptimizationModeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "VideoSDKRTC.PreCallOptimizationMode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PreCallOptimizationMode",
-                        "printedName": "VideoSDKRTC.PreCallOptimizationMode",
-                        "usr": "s:11VideoSDKRTC23PreCallOptimizationModeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:11VideoSDKRTC23PreCallOptimizationModeO6motionyA2CmF",
-            "mangledName": "$s11VideoSDKRTC23PreCallOptimizationModeO6motionyA2CmF",
-            "moduleName": "VideoSDKRTC"
-          },
-          {
-            "kind": "Var",
-            "name": "detail",
-            "printedName": "detail",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(VideoSDKRTC.PreCallOptimizationMode.Type) -> VideoSDKRTC.PreCallOptimizationMode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PreCallOptimizationMode",
-                    "printedName": "VideoSDKRTC.PreCallOptimizationMode",
-                    "usr": "s:11VideoSDKRTC23PreCallOptimizationModeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "VideoSDKRTC.PreCallOptimizationMode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PreCallOptimizationMode",
-                        "printedName": "VideoSDKRTC.PreCallOptimizationMode",
-                        "usr": "s:11VideoSDKRTC23PreCallOptimizationModeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:11VideoSDKRTC23PreCallOptimizationModeO6detailyA2CmF",
-            "mangledName": "$s11VideoSDKRTC23PreCallOptimizationModeO6detailyA2CmF",
-            "moduleName": "VideoSDKRTC"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "VideoSDKRTC.PreCallOptimizationMode?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PreCallOptimizationMode",
-                    "printedName": "VideoSDKRTC.PreCallOptimizationMode",
-                    "usr": "s:11VideoSDKRTC23PreCallOptimizationModeO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:11VideoSDKRTC23PreCallOptimizationModeO8rawValueACSgSS_tcfc",
-            "mangledName": "$s11VideoSDKRTC23PreCallOptimizationModeO8rawValueACSgSS_tcfc",
-            "moduleName": "VideoSDKRTC",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11VideoSDKRTC23PreCallOptimizationModeO8rawValueSSvp",
-            "mangledName": "$s11VideoSDKRTC23PreCallOptimizationModeO8rawValueSSvp",
-            "moduleName": "VideoSDKRTC",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11VideoSDKRTC23PreCallOptimizationModeO8rawValueSSvg",
-                "mangledName": "$s11VideoSDKRTC23PreCallOptimizationModeO8rawValueSSvg",
-                "moduleName": "VideoSDKRTC",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:11VideoSDKRTC23PreCallOptimizationModeO",
-        "mangledName": "$s11VideoSDKRTC23PreCallOptimizationModeO",
-        "moduleName": "VideoSDKRTC",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "enumRawTypeName": "String",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
           }
         ]
       },
@@ -62318,6 +61887,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "BidirectionalCollection",
             "printedName": "BidirectionalCollection",
             "children": [
@@ -62999,6 +62575,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "ContiguousBytes",
             "printedName": "ContiguousBytes",
             "usr": "s:10Foundation15ContiguousBytesP",
@@ -63533,6 +63116,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "CVarArg",
             "printedName": "CVarArg",
             "usr": "s:s7CVarArgP",
@@ -63919,6 +63509,13 @@
             "printedName": "AccelerateMutableBuffer",
             "usr": "s:10Accelerate0A13MutableBufferP",
             "mangledName": "$s10Accelerate0A13MutableBufferP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
           },
           {
             "kind": "Conformance",
@@ -64870,9 +64467,9 @@
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/ScreenShare\/BroadcastSocketConnection.swift",
       "kind": "BooleanLiteral",
-      "offset": 603,
-      "length": 5,
-      "value": "false"
+      "offset": 17806,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/CallObserverManager.swift",
@@ -67278,154 +66875,154 @@
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "IntegerLiteral",
-      "offset": 66094,
+      "offset": 66403,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "IntegerLiteral",
-      "offset": 66123,
+      "offset": 66432,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "StringLiteral",
-      "offset": 87107,
+      "offset": 87416,
       "length": 25,
       "value": "\"com.videosdk.deviceload\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "IntegerLiteral",
-      "offset": 87247,
+      "offset": 87556,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "IntegerLiteral",
-      "offset": 87296,
+      "offset": 87605,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "StringLiteral",
-      "offset": 94224,
+      "offset": 94533,
       "length": 10,
       "value": "\"precall-\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "StringLiteral",
-      "offset": 94276,
+      "offset": 94585,
       "length": 20,
       "value": "\"precall-open-media\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "StringLiteral",
-      "offset": 94340,
+      "offset": 94649,
       "length": 23,
       "value": "\"precall-release-media\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "StringLiteral",
-      "offset": 94408,
+      "offset": 94717,
       "length": 24,
       "value": "\"precall-provided-media\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "StringLiteral",
-      "offset": 94469,
+      "offset": 94778,
       "length": 15,
       "value": "\"precall-stats\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "StringLiteral",
-      "offset": 94531,
+      "offset": 94840,
       "length": 23,
       "value": "\"live.videosdk.precall\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "BooleanLiteral",
-      "offset": 94649,
+      "offset": 94958,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "Dictionary",
-      "offset": 94806,
+      "offset": 95115,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "StringLiteral",
-      "offset": 105111,
+      "offset": 105420,
       "length": 27,
       "value": "\"ERROR_PRECALL_TEST_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "StringLiteral",
-      "offset": 105165,
+      "offset": 105474,
       "length": 63,
       "value": "\"Native pre-call payload was unparseable: \""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "StringLiteral",
-      "offset": 105221,
+      "offset": 105530,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "StringLiteral",
-      "offset": 105227,
+      "offset": 105536,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "StringLiteral",
-      "offset": 105410,
+      "offset": 105719,
       "length": 27,
       "value": "\"ERROR_PRECALL_TEST_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "StringLiteral",
-      "offset": 105460,
+      "offset": 105769,
       "length": 61,
       "value": "\"Native pre-call payload had no result: \""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "StringLiteral",
-      "offset": 105514,
+      "offset": 105823,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "StringLiteral",
-      "offset": 105520,
+      "offset": 105829,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/FFIBridge.swift",
       "kind": "BooleanLiteral",
-      "offset": 108321,
+      "offset": 108630,
       "length": 5,
       "value": "false"
     },
@@ -67551,21 +67148,35 @@
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/HLSConfig.swift",
       "kind": "StringLiteral",
-      "offset": 20367,
+      "offset": 19301,
+      "length": 5,
+      "value": "\"med\""
+    },
+    {
+      "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/HLSConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 19578,
+      "length": 5,
+      "value": "\"low\""
+    },
+    {
+      "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/HLSConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 20383,
       "length": 11,
       "value": "\"landscape\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/HLSConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 22874,
+      "offset": 22890,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/HLSConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 24625,
+      "offset": 24641,
       "length": 5,
       "value": "false"
     },
@@ -67607,37 +67218,23 @@
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/KeyProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 668,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/KeyProvider.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2494,
+      "offset": 2062,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/KeyProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 3858,
+      "offset": 3247,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/KeyProvider.swift",
       "kind": "Dictionary",
-      "offset": 4309,
+      "offset": 3698,
       "length": 3,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/KeyProvider.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4705,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Tracks\/MediaStreamTrack.swift",
@@ -67710,6 +67307,13 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/PubSub.swift",
+      "kind": "StringLiteral",
+      "offset": 13057,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/PubSubPublishOptions.swift",
       "kind": "BooleanLiteral",
       "offset": 699,
@@ -67754,203 +67358,203 @@
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "Dictionary",
-      "offset": 1031,
+      "offset": 1046,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "Dictionary",
-      "offset": 1192,
+      "offset": 1207,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 2243,
+      "offset": 2258,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 2678,
+      "offset": 2829,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 3020,
+      "offset": 3171,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 3274,
+      "offset": 3425,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 14873,
+      "offset": 15141,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "StringLiteral",
-      "offset": 15649,
+      "offset": 15917,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 15687,
+      "offset": 15955,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 15728,
+      "offset": 15996,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 15906,
+      "offset": 16174,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 15947,
+      "offset": 16215,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 16000,
+      "offset": 16268,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 16031,
+      "offset": 16299,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 16062,
+      "offset": 16330,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 16397,
+      "offset": 16665,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "IntegerLiteral",
-      "offset": 16981,
+      "offset": 17249,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 17254,
+      "offset": 17522,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 17715,
+      "offset": 17983,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 18568,
+      "offset": 18836,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "StringLiteral",
-      "offset": 19273,
+      "offset": 19541,
       "length": 27,
       "value": "\"com.sdk.participant.queue\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "StringLiteral",
-      "offset": 19717,
+      "offset": 19985,
       "length": 25,
       "value": "\"com.sdk.media.ffi.queue\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "Dictionary",
-      "offset": 20040,
+      "offset": 20308,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 21656,
+      "offset": 21924,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 21895,
+      "offset": 22163,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 22594,
+      "offset": 22862,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 22775,
+      "offset": 23043,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 146771,
+      "offset": 149097,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 147872,
+      "offset": 150198,
       "length": 4,
       "value": "true"
     },
@@ -67986,2603 +67590,2617 @@
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "Dictionary",
       "offset": 10672,
-      "length": 7334,
-      "value": "[(3011, \"ERROR_GET_VIDEO_MEDIA\"), (3012, \"ERROR_GET_AUDIO_MEDIA\"), (3013, \"ERROR_GET_DISPLAY_MEDIA\"), (3014, \"ERROR_GET_VIDEO_MEDIA_PERMISSION_DENIED\"), (3015, \"ERROR_GET_AUDIO_MEDIA_PERMISSION_DENIED\"), (3016, \"ERROR_GET_DISPLAY_MEDIA_PERMISSION_DENIED\"), (3017, \"ERROR_CAMERA_ACCESS_DENIED_OR_DISMISSED\"), (3018, \"ERROR_MICROPHONE_ACCESS_DENIED_OR_DISMISSED\"), (3019, \"ERROR_CAMERA_PERMISSION_DENIED_BY_OS\"), (3020, \"ERROR_MICROPHONE_PERMISSION_DENIED_BY_OS\"), (3021, \"ERROR_CAMERA_NOT_FOUND\"), (3022, \"ERROR_MICROPHONE_NOT_FOUND\"), (3023, \"ERROR_CAMERA_IN_USE\"), (3024, \"ERROR_MICROPHONE_IN_USE\"), (3025, \"ERROR_CAMERA_PERMISSION_OR_AUTOPLAY_ISSUE\"), (3026, \"ERROR_VIDEO_SOURCE_INITIATION_FAILED\"), (3027, \"ERROR_WEBCAM_TRACK_ENDED\"), (3028, \"ERROR_MICROPHONE_TRACK_ENDED\"), (3029, \"ERROR_INVALID_CUSTOM_VIDEO_TRACK\"), (3030, \"ERROR_INVALID_CUSTOM_AUDIO_TRACK\"), (3031, \"ERROR_CUSTOM_VIDEO_TRACK_ENDED\"), (3032, \"ERROR_CUSTOM_AUDIO_TRACK_ENDED\"), (3033, \"ERROR_CAMERA_ACCESS_UNAVAILABLE\"), (3034, \"ERROR_MICROPHONE_ACCESS_UNAVAILABLE\"), (3035, \"ERROR_ACTION_PERFORMED_BEFORE_ROOM_JOINED\"), (3036, \"ERROR_RN_CAMERA_ACCESS_DENIED_OR_DISMISSED\"), (3037, \"ERROR_RN_CAMERA_NOT_FOUND\"), (3038, \"ERROR_RN_MIC_ACCESS_DENIED_OR_DISMISSED\"), (3039, \"ERROR_RN_MIC_NOT_FOUND\"), (3040, \"ERROR_RN_CAMERA_ACCESS_UNAVAILABLE\"), (3041, \"ERROR_RN_MIC_ACCESS_UNAVAILABLE\"), (3042, \"ERROR_RN_CAMERA_TRACK_ENDED\"), (3043, \"ERROR_RN_MIC_TRACK_ENDED\"), (3044, \"ERROR_ROOM_MEDIA_CONNECTION_FAILED\"), (3045, \"ERROR_VIDEO_PRODUCE_CODEC_NOT_SUPPORTED\"), (3046, \"ERROR_MULTISTREAM_NOT_SUPPORTED\"), (3047, \"ERROR_UNABLE_TO_JOIN_ROOM\"), (3048, \"ERROR_MEDIA_NOT_READY\"), (3049, \"ERROR_WEBCAM_PRODUCE_FAILED\"), (3050, \"ERROR_MEDIA_DEVICE_NOT_INITIALIZED\"), (3051, \"ERROR_NO_WEBCAM_DEVICE_FOUND\"), (3052, \"ERROR_NO_SUPPORTED_VIDEO_CODEC\"), (3053, \"ERROR_VIDEO_TRACK_CREATION_FAILED\"), (3054, \"ERROR_ALREADY_IN_REQUESTED_STATE\"), (3055, \"ERROR_OPERATION_IN_PROGRESS\"), (3056, \"ERROR_OPERATION_ABORTED\"), (3057, \"ERROR_END_ROOM_FAILED\"), (3058, \"ERROR_MICROPHONE_PRODUCE_FAILED\"), (3059, \"ERROR_NO_MICROPHONE_DEVICE_FOUND\"), (3060, \"ERROR_AUDIO_TRACK_CREATION_FAILED\"), (3061, \"ERROR_SCREENSHARE_PRODUCE_FAILED\"), (3062, \"ERROR_WEBCAM_NOT_ENABLED\"), (3063, \"ERROR_SET_WEBCAM_QUALITY_FAILED\"), (3064, \"ERROR_MEDIA_DEVICE_NOT_LOADED\"), (3065, \"ERROR_ROOM_RECONNECTING\"), (3066, \"ERROR_ACTION_NOT_SUPPORTED_IN_MODE\"), (3067, \"ERROR_INVALID_MODE\"), (3068, \"ERROR_ACTION_NOT_SUPPORTED\"), (3069, \"ERROR_CAPTURE_IMAGE_FAILED\"), (3070, \"ERROR_SEND_FAILED\"), (3071, \"ERROR_INVALID_CUSTOM_TRACK_CONFIG\"), (3072, \"ERROR_PAYLOAD_TOO_LARGE\"), (3073, \"ERROR_INVALID_PARAMETER\"), (3074, \"ERROR_FILE_UPLOAD_FAILED\"), (3075, \"ERROR_FILE_FETCH_FAILED\"), (3076, \"ERROR_WEBCAM_CLOSE_PRODUCER_FAILED\"), (3077, \"ERROR_MICROPHONE_CLOSE_PRODUCER_FAILED\"), (3078, \"ERROR_SCREENSHARE_CLOSE_PRODUCER_FAILED\"), (3079, \"ERROR_OPERATION_TIMED_OUT\"), (4000, \"UNKNOWN_ERROR\"), (4001, \"INVALID_API_KEY\"), (4002, \"INVALID_TOKEN\"), (4003, \"INVALID_ROOM_ID\"), (4004, \"INVALID_PARTICIPANT_ID\"), (4005, \"DUPLICATE_PARTICIPANT\"), (4006, \"ACCOUNT_DEACTIVATED\"), (4007, \"ACCOUNT_DISCONTINUED\"), (4008, \"INVALID_PERMISSIONS\"), (4009, \"MAX_PARTCIPANT_REACHED\"), (4010, \"MAX_SPEAKER_REACHED\"), (4011, \"START_RECORDING_FAILED\"), (4012, \"STOP_RECORDING_FAILED\"), (4013, \"START_LIVESTREAM_FAILED\"), (4014, \"STOP_LIVESTREAM_FAILED\"), (4015, \"INVALID_LIVESTREAM_CONFIG\"), (4016, \"START_HLS_FAILED\"), (4017, \"STOP_HLS_FAILED\"), (4018, \"PREV_RECORDING_PROCESSING\"), (4019, \"PREV_RTMP_RECORDING_PROCESSING\"), (4020, \"PREV_HLS_STREAMING_PROCESSING\"), (4021, \"ADD_ON_SERVICES_DISABLED\"), (4022, \"UNAUTHORIZED_ROOM_ID\"), (4023, \"UNAUTHORIZED_PARTCIPANT_ID\"), (4024, \"UNAUTHORIZED_ROLE\"), (4025, \"UNAUTHORIZED_REQUEST\"), (4026, \"MAX_SPEAKER_LIMIT_REACHED_ON_ORGANIZATION\"), (4027, \"MAX_VIEWER_LIMIT_REACHED_ON_ORGANIZATION\"), (4028, \"MAX_RECORDING_LIMIT_REACHED_ON_ORGANIZATION\"), (4029, \"MAX_HLS_LIMIT_REACHED_ON_ORGANIZATION\"), (4030, \"MAX_LIVESTREAM_LIMIT_REACHED_ON_ORGANIZATION\"), (4031, \"START_TRANSCRIPTION_FAILED\"), (4032, \"STOP_TRANSCRIPTION_FAILED\"), (4035, \"START_PARTICIPANT_RECORDING_FAILED\"), (4036, \"STOP_PARTICIPANT_RECORDING_FAILED\"), (4037, \"START_TRACK_RECORDING_FAILED\"), (4038, \"STOP_TRACK_RECORDING_FAILED\"), (4039, \"START_COMPOSITE_RECORDING_FAILED\"), (4040, \"STOP_COMPPOSITE_RECORDING_FAILED\"), (4041, \"MAX_RECV_ONLY_LIMIT_REACHED_ON_ORGANIZATION\"), (4042, \"START_TRANSLATION_FAILED\"), (4043, \"STOP_TRANSLATION_FAILED\"), (4044, \"CHANGE_TRANSLATION_LANGUAGE_FAILED\"), (4045, \"FAILED_TO_SET_VALUE\"), (4046, \"FAILED_TO_GET_VALUE\"), (4047, \"ADAPTIVE_SUBSCRIPTION_NOT_ENABLED_BY_SDK\"), (4048, \"ADAPTIVE_SUBSCRIPTION_ENABLE_FAILED\"), (4049, \"ADAPTIVE_SUBSCRIPTION_DISABLE_FAILED\"), (4050, \"CREATE_CONSUMER_FAILED\"), (4051, \"CODEC_NOT_SUPPORTED\"), (4052, \"ROOM_ID_DISABLED\"), (4053, \"APIKEY_DEACTIVATED\"), (4054, \"START_WHITEBOARD_FAILED\"), (4055, \"STOP_WHITEBOARD_FAILED\"), (4056, \"WHITEBOARD_OPERATION_IN_PROGRESS\"), (4057, \"PAUSE_ALL_STREAMS_FAILED\"), (4058, \"RESUME_ALL_STREAMS_FAILED\"), (4059, \"RESPOND_ENTRY_FAILED\"), (4065, \"CHANGE_MODE_FAILED\"), (4066, \"REMOVE_PARTICIPANT_FAILED\"), (4067, \"ENABLE_PARTICIPANT_MIC_FAILED\"), (4068, \"DISABLE_PARTICIPANT_MIC_FAILED\"), (4069, \"ENABLE_PARTICIPANT_WEBCAM_FAILED\"), (4070, \"DISABLE_PARTICIPANT_WEBCAM_FAILED\"), (4071, \"PIN_FAILED\"), (4072, \"UNPIN_FAILED\"), (4073, \"SET_QUALITY_FAILED\"), (4074, \"PAUSE_STREAM_FAILED\"), (4075, \"RESUME_STREAM_FAILED\"), (4076, \"SWITCH_ROOM_FAILED\"), (4077, \"SWITCH_PARTICIPANT_ROOM_FAILED\"), (4078, \"REQUEST_MEDIA_RELAY_FAILED\"), (4079, \"STOP_MEDIA_RELAY_FAILED\"), (4080, \"CONSUME_MIC_STREAMS_FAILED\"), (4081, \"CONSUME_WEBCAM_STREAMS_FAILED\"), (4082, \"STOP_CONSUMING_MIC_STREAMS_FAILED\"), (4083, \"STOP_CONSUMING_WEBCAM_STREAMS_FAILED\"), (4084, \"RESPOND_MEDIA_RELAY_REQUEST_FAILED\"), (4085, \"FAILED_TO_OBSERVE_VALUE\"), (4086, \"FAILED_TO_STOP_OBSERVING_VALUE\"), (4087, \"PUBSUB_PUBLISH_FAILED\"), (4088, \"PUBSUB_SUBSCRIBE_FAILED\"), (4089, \"PUBSUB_UNSUBSCRIBE_FAILED\"), (5000, \"SOMETHING_WENT_WRONG\"), (5001, \"RECORDING_FAILED\"), (5002, \"LIVESTREAM_FAILED\"), (5003, \"HLS_FAILED\"), (5004, \"RECORDING_DURATION_LIMIT_REACHED\"), (5005, \"LIVESTREAM_DURATION_LIMIT_REACHED\"), (5006, \"HLS_DURATION_LIMIT_REACHED\"), (5007, \"TRANSCRIPTION_FAILED\"), (5012, \"PARTICIPANT_RECORDING_FAILED\"), (5013, \"TRACK_RECORDING_FAILED\"), (5015, \"TRANSLATION_FAILED\")]"
+      "length": 7389,
+      "value": "[(3011, \"ERROR_GET_VIDEO_MEDIA\"), (3012, \"ERROR_GET_AUDIO_MEDIA\"), (3013, \"ERROR_GET_DISPLAY_MEDIA\"), (3014, \"ERROR_GET_VIDEO_MEDIA_PERMISSION_DENIED\"), (3015, \"ERROR_GET_AUDIO_MEDIA_PERMISSION_DENIED\"), (3016, \"ERROR_GET_DISPLAY_MEDIA_PERMISSION_DENIED\"), (3017, \"ERROR_CAMERA_ACCESS_DENIED_OR_DISMISSED\"), (3018, \"ERROR_MICROPHONE_ACCESS_DENIED_OR_DISMISSED\"), (3019, \"ERROR_CAMERA_PERMISSION_DENIED_BY_OS\"), (3020, \"ERROR_MICROPHONE_PERMISSION_DENIED_BY_OS\"), (3021, \"ERROR_CAMERA_NOT_FOUND\"), (3022, \"ERROR_MICROPHONE_NOT_FOUND\"), (3023, \"ERROR_CAMERA_IN_USE\"), (3024, \"ERROR_MICROPHONE_IN_USE\"), (3025, \"ERROR_CAMERA_PERMISSION_OR_AUTOPLAY_ISSUE\"), (3026, \"ERROR_VIDEO_SOURCE_INITIATION_FAILED\"), (3027, \"ERROR_WEBCAM_TRACK_ENDED\"), (3028, \"ERROR_MICROPHONE_TRACK_ENDED\"), (3029, \"ERROR_INVALID_CUSTOM_VIDEO_TRACK\"), (3030, \"ERROR_INVALID_CUSTOM_AUDIO_TRACK\"), (3031, \"ERROR_CUSTOM_VIDEO_TRACK_ENDED\"), (3032, \"ERROR_CUSTOM_AUDIO_TRACK_ENDED\"), (3033, \"ERROR_CAMERA_ACCESS_UNAVAILABLE\"), (3034, \"ERROR_MICROPHONE_ACCESS_UNAVAILABLE\"), (3035, \"ERROR_ACTION_PERFORMED_BEFORE_ROOM_JOINED\"), (3036, \"ERROR_RN_CAMERA_ACCESS_DENIED_OR_DISMISSED\"), (3037, \"ERROR_RN_CAMERA_NOT_FOUND\"), (3038, \"ERROR_RN_MIC_ACCESS_DENIED_OR_DISMISSED\"), (3039, \"ERROR_RN_MIC_NOT_FOUND\"), (3040, \"ERROR_RN_CAMERA_ACCESS_UNAVAILABLE\"), (3041, \"ERROR_RN_MIC_ACCESS_UNAVAILABLE\"), (3042, \"ERROR_RN_CAMERA_TRACK_ENDED\"), (3043, \"ERROR_RN_MIC_TRACK_ENDED\"), (3044, \"ERROR_ROOM_MEDIA_CONNECTION_FAILED\"), (3045, \"ERROR_VIDEO_PRODUCE_CODEC_NOT_SUPPORTED\"), (3046, \"ERROR_MULTISTREAM_NOT_SUPPORTED\"), (3047, \"ERROR_UNABLE_TO_JOIN_ROOM\"), (3048, \"ERROR_MEDIA_NOT_READY\"), (3049, \"ERROR_WEBCAM_PRODUCE_FAILED\"), (3050, \"ERROR_MEDIA_DEVICE_NOT_INITIALIZED\"), (3051, \"ERROR_NO_WEBCAM_DEVICE_FOUND\"), (3052, \"ERROR_NO_SUPPORTED_VIDEO_CODEC\"), (3053, \"ERROR_VIDEO_TRACK_CREATION_FAILED\"), (3054, \"ERROR_ALREADY_IN_REQUESTED_STATE\"), (3055, \"ERROR_OPERATION_IN_PROGRESS\"), (3056, \"ERROR_OPERATION_ABORTED\"), (3057, \"ERROR_END_ROOM_FAILED\"), (3058, \"ERROR_MICROPHONE_PRODUCE_FAILED\"), (3059, \"ERROR_NO_MICROPHONE_DEVICE_FOUND\"), (3060, \"ERROR_AUDIO_TRACK_CREATION_FAILED\"), (3061, \"ERROR_SCREENSHARE_PRODUCE_FAILED\"), (3062, \"ERROR_WEBCAM_NOT_ENABLED\"), (3063, \"ERROR_SET_WEBCAM_QUALITY_FAILED\"), (3064, \"ERROR_MEDIA_DEVICE_NOT_LOADED\"), (3065, \"ERROR_ROOM_RECONNECTING\"), (3066, \"ERROR_ACTION_NOT_SUPPORTED_IN_MODE\"), (3067, \"ERROR_INVALID_MODE\"), (3068, \"ERROR_ACTION_NOT_SUPPORTED\"), (3069, \"ERROR_CAPTURE_IMAGE_FAILED\"), (3070, \"ERROR_SEND_FAILED\"), (3071, \"ERROR_INVALID_CUSTOM_TRACK_CONFIG\"), (3072, \"ERROR_PAYLOAD_TOO_LARGE\"), (3073, \"ERROR_INVALID_PARAMETER\"), (3074, \"ERROR_FILE_UPLOAD_FAILED\"), (3075, \"ERROR_FILE_FETCH_FAILED\"), (3076, \"ERROR_WEBCAM_CLOSE_PRODUCER_FAILED\"), (3077, \"ERROR_MICROPHONE_CLOSE_PRODUCER_FAILED\"), (3078, \"ERROR_SCREENSHARE_CLOSE_PRODUCER_FAILED\"), (3079, \"ERROR_OPERATION_TIMED_OUT\"), (3080, \"ERROR_VIDEO_EFFECTS_GRAPH_UNAVAILABLE\"), (4000, \"UNKNOWN_ERROR\"), (4001, \"INVALID_API_KEY\"), (4002, \"INVALID_TOKEN\"), (4003, \"INVALID_ROOM_ID\"), (4004, \"INVALID_PARTICIPANT_ID\"), (4005, \"DUPLICATE_PARTICIPANT\"), (4006, \"ACCOUNT_DEACTIVATED\"), (4007, \"ACCOUNT_DISCONTINUED\"), (4008, \"INVALID_PERMISSIONS\"), (4009, \"MAX_PARTCIPANT_REACHED\"), (4010, \"MAX_SPEAKER_REACHED\"), (4011, \"START_RECORDING_FAILED\"), (4012, \"STOP_RECORDING_FAILED\"), (4013, \"START_LIVESTREAM_FAILED\"), (4014, \"STOP_LIVESTREAM_FAILED\"), (4015, \"INVALID_LIVESTREAM_CONFIG\"), (4016, \"START_HLS_FAILED\"), (4017, \"STOP_HLS_FAILED\"), (4018, \"PREV_RECORDING_PROCESSING\"), (4019, \"PREV_RTMP_RECORDING_PROCESSING\"), (4020, \"PREV_HLS_STREAMING_PROCESSING\"), (4021, \"ADD_ON_SERVICES_DISABLED\"), (4022, \"UNAUTHORIZED_ROOM_ID\"), (4023, \"UNAUTHORIZED_PARTCIPANT_ID\"), (4024, \"UNAUTHORIZED_ROLE\"), (4025, \"UNAUTHORIZED_REQUEST\"), (4026, \"MAX_SPEAKER_LIMIT_REACHED_ON_ORGANIZATION\"), (4027, \"MAX_VIEWER_LIMIT_REACHED_ON_ORGANIZATION\"), (4028, \"MAX_RECORDING_LIMIT_REACHED_ON_ORGANIZATION\"), (4029, \"MAX_HLS_LIMIT_REACHED_ON_ORGANIZATION\"), (4030, \"MAX_LIVESTREAM_LIMIT_REACHED_ON_ORGANIZATION\"), (4031, \"START_TRANSCRIPTION_FAILED\"), (4032, \"STOP_TRANSCRIPTION_FAILED\"), (4035, \"START_PARTICIPANT_RECORDING_FAILED\"), (4036, \"STOP_PARTICIPANT_RECORDING_FAILED\"), (4037, \"START_TRACK_RECORDING_FAILED\"), (4038, \"STOP_TRACK_RECORDING_FAILED\"), (4039, \"START_COMPOSITE_RECORDING_FAILED\"), (4040, \"STOP_COMPPOSITE_RECORDING_FAILED\"), (4041, \"MAX_RECV_ONLY_LIMIT_REACHED_ON_ORGANIZATION\"), (4042, \"START_TRANSLATION_FAILED\"), (4043, \"STOP_TRANSLATION_FAILED\"), (4044, \"CHANGE_TRANSLATION_LANGUAGE_FAILED\"), (4045, \"FAILED_TO_SET_VALUE\"), (4046, \"FAILED_TO_GET_VALUE\"), (4047, \"ADAPTIVE_SUBSCRIPTION_NOT_ENABLED_BY_SDK\"), (4048, \"ADAPTIVE_SUBSCRIPTION_ENABLE_FAILED\"), (4049, \"ADAPTIVE_SUBSCRIPTION_DISABLE_FAILED\"), (4050, \"CREATE_CONSUMER_FAILED\"), (4051, \"CODEC_NOT_SUPPORTED\"), (4052, \"ROOM_ID_DISABLED\"), (4053, \"APIKEY_DEACTIVATED\"), (4054, \"START_WHITEBOARD_FAILED\"), (4055, \"STOP_WHITEBOARD_FAILED\"), (4056, \"WHITEBOARD_OPERATION_IN_PROGRESS\"), (4057, \"PAUSE_ALL_STREAMS_FAILED\"), (4058, \"RESUME_ALL_STREAMS_FAILED\"), (4059, \"RESPOND_ENTRY_FAILED\"), (4065, \"CHANGE_MODE_FAILED\"), (4066, \"REMOVE_PARTICIPANT_FAILED\"), (4067, \"ENABLE_PARTICIPANT_MIC_FAILED\"), (4068, \"DISABLE_PARTICIPANT_MIC_FAILED\"), (4069, \"ENABLE_PARTICIPANT_WEBCAM_FAILED\"), (4070, \"DISABLE_PARTICIPANT_WEBCAM_FAILED\"), (4071, \"PIN_FAILED\"), (4072, \"UNPIN_FAILED\"), (4073, \"SET_QUALITY_FAILED\"), (4074, \"PAUSE_STREAM_FAILED\"), (4075, \"RESUME_STREAM_FAILED\"), (4076, \"SWITCH_ROOM_FAILED\"), (4077, \"SWITCH_PARTICIPANT_ROOM_FAILED\"), (4078, \"REQUEST_MEDIA_RELAY_FAILED\"), (4079, \"STOP_MEDIA_RELAY_FAILED\"), (4080, \"CONSUME_MIC_STREAMS_FAILED\"), (4081, \"CONSUME_WEBCAM_STREAMS_FAILED\"), (4082, \"STOP_CONSUMING_MIC_STREAMS_FAILED\"), (4083, \"STOP_CONSUMING_WEBCAM_STREAMS_FAILED\"), (4084, \"RESPOND_MEDIA_RELAY_REQUEST_FAILED\"), (4085, \"FAILED_TO_OBSERVE_VALUE\"), (4086, \"FAILED_TO_STOP_OBSERVING_VALUE\"), (4087, \"PUBSUB_PUBLISH_FAILED\"), (4088, \"PUBSUB_SUBSCRIBE_FAILED\"), (4089, \"PUBSUB_UNSUBSCRIBE_FAILED\"), (5000, \"SOMETHING_WENT_WRONG\"), (5001, \"RECORDING_FAILED\"), (5002, \"LIVESTREAM_FAILED\"), (5003, \"HLS_FAILED\"), (5004, \"RECORDING_DURATION_LIMIT_REACHED\"), (5005, \"LIVESTREAM_DURATION_LIMIT_REACHED\"), (5006, \"HLS_DURATION_LIMIT_REACHED\"), (5007, \"TRANSCRIPTION_FAILED\"), (5012, \"PARTICIPANT_RECORDING_FAILED\"), (5013, \"TRACK_RECORDING_FAILED\"), (5015, \"TRANSLATION_FAILED\")]"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 18213,
+      "offset": 18257,
       "length": 4,
       "value": "3011"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 18225,
+      "offset": 18269,
       "length": 23,
       "value": "\"ERROR_GET_VIDEO_MEDIA\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 18422,
+      "offset": 18455,
       "length": 4,
       "value": "3012"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 18434,
+      "offset": 18467,
       "length": 23,
       "value": "\"ERROR_GET_AUDIO_MEDIA\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 18634,
+      "offset": 18656,
       "length": 4,
       "value": "3013"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 18646,
+      "offset": 18668,
       "length": 25,
       "value": "\"ERROR_GET_DISPLAY_MEDIA\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 18849,
+      "offset": 18871,
       "length": 4,
       "value": "3014"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 18861,
+      "offset": 18883,
       "length": 41,
       "value": "\"ERROR_GET_VIDEO_MEDIA_PERMISSION_DENIED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 19084,
+      "offset": 19106,
       "length": 4,
       "value": "3015"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 19096,
+      "offset": 19118,
       "length": 41,
       "value": "\"ERROR_GET_AUDIO_MEDIA_PERMISSION_DENIED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 19316,
+      "offset": 19338,
       "length": 4,
       "value": "3016"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 19328,
+      "offset": 19350,
       "length": 43,
       "value": "\"ERROR_GET_DISPLAY_MEDIA_PERMISSION_DENIED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 19627,
+      "offset": 19611,
       "length": 4,
       "value": "3017"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 19639,
+      "offset": 19623,
       "length": 41,
       "value": "\"ERROR_CAMERA_ACCESS_DENIED_OR_DISMISSED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 19944,
+      "offset": 19894,
       "length": 4,
       "value": "3018"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 19956,
+      "offset": 19906,
       "length": 45,
       "value": "\"ERROR_MICROPHONE_ACCESS_DENIED_OR_DISMISSED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 20252,
+      "offset": 20206,
       "length": 4,
       "value": "3019"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 20264,
+      "offset": 20218,
       "length": 38,
       "value": "\"ERROR_CAMERA_PERMISSION_DENIED_BY_OS\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 20561,
+      "offset": 20519,
       "length": 4,
       "value": "3020"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 20573,
+      "offset": 20531,
       "length": 42,
       "value": "\"ERROR_MICROPHONE_PERMISSION_DENIED_BY_OS\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 20842,
+      "offset": 20800,
       "length": 4,
       "value": "3021"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 20854,
+      "offset": 20812,
       "length": 24,
       "value": "\"ERROR_CAMERA_NOT_FOUND\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 21057,
+      "offset": 21015,
       "length": 4,
       "value": "3022"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 21069,
+      "offset": 21027,
       "length": 28,
       "value": "\"ERROR_MICROPHONE_NOT_FOUND\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 21428,
+      "offset": 21244,
       "length": 4,
       "value": "3023"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 21440,
+      "offset": 21256,
       "length": 21,
       "value": "\"ERROR_CAMERA_IN_USE\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 21804,
+      "offset": 21474,
       "length": 4,
       "value": "3024"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 21816,
+      "offset": 21486,
       "length": 25,
       "value": "\"ERROR_MICROPHONE_IN_USE\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 22125,
+      "offset": 21795,
       "length": 4,
       "value": "3025"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 22137,
+      "offset": 21807,
       "length": 43,
       "value": "\"ERROR_CAMERA_PERMISSION_OR_AUTOPLAY_ISSUE\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 22398,
+      "offset": 22060,
       "length": 4,
       "value": "3026"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 22410,
+      "offset": 22072,
       "length": 38,
       "value": "\"ERROR_VIDEO_SOURCE_INITIATION_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 22692,
+      "offset": 22354,
       "length": 4,
       "value": "3027"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 22704,
+      "offset": 22366,
       "length": 26,
       "value": "\"ERROR_WEBCAM_TRACK_ENDED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 22970,
+      "offset": 22632,
       "length": 4,
       "value": "3028"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 22982,
+      "offset": 22644,
       "length": 30,
       "value": "\"ERROR_MICROPHONE_TRACK_ENDED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 23291,
+      "offset": 22953,
       "length": 4,
       "value": "3029"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 23303,
+      "offset": 22965,
       "length": 34,
       "value": "\"ERROR_INVALID_CUSTOM_VIDEO_TRACK\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 23616,
+      "offset": 23278,
       "length": 4,
       "value": "3030"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 23628,
+      "offset": 23290,
       "length": 34,
       "value": "\"ERROR_INVALID_CUSTOM_AUDIO_TRACK\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 23896,
+      "offset": 23558,
       "length": 4,
       "value": "3031"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 23908,
+      "offset": 23570,
       "length": 32,
       "value": "\"ERROR_CUSTOM_VIDEO_TRACK_ENDED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 24174,
+      "offset": 23836,
       "length": 4,
       "value": "3032"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 24186,
+      "offset": 23848,
       "length": 32,
       "value": "\"ERROR_CUSTOM_AUDIO_TRACK_ENDED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 24459,
+      "offset": 24101,
       "length": 4,
       "value": "3033"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 24471,
+      "offset": 24113,
       "length": 33,
       "value": "\"ERROR_CAMERA_ACCESS_UNAVAILABLE\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 24753,
+      "offset": 24379,
       "length": 4,
       "value": "3034"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 24765,
+      "offset": 24391,
       "length": 37,
       "value": "\"ERROR_MICROPHONE_ACCESS_UNAVAILABLE\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 24980,
+      "offset": 24606,
       "length": 4,
       "value": "3035"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 24992,
+      "offset": 24618,
       "length": 43,
       "value": "\"ERROR_ACTION_PERFORMED_BEFORE_ROOM_JOINED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 25465,
+      "offset": 25091,
       "length": 4,
       "value": "3036"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 25477,
+      "offset": 25103,
       "length": 44,
       "value": "\"ERROR_RN_CAMERA_ACCESS_DENIED_OR_DISMISSED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 25695,
+      "offset": 25321,
       "length": 4,
       "value": "3037"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 25707,
+      "offset": 25333,
       "length": 27,
       "value": "\"ERROR_RN_CAMERA_NOT_FOUND\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 25945,
+      "offset": 25571,
       "length": 4,
       "value": "3038"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 25957,
+      "offset": 25583,
       "length": 41,
       "value": "\"ERROR_RN_MIC_ACCESS_DENIED_OR_DISMISSED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 26173,
+      "offset": 25799,
       "length": 4,
       "value": "3039"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 26185,
+      "offset": 25811,
       "length": 24,
       "value": "\"ERROR_RN_MIC_NOT_FOUND\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 26397,
+      "offset": 26023,
       "length": 4,
       "value": "3040"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 26409,
+      "offset": 26035,
       "length": 36,
       "value": "\"ERROR_RN_CAMERA_ACCESS_UNAVAILABLE\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 26634,
+      "offset": 26260,
       "length": 4,
       "value": "3041"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 26646,
+      "offset": 26272,
       "length": 33,
       "value": "\"ERROR_RN_MIC_ACCESS_UNAVAILABLE\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 26861,
+      "offset": 26487,
       "length": 4,
       "value": "3042"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 26873,
+      "offset": 26499,
       "length": 29,
       "value": "\"ERROR_RN_CAMERA_TRACK_ENDED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 27085,
+      "offset": 26711,
       "length": 4,
       "value": "3043"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 27097,
+      "offset": 26723,
       "length": 26,
       "value": "\"ERROR_RN_MIC_TRACK_ENDED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 27421,
+      "offset": 27047,
       "length": 4,
       "value": "3044"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 27433,
+      "offset": 27059,
       "length": 36,
       "value": "\"ERROR_ROOM_MEDIA_CONNECTION_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 27696,
+      "offset": 27322,
       "length": 4,
       "value": "3045"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 27708,
+      "offset": 27334,
       "length": 41,
       "value": "\"ERROR_VIDEO_PRODUCE_CODEC_NOT_SUPPORTED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 27930,
+      "offset": 27556,
       "length": 4,
       "value": "3046"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 27942,
+      "offset": 27568,
       "length": 33,
       "value": "\"ERROR_MULTISTREAM_NOT_SUPPORTED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 28138,
+      "offset": 27764,
       "length": 4,
       "value": "3047"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 28150,
+      "offset": 27776,
       "length": 27,
       "value": "\"ERROR_UNABLE_TO_JOIN_ROOM\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 28366,
+      "offset": 27992,
       "length": 4,
       "value": "3048"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 28378,
+      "offset": 28004,
       "length": 23,
       "value": "\"ERROR_MEDIA_NOT_READY\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 28592,
+      "offset": 28218,
       "length": 4,
       "value": "3049"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 28604,
+      "offset": 28230,
       "length": 29,
       "value": "\"ERROR_WEBCAM_PRODUCE_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 28805,
+      "offset": 28431,
       "length": 4,
       "value": "3050"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 28817,
+      "offset": 28443,
       "length": 36,
       "value": "\"ERROR_MEDIA_DEVICE_NOT_INITIALIZED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 29253,
+      "offset": 28682,
       "length": 4,
       "value": "3051"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 29265,
+      "offset": 28694,
       "length": 30,
       "value": "\"ERROR_NO_WEBCAM_DEVICE_FOUND\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 29474,
+      "offset": 28903,
       "length": 4,
       "value": "3052"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 29486,
+      "offset": 28915,
       "length": 32,
       "value": "\"ERROR_NO_SUPPORTED_VIDEO_CODEC\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 29680,
+      "offset": 29109,
       "length": 4,
       "value": "3053"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 29692,
+      "offset": 29121,
       "length": 35,
       "value": "\"ERROR_VIDEO_TRACK_CREATION_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 29893,
+      "offset": 29322,
       "length": 4,
       "value": "3054"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 29905,
+      "offset": 29334,
       "length": 34,
       "value": "\"ERROR_ALREADY_IN_REQUESTED_STATE\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 30142,
+      "offset": 29571,
       "length": 4,
       "value": "3055"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 30154,
+      "offset": 29583,
       "length": 29,
       "value": "\"ERROR_OPERATION_IN_PROGRESS\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 30348,
+      "offset": 29777,
       "length": 4,
       "value": "3056"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 30360,
+      "offset": 29789,
       "length": 25,
       "value": "\"ERROR_OPERATION_ABORTED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 30543,
+      "offset": 29972,
       "length": 4,
       "value": "3057"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 30555,
+      "offset": 29984,
       "length": 23,
       "value": "\"ERROR_END_ROOM_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 30777,
+      "offset": 30206,
       "length": 4,
       "value": "3058"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 30789,
+      "offset": 30218,
       "length": 33,
       "value": "\"ERROR_MICROPHONE_PRODUCE_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 31166,
+      "offset": 30462,
       "length": 4,
       "value": "3059"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 31178,
+      "offset": 30474,
       "length": 34,
       "value": "\"ERROR_NO_MICROPHONE_DEVICE_FOUND\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 31374,
+      "offset": 30670,
       "length": 4,
       "value": "3060"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 31386,
+      "offset": 30682,
       "length": 35,
       "value": "\"ERROR_AUDIO_TRACK_CREATION_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 31616,
+      "offset": 30912,
       "length": 4,
       "value": "3061"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 31628,
+      "offset": 30924,
       "length": 34,
       "value": "\"ERROR_SCREENSHARE_PRODUCE_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 31842,
+      "offset": 31138,
       "length": 4,
       "value": "3062"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 31854,
+      "offset": 31150,
       "length": 26,
       "value": "\"ERROR_WEBCAM_NOT_ENABLED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 32040,
+      "offset": 31336,
       "length": 4,
       "value": "3063"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 32052,
+      "offset": 31348,
       "length": 33,
       "value": "\"ERROR_SET_WEBCAM_QUALITY_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 32275,
+      "offset": 31571,
       "length": 4,
       "value": "3064"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 32287,
+      "offset": 31583,
       "length": 31,
       "value": "\"ERROR_MEDIA_DEVICE_NOT_LOADED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 32485,
+      "offset": 31781,
       "length": 4,
       "value": "3065"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 32497,
+      "offset": 31793,
       "length": 25,
       "value": "\"ERROR_ROOM_RECONNECTING\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 32706,
+      "offset": 32002,
       "length": 4,
       "value": "3066"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 32718,
+      "offset": 32014,
       "length": 36,
       "value": "\"ERROR_ACTION_NOT_SUPPORTED_IN_MODE\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 32896,
+      "offset": 32192,
       "length": 4,
       "value": "3067"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 32908,
+      "offset": 32204,
       "length": 20,
       "value": "\"ERROR_INVALID_MODE\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 33243,
+      "offset": 32539,
       "length": 4,
       "value": "3068"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 33255,
+      "offset": 32551,
       "length": 28,
       "value": "\"ERROR_ACTION_NOT_SUPPORTED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 33472,
+      "offset": 32768,
       "length": 4,
       "value": "3069"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 33484,
+      "offset": 32780,
       "length": 28,
       "value": "\"ERROR_CAPTURE_IMAGE_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 33687,
+      "offset": 32983,
       "length": 4,
       "value": "3070"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 33699,
+      "offset": 32995,
       "length": 19,
       "value": "\"ERROR_SEND_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 33895,
+      "offset": 33191,
       "length": 4,
       "value": "3071"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 33907,
+      "offset": 33203,
       "length": 35,
       "value": "\"ERROR_INVALID_CUSTOM_TRACK_CONFIG\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 34126,
+      "offset": 33422,
       "length": 4,
       "value": "3072"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 34138,
+      "offset": 33434,
       "length": 25,
       "value": "\"ERROR_PAYLOAD_TOO_LARGE\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 34327,
+      "offset": 33623,
       "length": 4,
       "value": "3073"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 34339,
+      "offset": 33635,
       "length": 25,
       "value": "\"ERROR_INVALID_PARAMETER\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 34536,
+      "offset": 33832,
       "length": 4,
       "value": "3074"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 34548,
+      "offset": 33844,
       "length": 26,
       "value": "\"ERROR_FILE_UPLOAD_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 34744,
+      "offset": 34040,
       "length": 4,
       "value": "3075"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 34756,
+      "offset": 34052,
       "length": 25,
       "value": "\"ERROR_FILE_FETCH_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 34964,
+      "offset": 34260,
       "length": 4,
       "value": "3076"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 34976,
+      "offset": 34272,
       "length": 36,
       "value": "\"ERROR_WEBCAM_CLOSE_PRODUCER_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 35203,
+      "offset": 34499,
       "length": 4,
       "value": "3077"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 35215,
+      "offset": 34511,
       "length": 40,
       "value": "\"ERROR_MICROPHONE_CLOSE_PRODUCER_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 35444,
+      "offset": 34740,
       "length": 4,
       "value": "3078"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 35456,
+      "offset": 34752,
       "length": 41,
       "value": "\"ERROR_SCREENSHARE_CLOSE_PRODUCER_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 35686,
+      "offset": 34982,
       "length": 4,
       "value": "3079"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 35698,
+      "offset": 34994,
       "length": 27,
       "value": "\"ERROR_OPERATION_TIMED_OUT\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 35885,
+      "offset": 35332,
+      "length": 4,
+      "value": "3080"
+    },
+    {
+      "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
+      "kind": "StringLiteral",
+      "offset": 35344,
+      "length": 39,
+      "value": "\"ERROR_VIDEO_EFFECTS_GRAPH_UNAVAILABLE\""
+    },
+    {
+      "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 35543,
       "length": 4,
       "value": "4000"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 35897,
+      "offset": 35555,
       "length": 15,
       "value": "\"UNKNOWN_ERROR\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 36109,
+      "offset": 35767,
       "length": 4,
       "value": "4001"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 36121,
+      "offset": 35779,
       "length": 17,
       "value": "\"INVALID_API_KEY\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 36297,
+      "offset": 35955,
       "length": 4,
       "value": "4002"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 36309,
+      "offset": 35967,
       "length": 15,
       "value": "\"INVALID_TOKEN\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 36519,
+      "offset": 36177,
       "length": 4,
       "value": "4003"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 36531,
+      "offset": 36189,
       "length": 17,
       "value": "\"INVALID_ROOM_ID\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 36740,
+      "offset": 36398,
       "length": 4,
       "value": "4004"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 36752,
+      "offset": 36410,
       "length": 24,
       "value": "\"INVALID_PARTICIPANT_ID\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 36961,
+      "offset": 36619,
       "length": 4,
       "value": "4005"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 36973,
+      "offset": 36631,
       "length": 23,
       "value": "\"DUPLICATE_PARTICIPANT\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 37226,
+      "offset": 36884,
       "length": 4,
       "value": "4006"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 37238,
+      "offset": 36896,
       "length": 21,
       "value": "\"ACCOUNT_DEACTIVATED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 37488,
+      "offset": 37146,
       "length": 4,
       "value": "4007"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 37500,
+      "offset": 37158,
       "length": 22,
       "value": "\"ACCOUNT_DISCONTINUED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 37747,
+      "offset": 37405,
       "length": 4,
       "value": "4008"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 37759,
+      "offset": 37417,
       "length": 21,
       "value": "\"INVALID_PERMISSIONS\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 37992,
+      "offset": 37650,
       "length": 4,
       "value": "4009"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 38004,
+      "offset": 37662,
       "length": 24,
       "value": "\"MAX_PARTCIPANT_REACHED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 38234,
+      "offset": 37892,
       "length": 4,
       "value": "4010"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 38246,
+      "offset": 37904,
       "length": 21,
       "value": "\"MAX_SPEAKER_REACHED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 38440,
+      "offset": 38098,
       "length": 4,
       "value": "4011"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 38452,
+      "offset": 38110,
       "length": 24,
       "value": "\"START_RECORDING_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 38647,
+      "offset": 38305,
       "length": 4,
       "value": "4012"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 38659,
+      "offset": 38317,
       "length": 23,
       "value": "\"STOP_RECORDING_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 38857,
+      "offset": 38515,
       "length": 4,
       "value": "4013"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 38869,
+      "offset": 38527,
       "length": 25,
       "value": "\"START_LIVESTREAM_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 39067,
+      "offset": 38725,
       "length": 4,
       "value": "4014"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 39079,
+      "offset": 38737,
       "length": 24,
       "value": "\"STOP_LIVESTREAM_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 39280,
+      "offset": 38938,
       "length": 4,
       "value": "4015"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 39292,
+      "offset": 38950,
       "length": 27,
       "value": "\"INVALID_LIVESTREAM_CONFIG\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 39480,
+      "offset": 39138,
       "length": 4,
       "value": "4016"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 39492,
+      "offset": 39150,
       "length": 18,
       "value": "\"START_HLS_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 39669,
+      "offset": 39327,
       "length": 4,
       "value": "4017"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 39681,
+      "offset": 39339,
       "length": 17,
       "value": "\"STOP_HLS_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 39901,
+      "offset": 39559,
       "length": 4,
       "value": "4018"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 39913,
+      "offset": 39571,
       "length": 27,
       "value": "\"PREV_RECORDING_PROCESSING\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 40153,
+      "offset": 39811,
       "length": 4,
       "value": "4019"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 40165,
+      "offset": 39823,
       "length": 32,
       "value": "\"PREV_RTMP_RECORDING_PROCESSING\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 40408,
+      "offset": 40066,
       "length": 4,
       "value": "4020"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 40420,
+      "offset": 40078,
       "length": 31,
       "value": "\"PREV_HLS_STREAMING_PROCESSING\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 40661,
+      "offset": 40319,
       "length": 4,
       "value": "4021"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 40673,
+      "offset": 40331,
       "length": 26,
       "value": "\"ADD_ON_SERVICES_DISABLED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 40859,
+      "offset": 40517,
       "length": 4,
       "value": "4022"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 40871,
+      "offset": 40529,
       "length": 22,
       "value": "\"UNAUTHORIZED_ROOM_ID\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 41066,
+      "offset": 40724,
       "length": 4,
       "value": "4023"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 41078,
+      "offset": 40736,
       "length": 28,
       "value": "\"UNAUTHORIZED_PARTCIPANT_ID\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 41277,
+      "offset": 40935,
       "length": 4,
       "value": "4024"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 41289,
+      "offset": 40947,
       "length": 19,
       "value": "\"UNAUTHORIZED_ROLE\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 41478,
+      "offset": 41136,
       "length": 4,
       "value": "4025"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 41490,
+      "offset": 41148,
       "length": 22,
       "value": "\"UNAUTHORIZED_REQUEST\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 41746,
+      "offset": 41404,
       "length": 4,
       "value": "4026"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 41758,
+      "offset": 41416,
       "length": 43,
       "value": "\"MAX_SPEAKER_LIMIT_REACHED_ON_ORGANIZATION\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 42125,
+      "offset": 41783,
       "length": 4,
       "value": "4027"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 42137,
+      "offset": 41795,
       "length": 42,
       "value": "\"MAX_VIEWER_LIMIT_REACHED_ON_ORGANIZATION\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 42420,
+      "offset": 42078,
       "length": 4,
       "value": "4028"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 42432,
+      "offset": 42090,
       "length": 45,
       "value": "\"MAX_RECORDING_LIMIT_REACHED_ON_ORGANIZATION\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 42706,
+      "offset": 42364,
       "length": 4,
       "value": "4029"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 42718,
+      "offset": 42376,
       "length": 39,
       "value": "\"MAX_HLS_LIMIT_REACHED_ON_ORGANIZATION\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 43000,
+      "offset": 42658,
       "length": 4,
       "value": "4030"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 43012,
+      "offset": 42670,
       "length": 46,
       "value": "\"MAX_LIVESTREAM_LIMIT_REACHED_ON_ORGANIZATION\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 43239,
+      "offset": 42897,
       "length": 4,
       "value": "4031"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 43251,
+      "offset": 42909,
       "length": 28,
       "value": "\"START_TRANSCRIPTION_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 43458,
+      "offset": 43116,
       "length": 4,
       "value": "4032"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 43470,
+      "offset": 43128,
       "length": 27,
       "value": "\"STOP_TRANSCRIPTION_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 43694,
+      "offset": 43352,
       "length": 4,
       "value": "4035"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 43706,
+      "offset": 43364,
       "length": 36,
       "value": "\"START_PARTICIPANT_RECORDING_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 43937,
+      "offset": 43595,
       "length": 4,
       "value": "4036"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 43949,
+      "offset": 43607,
       "length": 35,
       "value": "\"STOP_PARTICIPANT_RECORDING_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 44169,
+      "offset": 43827,
       "length": 4,
       "value": "4037"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 44181,
+      "offset": 43839,
       "length": 30,
       "value": "\"START_TRACK_RECORDING_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 44394,
+      "offset": 44052,
       "length": 4,
       "value": "4038"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 44406,
+      "offset": 44064,
       "length": 29,
       "value": "\"STOP_TRACK_RECORDING_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 44628,
+      "offset": 44286,
       "length": 4,
       "value": "4039"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 44640,
+      "offset": 44298,
       "length": 34,
       "value": "\"START_COMPOSITE_RECORDING_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 44866,
+      "offset": 44524,
       "length": 4,
       "value": "4040"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 44878,
+      "offset": 44536,
       "length": 34,
       "value": "\"STOP_COMPPOSITE_RECORDING_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 45224,
+      "offset": 44882,
       "length": 4,
       "value": "4041"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 45236,
+      "offset": 44894,
       "length": 45,
       "value": "\"MAX_RECV_ONLY_LIMIT_REACHED_ON_ORGANIZATION\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 45458,
+      "offset": 45116,
       "length": 4,
       "value": "4042"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 45470,
+      "offset": 45128,
       "length": 26,
       "value": "\"START_TRANSLATION_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 45671,
+      "offset": 45329,
       "length": 4,
       "value": "4043"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 45683,
+      "offset": 45341,
       "length": 25,
       "value": "\"STOP_TRANSLATION_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 45905,
+      "offset": 45563,
       "length": 4,
       "value": "4044"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 45917,
+      "offset": 45575,
       "length": 36,
       "value": "\"CHANGE_TRANSLATION_LANGUAGE_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 46103,
+      "offset": 45761,
       "length": 4,
       "value": "4045"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 46115,
+      "offset": 45773,
       "length": 21,
       "value": "\"FAILED_TO_SET_VALUE\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 46286,
+      "offset": 45944,
       "length": 4,
       "value": "4046"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 46298,
+      "offset": 45956,
       "length": 21,
       "value": "\"FAILED_TO_GET_VALUE\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 46543,
+      "offset": 46201,
       "length": 4,
       "value": "4047"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 46555,
+      "offset": 46213,
       "length": 42,
       "value": "\"ADAPTIVE_SUBSCRIPTION_NOT_ENABLED_BY_SDK\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 46769,
+      "offset": 46427,
       "length": 4,
       "value": "4048"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 46781,
+      "offset": 46439,
       "length": 37,
       "value": "\"ADAPTIVE_SUBSCRIPTION_ENABLE_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 46992,
+      "offset": 46650,
       "length": 4,
       "value": "4049"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 47004,
+      "offset": 46662,
       "length": 38,
       "value": "\"ADAPTIVE_SUBSCRIPTION_DISABLE_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 47186,
+      "offset": 46844,
       "length": 4,
       "value": "4050"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 47198,
+      "offset": 46856,
       "length": 24,
       "value": "\"CREATE_CONSUMER_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 47404,
+      "offset": 47062,
       "length": 4,
       "value": "4051"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 47416,
+      "offset": 47074,
       "length": 21,
       "value": "\"CODEC_NOT_SUPPORTED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 47614,
+      "offset": 47272,
       "length": 4,
       "value": "4052"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 47626,
+      "offset": 47284,
       "length": 18,
       "value": "\"ROOM_ID_DISABLED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 47839,
+      "offset": 47497,
       "length": 4,
       "value": "4053"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 47851,
+      "offset": 47509,
       "length": 20,
       "value": "\"APIKEY_DEACTIVATED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 48046,
+      "offset": 47704,
       "length": 4,
       "value": "4054"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 48058,
+      "offset": 47716,
       "length": 25,
       "value": "\"START_WHITEBOARD_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 48256,
+      "offset": 47914,
       "length": 4,
       "value": "4055"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 48268,
+      "offset": 47926,
       "length": 24,
       "value": "\"STOP_WHITEBOARD_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 48466,
+      "offset": 48124,
       "length": 4,
       "value": "4056"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 48478,
+      "offset": 48136,
       "length": 34,
       "value": "\"WHITEBOARD_OPERATION_IN_PROGRESS\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 48689,
+      "offset": 48347,
       "length": 4,
       "value": "4057"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 48701,
+      "offset": 48359,
       "length": 26,
       "value": "\"PAUSE_ALL_STREAMS_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 48906,
+      "offset": 48564,
       "length": 4,
       "value": "4058"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 48918,
+      "offset": 48576,
       "length": 27,
       "value": "\"RESUME_ALL_STREAMS_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 49117,
+      "offset": 48775,
       "length": 4,
       "value": "4059"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 49129,
+      "offset": 48787,
       "length": 22,
       "value": "\"RESPOND_ENTRY_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 49316,
+      "offset": 48974,
       "length": 4,
       "value": "4065"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 49328,
+      "offset": 48986,
       "length": 20,
       "value": "\"CHANGE_MODE_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 49527,
+      "offset": 49185,
       "length": 4,
       "value": "4066"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 49539,
+      "offset": 49197,
       "length": 27,
       "value": "\"REMOVE_PARTICIPANT_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 49753,
+      "offset": 49411,
       "length": 4,
       "value": "4067"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 49765,
+      "offset": 49423,
       "length": 31,
       "value": "\"ENABLE_PARTICIPANT_MIC_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 49985,
+      "offset": 49643,
       "length": 4,
       "value": "4068"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 49997,
+      "offset": 49655,
       "length": 32,
       "value": "\"DISABLE_PARTICIPANT_MIC_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 50222,
+      "offset": 49880,
       "length": 4,
       "value": "4069"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 50234,
+      "offset": 49892,
       "length": 34,
       "value": "\"ENABLE_PARTICIPANT_WEBCAM_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 50463,
+      "offset": 50121,
       "length": 4,
       "value": "4070"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 50475,
+      "offset": 50133,
       "length": 35,
       "value": "\"DISABLE_PARTICIPANT_WEBCAM_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 50659,
+      "offset": 50317,
       "length": 4,
       "value": "4071"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 50671,
+      "offset": 50329,
       "length": 12,
       "value": "\"PIN_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 50836,
+      "offset": 50494,
       "length": 4,
       "value": "4072"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 50848,
+      "offset": 50506,
       "length": 14,
       "value": "\"UNPIN_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 51027,
+      "offset": 50685,
       "length": 4,
       "value": "4073"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 51039,
+      "offset": 50697,
       "length": 20,
       "value": "\"SET_QUALITY_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 51226,
+      "offset": 50884,
       "length": 4,
       "value": "4074"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 51238,
+      "offset": 50896,
       "length": 21,
       "value": "\"PAUSE_STREAM_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 51428,
+      "offset": 51086,
       "length": 4,
       "value": "4075"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 51440,
+      "offset": 51098,
       "length": 22,
       "value": "\"RESUME_STREAM_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 51627,
+      "offset": 51285,
       "length": 4,
       "value": "4076"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 51639,
+      "offset": 51297,
       "length": 20,
       "value": "\"SWITCH_ROOM_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 51848,
+      "offset": 51506,
       "length": 4,
       "value": "4077"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 51860,
+      "offset": 51518,
       "length": 32,
       "value": "\"SWITCH_PARTICIPANT_ROOM_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 52065,
+      "offset": 51723,
       "length": 4,
       "value": "4078"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 52077,
+      "offset": 51735,
       "length": 28,
       "value": "\"REQUEST_MEDIA_RELAY_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 52280,
+      "offset": 51938,
       "length": 4,
       "value": "4079"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 52292,
+      "offset": 51950,
       "length": 25,
       "value": "\"STOP_MEDIA_RELAY_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 52498,
+      "offset": 52156,
       "length": 4,
       "value": "4080"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 52510,
+      "offset": 52168,
       "length": 28,
       "value": "\"CONSUME_MIC_STREAMS_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 52725,
+      "offset": 52383,
       "length": 4,
       "value": "4081"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 52737,
+      "offset": 52395,
       "length": 31,
       "value": "\"CONSUME_WEBCAM_STREAMS_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 52963,
+      "offset": 52621,
       "length": 4,
       "value": "4082"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 52975,
+      "offset": 52633,
       "length": 35,
       "value": "\"STOP_CONSUMING_MIC_STREAMS_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 53211,
+      "offset": 52869,
       "length": 4,
       "value": "4083"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 53223,
+      "offset": 52881,
       "length": 38,
       "value": "\"STOP_CONSUMING_WEBCAM_STREAMS_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 53453,
+      "offset": 53111,
       "length": 4,
       "value": "4084"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 53465,
+      "offset": 53123,
       "length": 36,
       "value": "\"RESPOND_MEDIA_RELAY_REQUEST_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 53659,
+      "offset": 53317,
       "length": 4,
       "value": "4085"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 53671,
+      "offset": 53329,
       "length": 25,
       "value": "\"FAILED_TO_OBSERVE_VALUE\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 53868,
+      "offset": 53526,
       "length": 4,
       "value": "4086"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 53880,
+      "offset": 53538,
       "length": 32,
       "value": "\"FAILED_TO_STOP_OBSERVING_VALUE\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 54064,
+      "offset": 53722,
       "length": 4,
       "value": "4087"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 54076,
+      "offset": 53734,
       "length": 23,
       "value": "\"PUBSUB_PUBLISH_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 54255,
+      "offset": 53913,
       "length": 4,
       "value": "4088"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 54267,
+      "offset": 53925,
       "length": 25,
       "value": "\"PUBSUB_SUBSCRIBE_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 54454,
+      "offset": 54112,
       "length": 4,
       "value": "4089"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 54466,
+      "offset": 54124,
       "length": 27,
       "value": "\"PUBSUB_UNSUBSCRIBE_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 54676,
+      "offset": 54334,
       "length": 4,
       "value": "5000"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 54688,
+      "offset": 54346,
       "length": 22,
       "value": "\"SOMETHING_WENT_WRONG\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 54864,
+      "offset": 54522,
       "length": 4,
       "value": "5001"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 54876,
+      "offset": 54534,
       "length": 18,
       "value": "\"RECORDING_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 55050,
+      "offset": 54708,
       "length": 4,
       "value": "5002"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 55062,
+      "offset": 54720,
       "length": 19,
       "value": "\"LIVESTREAM_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 55223,
+      "offset": 54881,
       "length": 4,
       "value": "5003"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 55235,
+      "offset": 54893,
       "length": 12,
       "value": "\"HLS_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 55440,
+      "offset": 55098,
       "length": 4,
       "value": "5004"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 55452,
+      "offset": 55110,
       "length": 34,
       "value": "\"RECORDING_DURATION_LIMIT_REACHED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 55681,
+      "offset": 55339,
       "length": 4,
       "value": "5005"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 55693,
+      "offset": 55351,
       "length": 35,
       "value": "\"LIVESTREAM_DURATION_LIMIT_REACHED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 55909,
+      "offset": 55567,
       "length": 4,
       "value": "5006"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 55921,
+      "offset": 55579,
       "length": 28,
       "value": "\"HLS_DURATION_LIMIT_REACHED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 56111,
+      "offset": 55769,
       "length": 4,
       "value": "5007"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 56123,
+      "offset": 55781,
       "length": 22,
       "value": "\"TRANSCRIPTION_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 56323,
+      "offset": 55981,
       "length": 4,
       "value": "5012"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 56335,
+      "offset": 55993,
       "length": 30,
       "value": "\"PARTICIPANT_RECORDING_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 56531,
+      "offset": 56189,
       "length": 4,
       "value": "5013"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 56543,
+      "offset": 56201,
       "length": 24,
       "value": "\"TRACK_RECORDING_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 56724,
+      "offset": 56382,
       "length": 4,
       "value": "5015"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 56736,
+      "offset": 56394,
       "length": 20,
       "value": "\"TRANSLATION_FAILED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 80774,
+      "offset": 79853,
       "length": 13,
       "value": "\"HLS_STARTED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 81945,
+      "offset": 81024,
       "length": 19,
       "value": "\"RECORDING_STARTED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 82666,
+      "offset": 81745,
       "length": 20,
       "value": "\"LIVESTREAM_STARTED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 83510,
+      "offset": 82589,
       "length": 24,
       "value": "\"TRANSCRIPTION_STARTING\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 84042,
+      "offset": 83121,
       "length": 22,
       "value": "\"TRANSLATION_STARTING\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 84693,
+      "offset": 83772,
       "length": 14,
       "value": "\"UDP_OVER_TCP\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 86733,
+      "offset": 85812,
       "length": 5,
       "value": "\"VP8\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 86909,
+      "offset": 85988,
       "length": 6,
       "value": "\"H264\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 86956,
+      "offset": 86035,
       "length": 5,
       "value": "\"VP9\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 87002,
+      "offset": 86081,
       "length": 5,
       "value": "\"AV1\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 88401,
+      "offset": 87480,
       "length": 19,
       "value": "\"EncryptionSuccess\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 89437,
+      "offset": 88516,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 89586,
+      "offset": 88665,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 89711,
+      "offset": 88790,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 89836,
+      "offset": 88915,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 90324,
+      "offset": 89403,
       "length": 14,
       "value": "\"HIGH_QUALITY\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 91631,
+      "offset": 90710,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 91944,
+      "offset": 91023,
       "length": 11,
       "value": "3"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 92229,
+      "offset": 91308,
       "length": 17,
       "value": "\"FREEZE_DETECTED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 92837,
+      "offset": 91916,
       "length": 5,
       "value": "\"CPU\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 93245,
+      "offset": 92324,
       "length": 10,
       "value": "\"DETECTED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 93536,
+      "offset": 92615,
       "length": 7,
       "value": "\"audio\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 93583,
+      "offset": 92662,
       "length": 7,
       "value": "\"video\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 93636,
+      "offset": 92715,
       "length": 7,
       "value": "\"share\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 93825,
+      "offset": 92904,
       "length": 9,
       "value": "\"allowed\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 93890,
+      "offset": 92969,
       "length": 8,
       "value": "\"denied\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 94075,
+      "offset": 93154,
       "length": 10,
       "value": "\"accepted\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 94155,
+      "offset": 93234,
       "length": 10,
       "value": "\"rejected\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 94591,
+      "offset": 93670,
       "length": 10,
       "value": "\"incoming\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 94662,
+      "offset": 93741,
       "length": 10,
       "value": "\"outgoing\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 95225,
+      "offset": 94304,
       "length": 4,
       "value": "1001"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 95355,
+      "offset": 94434,
       "length": 4,
       "value": "1002"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 95508,
+      "offset": 94587,
       "length": 4,
       "value": "1003"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 95662,
+      "offset": 94741,
       "length": 4,
       "value": "1004"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 95780,
+      "offset": 94859,
       "length": 4,
       "value": "1005"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 95897,
+      "offset": 94976,
       "length": 4,
       "value": "1006"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 96021,
+      "offset": 95100,
       "length": 4,
       "value": "1007"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 96141,
+      "offset": 95220,
       "length": 4,
       "value": "1008"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 96295,
+      "offset": 95374,
       "length": 4,
       "value": "1009"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 96420,
+      "offset": 95499,
       "length": 4,
       "value": "1010"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 96559,
+      "offset": 95638,
       "length": 4,
       "value": "1011"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 96741,
+      "offset": 95820,
       "length": 4,
       "value": "1101"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 97091,
+      "offset": 96170,
       "length": 4,
       "value": "1102"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 97213,
+      "offset": 96292,
       "length": 4,
       "value": "1103"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 97336,
+      "offset": 96415,
       "length": 4,
       "value": "1104"
     },
@@ -70969,7 +70587,7 @@
       "kind": "StringLiteral",
       "offset": 337,
       "length": 15,
-      "value": "\"4.0.0-beta.11\""
+      "value": "\"4.0.0-beta.12\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/SDKConfig.swift",
@@ -71295,50 +70913,57 @@
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/ScreenShare\/SocketConnectionFrameReader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1567,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/ScreenShare\/SocketConnectionFrameReader.swift",
       "kind": "Array",
-      "offset": 4949,
+      "offset": 5344,
       "length": 24,
       "value": "[0x0D, 0x0A, 0x0D, 0x0A]"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/ScreenShare\/SocketConnectionFrameReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 6348,
+      "offset": 6743,
       "length": 4,
       "value": "3840"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/ScreenShare\/SocketConnectionFrameReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 6355,
+      "offset": 6750,
       "length": 4,
       "value": "2160"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/ScreenShare\/SocketConnectionFrameReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 6362,
+      "offset": 6757,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/ScreenShare\/SocketConnectionFrameReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 10658,
+      "offset": 11306,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/ScreenShare\/SocketConnectionFrameReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 10663,
+      "offset": 11311,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/ScreenShare\/SocketConnectionFrameReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 10697,
+      "offset": 11345,
       "length": 1,
       "value": "0"
     },
