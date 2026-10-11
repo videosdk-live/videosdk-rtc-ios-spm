@@ -20,7 +20,7 @@ A Swift framework for real-time audio and video communication for iOS applicatio
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/videosdk-live/videosdk-rtc-ios-spm.git", from: "3.2.0")
+    .package(url: "https://github.com/videosdk-live/videosdk-rtc-ios-spm.git", from: "4.0.0")
 ]
 ```
 
@@ -29,18 +29,31 @@ dependencies: [
 ```swift
 import VideoSDKRTC
 
-// Configure VideoSDK
-VideoSDK.config(token: "VideoSDK Token")
-
 // Initialize and join meeting
-let meeting = VideoSDK.initMeeting(
-		        meetingId: "abcd-1234-efgh",
-		        participantName: "John",
-		        micEnabled: true,
-		        webcamEnabled: true
-		    )
+do {
+	room = try VideoSDK.createRoom(
+		roomId: roomData.roomId,
+		token: roomData.token,
+		participantName: roomData.name,
+		micEnabled: roomData.micEnabled,
+		camEnabled: roomData.cameraEnabled
+	)
+} catch {
+	print("Setup failed: \(error)")   // ERROR_INVALID_PARAMETER for an empty room ID or token
+	return
+}
 
-meeting.join()
+// Adding the listener to room
+room?.addEventListener(self)
+
+// joining the room
+Task {
+	do {
+		try await room?.join()
+	} catch {
+		print("Join failed: \(error)")
+	}
+}
 ```
 
 ## Documentation
