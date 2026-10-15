@@ -546,6 +546,7 @@ public protocol ParticipantEventListener {
   func onStreamPaused(kind: VideoSDKRTC::StreamKind?, reason: Swift::String)
   func onStreamResumed(kind: VideoSDKRTC::StreamKind?, reason: Swift::String)
   func onMediaStatusChanged(participantId: Swift::String, kind: VideoSDKRTC::MediaType, newStatus: Swift::Bool)
+  func onVideoQualityChanged(participantId: Swift::String, prevQuality: VideoSDKRTC::VideoQuality, currentQuality: VideoSDKRTC::VideoQuality)
   func onAgentStateChanged(_ state: VideoSDKRTC::AgentState, forParticipant participant: VideoSDKRTC::Participant)
   func onAgentTranscriptionReceived(_ segment: VideoSDKRTC::TranscriptionSegment, forParticipant participant: VideoSDKRTC::Participant?)
   func onAgentMetrics(_ metrics: [Swift::String : Any], forParticipant participant: VideoSDKRTC::Participant)
@@ -557,6 +558,7 @@ extension VideoSDKRTC::ParticipantEventListener {
   public func onStreamPaused(kind: VideoSDKRTC::StreamKind?, reason: Swift::String)
   public func onStreamResumed(kind: VideoSDKRTC::StreamKind?, reason: Swift::String)
   public func onMediaStatusChanged(participantId: Swift::String, kind: VideoSDKRTC::MediaType, newStatus: Swift::Bool)
+  public func onVideoQualityChanged(participantId: Swift::String, prevQuality: VideoSDKRTC::VideoQuality, currentQuality: VideoSDKRTC::VideoQuality)
   public func onAgentStateChanged(_ state: VideoSDKRTC::AgentState, forParticipant participant: VideoSDKRTC::Participant)
   public func onAgentTranscriptionReceived(_ segment: VideoSDKRTC::TranscriptionSegment, forParticipant participant: VideoSDKRTC::Participant?)
   public func onAgentMetrics(_ metrics: [Swift::String : Any], forParticipant participant: VideoSDKRTC::Participant)
@@ -764,7 +766,6 @@ extension VideoSDKRTC::Room {
   public func removeVideoProcessor()
   public func muteMic() async throws
   public func unmuteMic(customMicrophoneTrack: VideoSDKRTC::CustomStreamTrack? = nil) async throws
-  public func setAudioDevice(_ device: VideoSDKRTC::MicrophoneDeviceInfo) throws
   public func setAudioDeviceChangeListener(_ listener: ((_ selected: VideoSDKRTC::MicrophoneDeviceInfo?, _ available: [VideoSDKRTC::MicrophoneDeviceInfo]) -> Swift::Void)?)
   public func changeMic(deviceId: Swift::String? = nil) async throws
   public func changeMic(customMicrophoneTrack: VideoSDKRTC::CustomStreamTrack) async throws
@@ -1445,7 +1446,7 @@ public enum CaptureFlash : Swift::Sendable {
   @_Concurrency::MainActor final public func hide()
   @objc deinit
 }
-@objc public enum SdkTraceComponent : Swift::Int32 {
+@_documentation(visibility: internal) @objc public enum SdkTraceComponent : Swift::Int32 {
   case media = 0
   case transport = 1
   case network = 2
@@ -1459,7 +1460,7 @@ public enum CaptureFlash : Swift::Sendable {
     get
   }
 }
-@objc public enum SdkTraceCategory : Swift::Int32 {
+@_documentation(visibility: internal) @objc public enum SdkTraceCategory : Swift::Int32 {
   case internalLog = 0
   case debug = 1
   case realtime = 2

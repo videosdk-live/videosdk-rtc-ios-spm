@@ -18229,6 +18229,48 @@
           },
           {
             "kind": "Function",
+            "name": "onVideoQualityChanged",
+            "printedName": "onVideoQualityChanged(participantId:prevQuality:currentQuality:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VideoQuality",
+                "printedName": "VideoSDKRTC.VideoQuality",
+                "usr": "s:11VideoSDKRTC0A7QualityO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VideoQuality",
+                "printedName": "VideoSDKRTC.VideoQuality",
+                "usr": "s:11VideoSDKRTC0A7QualityO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11VideoSDKRTC24ParticipantEventListenerP02onA14QualityChanged13participantId04prevG007currentG0ySS_AA0aG0OAItF",
+            "mangledName": "$s11VideoSDKRTC24ParticipantEventListenerP02onA14QualityChanged13participantId04prevG007currentG0ySS_AA0aG0OAItF",
+            "moduleName": "VideoSDKRTC",
+            "genericSig": "<τ_0_0 where τ_0_0 : VideoSDKRTC.ParticipantEventListener>",
+            "sugared_genericSig": "<Self where Self : VideoSDKRTC.ParticipantEventListener>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "onAgentStateChanged",
             "printedName": "onAgentStateChanged(_:forParticipant:)",
             "children": [
@@ -18570,6 +18612,44 @@
             "declKind": "Func",
             "usr": "s:11VideoSDKRTC24ParticipantEventListenerPAAE20onMediaStatusChanged13participantId4kind03newH0ySS_AA0G4TypeOSbtF",
             "mangledName": "$s11VideoSDKRTC24ParticipantEventListenerPAAE20onMediaStatusChanged13participantId4kind03newH0ySS_AA0G4TypeOSbtF",
+            "moduleName": "VideoSDKRTC",
+            "genericSig": "<τ_0_0 where τ_0_0 : VideoSDKRTC.ParticipantEventListener>",
+            "sugared_genericSig": "<Self where Self : VideoSDKRTC.ParticipantEventListener>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onVideoQualityChanged",
+            "printedName": "onVideoQualityChanged(participantId:prevQuality:currentQuality:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VideoQuality",
+                "printedName": "VideoSDKRTC.VideoQuality",
+                "usr": "s:11VideoSDKRTC0A7QualityO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VideoQuality",
+                "printedName": "VideoSDKRTC.VideoQuality",
+                "usr": "s:11VideoSDKRTC0A7QualityO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11VideoSDKRTC24ParticipantEventListenerPAAE02onA14QualityChanged13participantId04prevG007currentG0ySS_AA0aG0OAItF",
+            "mangledName": "$s11VideoSDKRTC24ParticipantEventListenerPAAE02onA14QualityChanged13participantId04prevG007currentG0ySS_AA0aG0OAItF",
             "moduleName": "VideoSDKRTC",
             "genericSig": "<τ_0_0 where τ_0_0 : VideoSDKRTC.ParticipantEventListener>",
             "sugared_genericSig": "<Self where Self : VideoSDKRTC.ParticipantEventListener>",
@@ -24468,35 +24548,6 @@
             "declKind": "Func",
             "usr": "s:11VideoSDKRTC4RoomC9unmuteMic21customMicrophoneTrackyAA012CustomStreamH0CSg_tYaKF",
             "mangledName": "$s11VideoSDKRTC4RoomC9unmuteMic21customMicrophoneTrackyAA012CustomStreamH0CSg_tYaKF",
-            "moduleName": "VideoSDKRTC",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setAudioDevice",
-            "printedName": "setAudioDevice(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MicrophoneDeviceInfo",
-                "printedName": "VideoSDKRTC.MicrophoneDeviceInfo",
-                "usr": "s:11VideoSDKRTC20MicrophoneDeviceInfoC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11VideoSDKRTC4RoomC14setAudioDeviceyyAA010MicrophoneF4InfoCKF",
-            "mangledName": "$s11VideoSDKRTC4RoomC14setAudioDeviceyyAA010MicrophoneF4InfoCKF",
             "moduleName": "VideoSDKRTC",
             "declAttributes": [
               "AccessControl",
@@ -46911,6 +46962,7 @@
         "declAttributes": [
           "AccessControl",
           "ObjC",
+          "Documentation",
           "RawDocComment"
         ],
         "enumRawTypeName": "Int32",
@@ -47339,6 +47391,7 @@
         "declAttributes": [
           "AccessControl",
           "ObjC",
+          "Documentation",
           "RawDocComment"
         ],
         "enumRawTypeName": "Int32",
@@ -64439,14 +64492,14 @@
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/AudioManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 12848,
+      "offset": 13912,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/FFI\/AudioManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 61393,
+      "offset": 62457,
       "length": 5,
       "value": "false"
     },
@@ -67253,14 +67306,14 @@
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Participant.swift",
       "kind": "BooleanLiteral",
-      "offset": 59870,
+      "offset": 60094,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Participant.swift",
       "kind": "BooleanLiteral",
-      "offset": 61703,
+      "offset": 61927,
       "length": 5,
       "value": "false"
     },
@@ -67406,155 +67459,169 @@
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16301,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "StringLiteral",
-      "offset": 15917,
+      "offset": 16342,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 15955,
+      "offset": 16380,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 15996,
+      "offset": 16421,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 16174,
+      "offset": 16599,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 16215,
+      "offset": 16640,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 16268,
+      "offset": 16693,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 16299,
+      "offset": 16724,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 16330,
+      "offset": 16755,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 16665,
+      "offset": 17090,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "IntegerLiteral",
-      "offset": 17249,
+      "offset": 17674,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 17522,
+      "offset": 17947,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 17983,
+      "offset": 18408,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 18836,
+      "offset": 19261,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "StringLiteral",
-      "offset": 19541,
+      "offset": 19966,
       "length": 27,
       "value": "\"com.sdk.participant.queue\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "StringLiteral",
-      "offset": 19985,
+      "offset": 20410,
       "length": 25,
       "value": "\"com.sdk.media.ffi.queue\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "Dictionary",
-      "offset": 20308,
+      "offset": 20733,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 21924,
+      "offset": 22349,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 22163,
+      "offset": 22588,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 22862,
+      "offset": 23287,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 23043,
+      "offset": 23468,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 149097,
+      "offset": 96660,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
+      "kind": "BooleanLiteral",
+      "offset": 155051,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/Classes\/Room.swift",
       "kind": "BooleanLiteral",
-      "offset": 150198,
+      "offset": 156152,
       "length": 4,
       "value": "true"
     },
@@ -69962,245 +70029,245 @@
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 87480,
+      "offset": 87460,
       "length": 19,
       "value": "\"EncryptionSuccess\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 88516,
+      "offset": 88525,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 88665,
+      "offset": 88674,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 88790,
+      "offset": 88799,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 88915,
+      "offset": 88924,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 89403,
+      "offset": 89412,
       "length": 14,
       "value": "\"HIGH_QUALITY\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 90710,
+      "offset": 90719,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 91023,
+      "offset": 91032,
       "length": 11,
       "value": "3"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 91308,
+      "offset": 91317,
       "length": 17,
       "value": "\"FREEZE_DETECTED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 91916,
+      "offset": 91925,
       "length": 5,
       "value": "\"CPU\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 92324,
+      "offset": 92333,
       "length": 10,
       "value": "\"DETECTED\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 92615,
+      "offset": 92624,
       "length": 7,
       "value": "\"audio\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 92662,
+      "offset": 92671,
       "length": 7,
       "value": "\"video\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 92715,
+      "offset": 92724,
       "length": 7,
       "value": "\"share\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 92904,
+      "offset": 92913,
       "length": 9,
       "value": "\"allowed\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 92969,
+      "offset": 92978,
       "length": 8,
       "value": "\"denied\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 93154,
+      "offset": 93163,
       "length": 10,
       "value": "\"accepted\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 93234,
+      "offset": 93243,
       "length": 10,
       "value": "\"rejected\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 93670,
+      "offset": 93679,
       "length": 10,
       "value": "\"incoming\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "StringLiteral",
-      "offset": 93741,
+      "offset": 93750,
       "length": 10,
       "value": "\"outgoing\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 94304,
+      "offset": 94313,
       "length": 4,
       "value": "1001"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 94434,
+      "offset": 94443,
       "length": 4,
       "value": "1002"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 94587,
+      "offset": 94596,
       "length": 4,
       "value": "1003"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 94741,
+      "offset": 94750,
       "length": 4,
       "value": "1004"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 94859,
+      "offset": 94868,
       "length": 4,
       "value": "1005"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 94976,
+      "offset": 94985,
       "length": 4,
       "value": "1006"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 95100,
+      "offset": 95109,
       "length": 4,
       "value": "1007"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 95220,
+      "offset": 95229,
       "length": 4,
       "value": "1008"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 95374,
+      "offset": 95383,
       "length": 4,
       "value": "1009"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 95499,
+      "offset": 95508,
       "length": 4,
       "value": "1010"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 95638,
+      "offset": 95647,
       "length": 4,
       "value": "1011"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 95820,
+      "offset": 95829,
       "length": 4,
       "value": "1101"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 96170,
+      "offset": 96179,
       "length": 4,
       "value": "1102"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 96292,
+      "offset": 96301,
       "length": 4,
       "value": "1103"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/RoomStateEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 96415,
+      "offset": 96424,
       "length": 4,
       "value": "1104"
     },
@@ -70587,7 +70654,7 @@
       "kind": "StringLiteral",
       "offset": 337,
       "length": 7,
-      "value": "\"4.0.0\""
+      "value": "\"4.0.1\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/SDKConfig.swift",
@@ -70613,273 +70680,273 @@
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 715,
+      "offset": 753,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 738,
+      "offset": 776,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 759,
+      "offset": 797,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 780,
+      "offset": 818,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 805,
+      "offset": 843,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 830,
+      "offset": 868,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 848,
+      "offset": 886,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 977,
+      "offset": 1053,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 996,
+      "offset": 1072,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1018,
+      "offset": 1094,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1041,
+      "offset": 1117,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1059,
+      "offset": 1135,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1078,
+      "offset": 1154,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1104,
+      "offset": 1180,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2252,
+      "offset": 2328,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2257,
+      "offset": 2333,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2393,
+      "offset": 2469,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2398,
+      "offset": 2474,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2514,
+      "offset": 2590,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2519,
+      "offset": 2595,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2653,
+      "offset": 2729,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2658,
+      "offset": 2734,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2765,
+      "offset": 2841,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2770,
+      "offset": 2846,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2886,
+      "offset": 2962,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2891,
+      "offset": 2967,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3300,
+      "offset": 3376,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "BooleanLiteral",
-      "offset": 4576,
+      "offset": 4652,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "BooleanLiteral",
-      "offset": 5730,
+      "offset": 5806,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "StringLiteral",
-      "offset": 5762,
+      "offset": 5838,
       "length": 9,
       "value": "\"SUCCESS\""
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "BooleanLiteral",
-      "offset": 5882,
+      "offset": 5958,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "BooleanLiteral",
-      "offset": 8083,
+      "offset": 8159,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "BooleanLiteral",
-      "offset": 12180,
+      "offset": 12256,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "BooleanLiteral",
-      "offset": 13032,
+      "offset": 13108,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "BooleanLiteral",
-      "offset": 13671,
+      "offset": 13747,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "BooleanLiteral",
-      "offset": 14287,
+      "offset": 14363,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "BooleanLiteral",
-      "offset": 14907,
+      "offset": 14983,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "BooleanLiteral",
-      "offset": 15529,
+      "offset": 15605,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Internal\/Tracing\/SdkTracer.swift",
       "kind": "BooleanLiteral",
-      "offset": 16166,
+      "offset": 16242,
       "length": 5,
       "value": "false"
     },
@@ -71215,7 +71282,7 @@
     {
       "filePath": "\/Users\/parthasodariya\/Documents\/Rust\/videosdk-rtc-ios-sdk-private\/VideoSDKRTC\/Public\/VideoSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 92647,
+      "offset": 92651,
       "length": 5,
       "value": "false"
     },
