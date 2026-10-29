@@ -115,6 +115,10 @@ int32_t room_enableMicWithMeta(const char *meta_json);
 uint32_t videosdk_pushAudioCapture(const int16_t *samples, uint32_t count);
 uint32_t videosdk_pullAudioPlayback(int16_t *out_samples, uint32_t count);
 uint32_t videosdk_audioPlaybackAvailable(void);
+/// debug counter, total since process start, any thread: remote audio frames the core's sinks received.
+uint64_t videosdk_remoteAudioSinkCallbacks(void);
+/// debug counter, total since process start, any thread: audio mixer loop passes.
+uint64_t videosdk_audioMixerWakeups(void);
 
 // Video capture
 int32_t videosdk_videoInit(uint32_t width, uint32_t height, uint32_t fps, int32_t codec);
@@ -180,6 +184,12 @@ int32_t videosdk_pollScreenSharePlaybackNV12(const char *participant_id,
                                         uint8_t *uv_dst, uint32_t uv_stride,
                                         uint32_t buf_width, uint32_t buf_height,
                                         uint32_t *out_width, uint32_t *out_height);
+
+/// 1 when the participant's camera slot (screen-share slot with
+/// is_share) holds a frame no poll has taken yet, else 0, including a
+/// NULL or non-UTF-8 id. Takes nothing; any thread. A check on the
+/// local camera counts as a poll, so the local slot keeps filling.
+int32_t videosdk_videoFrameReady(const char *participant_id, bool is_share);
 
 // Participants
 char *room_getParticipants(void);
@@ -438,14 +448,41 @@ bool videosdk_effectsGraphEnabled(void);
 
 /// Register the self-view sink. The callback receives a RETAINED (+1)
 /// CVPixelBufferRef and the frame's pts; the receiver owns it and must
-/// CFRelease it. Pass NULL to detach.
+/// CFRelease it. Both the effects graph and videosdk_pushVideoCaptureNative
+/// feed it. Pass NULL to detach.
 void videosdk_effectsSetPreviewCallback(void (*cb)(void *pixel_buffer, int64_t pts_us));
+
+/// Register a sink for one remote track's frames: camera, or screen share
+/// with is_share. The decoder's worker thread calls cb(ctx, pixel_buffer)
+/// once per decoded frame with a RETAINED (+1) NV12 '420v' CVPixelBufferRef
+/// from a core-owned pool; the receiver owns it and must CFRelease it. cb
+/// must return quickly and must not call this function. Pass NULL cb to
+/// clear: when that returns no call with the old ctx is in flight and none
+/// follows. While a sink is registered the track's playback slot is not
+/// written. Returns 0, or -1 for a NULL or non-UTF-8 participant_id.
+int32_t videosdk_setRemoteVideoCallback(const char *participant_id, bool is_share,
+                                        void (*cb)(void *ctx, void *pixel_buffer),
+                                        void *ctx);
 
 /// Push one camera CVPixelBuffer into the graph. The buffer is BORROWED — this
 /// call does not retain it. Returns 0 when a frame reached the encoder, -1
 /// otherwise (already counted at the right drop site).
 int32_t videosdk_pushVideoCaptureCVPixelBuffer(void *pixel_buffer, uint32_t width,
                                                uint32_t height, int64_t pts_us);
+
+/// Publish one camera CVPixelBuffer natively at `width`x`height`, centre-cropped
+/// and scaled when its size differs. The buffer is BORROWED: the core retains
+/// what it publishes. Returns 0 pushed, -1 dropped, -3 when native capture is
+/// off and nothing was touched. A -1 is counted as `encoderDropped`, except for
+/// a NULL buffer or a zero size.
+int32_t videosdk_pushVideoCaptureNative(void *pixel_buffer, uint32_t width, uint32_t height,
+                                        int64_t pts_us);
+
+/// Turn the native camera publish on or off for the process. Off by default.
+void videosdk_setNativeCaptureEnabled(bool enabled);
+
+/// Whether the native camera publish is on.
+bool videosdk_nativeCaptureEnabled(void);
 
 /// Set the opus audio encoder config for the mic track. `bitrate_kbps` 0 or
 /// >128 means "no override". The `*_valid` flags gate whether the paired
@@ -473,6 +510,13 @@ void videosdk_setCodecSwitchEnabled(bool enabled);
 /// configuration and failures reach the platform console. Off by default and
 /// for diagnosis only: it also logs candidate addresses and session details.
 void videosdk_setEngineLogToStderr(bool enabled);
+
+/// Turn the engine's INFO log lines on or off at runtime. Off by default (the
+/// engine logs WARNING and ERROR only) and not persisted. `videosdk_init`
+/// turns it on when `RUST_LOG` lets target `libwebrtc` through at INFO; a
+/// later call overrides that. The lines reach stderr when `RUST_LOG` lets
+/// target `libwebrtc` through. Never fails.
+void videosdk_setEngineInfoLog(bool enabled);
 
 /// Declare that this platform can hand the audio device to the engine, letting
 /// capture and playout share one unit so the canceller has a far-end reference.
