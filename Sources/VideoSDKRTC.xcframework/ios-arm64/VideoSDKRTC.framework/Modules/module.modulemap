@@ -1,5 +1,5 @@
 framework module VideoSDKRTC {
-  umbrella header "VideoSDKRTC-umbrella.h"
+  umbrella header "VideoSDKRTC.default-Broadcast-umbrella.h"
 
   export *
   module * { export * }

@@ -347,6 +347,9 @@ extern "C" {
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreFoundation;
+@import CoreMedia;
+@import Foundation;
+@import ReplayKit;
 @import UIKit;
 #endif
 
@@ -372,116 +375,54 @@ extern "C" {
 #if defined(__OBJC__)
 
 @class NSCoder;
-/// A UIView that renders frames received via the <code>RTCVideoRenderer</code> protocol.
-/// The view keeps its last frame on screen until the next frame arrives or the view is cleared.
-/// When the app becomes active again, for example after an unlock or a return from the
-/// background, the view draws that frame again, so a screen share that sends no new frames still
-/// shows its last frame. The view does not keep the screen awake.
-/// While the view is not in a window it draws nothing and copies nothing: it keeps only the newest
-/// frame, and draws that frame as soon as it enters a window. A track whose only renderers are
-/// views out of a window stops fetching frames until one of them enters a window.
-/// Usage (modern):
-/// \code
-/// let view = RTCMTLVideoView()
-/// (stream.track as? RTCVideoTrack)?.add(view)
-///
-/// \endcodeUsage (legacy, still supported):
-/// \code
-/// let view = stream.createRenderView()
-///
-/// \endcodeNo explicit <code>@objc(RTCMTLVideoView)</code> name: the vendored core still ships libwebrtc’s legacy <code>RTCMTLVideoView</code>, so that symbol name would clash at link time.
-SWIFT_CLASS("_TtC11VideoSDKRTC15RTCMTLVideoView")
-@interface RTCMTLVideoView : UIView
-/// The class of the view’s backing layer, <code>AVSampleBufferDisplayLayer</code>, which draws the frames.
-/// The layer shows each frame’s pixel buffer as it is, with no colour conversion on the CPU,
-/// so <code>view.layer</code> is the video itself. The view decides what the layer shows: don’t set the
-/// layer’s <code>contents</code> or enqueue sample buffers to it. To read the frame on screen, use
-/// <code>lastFrame</code>.
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
-+ (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
-/// How a frame fits the view. Setting it, directly or through <code>videoContentMode</code>, sets the
-/// display layer’s <code>videoGravity</code>.
-/// <ul>
-///   <li>
-///     <code>.scaleToFill</code> (the default) and <code>.redraw</code> stretch the frame (<code>.resize</code>).
-///   </li>
-///   <li>
-///     <code>.scaleAspectFit</code> letterboxes it (<code>.resizeAspect</code>).
-///   </li>
-///   <li>
-///     <code>.scaleAspectFill</code> crops it (<code>.resizeAspectFill</code>).
-///   </li>
-///   <li>
-///     A positional mode such as <code>.center</code> or <code>.top</code> has no display-layer equivalent, so it
-///     letterboxes (<code>.resizeAspect</code>).
-///   </li>
-/// </ul>
-@property (nonatomic) UIViewContentMode contentMode;
-/// Creates a view with the given frame, ready to be added to an <code>RTCVideoTrack</code>.
-/// \param frame The view’s frame rectangle.
-///
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-/// Creates a view from a storyboard or nib.
-/// \param coder The unarchiver.
-///
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-/// Tells the view it entered or left a window.
-/// On entering a window the view draws the newest frame it received while out of one, or
-/// draws its last frame again, with no new frame needed. While out of a window it draws nothing,
-/// and the tracks it renders stop fetching frames unless another renderer needs them.
-/// UIKit calls this on the main thread; an override must call <code>super</code>.
-- (void)didMoveToWindow;
-@end
-
-/// Mirrors Rust <code>EventCategory</code>. Raw values are FROZEN.
-typedef SWIFT_ENUM(int32_t, SdkTraceCategory, open) {
-  SdkTraceCategoryInternalLog = 0,
-  SdkTraceCategoryDebug = 1,
-  SdkTraceCategoryRealtime = 2,
-  SdkTraceCategoryTelemetry = 3,
-  SdkTraceCategoryWarn = 4,
-  SdkTraceCategoryError = 5,
-  SdkTraceCategoryBackendError = 6,
-};
-
-/// Mirrors Rust <code>ComponentCategory</code>
-typedef SWIFT_ENUM(int32_t, SdkTraceComponent, open) {
-  SdkTraceComponentMedia = 0,
-  SdkTraceComponentTransport = 1,
-  SdkTraceComponentNetwork = 2,
-  SdkTraceComponentMeeting = 3,
-  SdkTraceComponentParticipant = 4,
-  SdkTraceComponentInternalLog = 5,
-  SdkTraceComponentInfo = 6,
-};
-
 @class UIColor;
-/// A UIView that presents the system’s broadcast picker for the app’s
-/// configured Broadcast Upload Extension. Tap the view (or call
-/// <code>triggerPicker()</code>) to show the system “Start Broadcast” UI.
-/// <h3>Apps do not need this view</h3>
-/// <code>Room/enableScreenShare(_:)-(CustomScreenShareTrackConfig)</code> parks one
-/// of these off-screen and taps it for you, so a “Share screen” button in your
-/// app is one call:
-/// \code
-/// try await room.enableScreenShare()
-///
-/// \endcodeAdding your own alongside that call shows the picker twice. That was the
-/// documented pattern before 4.0, when <code>enableScreenShare()</code> only armed the
-/// consumer side; it is no longer.
-/// Still public for apps that must own where the picker sits in their
-/// hierarchy. If that is you, let the user tap the view and do not also call
-/// <code>enableScreenShare()</code>.
+/// The UIKit form of <code>BroadcastPicker</code>: <code>triggerPicker()</code> starts or stops the share for
+/// <code>options</code>, so your own button can look like the rest of the app.
 SWIFT_CLASS("_TtC11VideoSDKRTC23VideoSDKBroadcastButton")
 @interface VideoSDKBroadcastButton : UIView
-/// Not supported. Storyboard and nib decoding always traps with <code>fatalError</code>;
-/// use <code>init(extensionBundleId:)</code> instead.
-/// \param coder Unused.
-///
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-/// Tint the inner broadcast icon.
+/// Not supported; use <code>init(options:)</code>.
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE;
+/// Tints the inner broadcast icon.
 @property (nonatomic, strong) UIColor * _Null_unspecified tintColor;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+@class NSString;
+@class NSObject;
+/// The Broadcast Upload Extension’s side of a screen share, as a class to subclass:
+/// \code
+/// final class SampleHandler: VideoSDKBroadcastHandler {
+///     override var appGroupIdentifier: String { "group.app" }
+/// }
+///
+/// \endcodeIt writes ReplayKit’s frames into the App Group socket <code>LocalParticipant/setScreen(_:)</code> reads,
+/// forwards the app audio when <code>ScreenOptions/audio</code> asks for it, and finishes the broadcast when
+/// the app stops sharing. Add <code>pod 'VideoSDKRTC/Broadcast'</code> to the extension target: it carries no
+/// media core, so the extension stays inside its memory limit.
+SWIFT_CLASS("_TtC11VideoSDKRTC24VideoSDKBroadcastHandler")
+@interface VideoSDKBroadcastHandler : RPBroadcastSampleHandler
+/// Tells the app the broadcast started and connects to its socket.
+- (void)broadcastStartedWithSetupInfo:(NSDictionary<NSString *, NSObject *> * _Nullable)setupInfo;
+/// Tells the app the broadcast stopped and closes the socket.
+- (void)broadcastFinished;
+/// Forwards every third video frame to the app, and the app audio when the app asked for it.
+- (void)processSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer withType:(RPSampleBufferType)sampleBufferType;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+/// An optional ready-made target: the video size drives <code>intrinsicContentSize</code>, so Auto Layout can
+/// size a tile to the publisher’s ratio.
+SWIFT_CLASS("_TtC11VideoSDKRTC17VideoSDKVideoView")
+@interface VideoSDKVideoView : UIView
+/// The video size, or no intrinsic size before the first frame.
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
+/// An empty view to attach.
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+/// Not from a storyboard.
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE;
+/// Takes the renderer’s video size; shortcut: read only when the view lays out, so a size change
+/// waits for the next layout; push it from the frame counter if a tile needs it sooner.
+- (void)layoutSubviews;
 @end
 
 #endif // defined(__OBJC__)
